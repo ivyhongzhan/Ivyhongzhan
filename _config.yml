@@ -18,35 +18,39 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your o
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
-impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+# Site Settings
+title: Ivy (Hong) Zhan
+description: >-
+  PhD Applicant in AI and Machine Learning. Research interests include robust ML, uncertainty quantification, and causal inference for engineering systems.
 
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
+# Your Information
+url: "https://ivyhongzhan.github.io" 
+baseurl: ""
 
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+author: "Ivy (Hong) Zhan"
+affiliation: "MSc, University of York"
+email: "hz2030@alumni.york.ac.uk" 
+phone: "+44 7909 329936" 
 
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+# Social Links
+social:
+  - icon: fab fa-linkedin
+    icon_pack: fab
+    link: https://linkedin.com/in/ivyhongzhan 
+  - icon: fab fa-github
+    icon_pack: fab
+    link: https://github.com/ivyhongzhan
 
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
-
-navbar_fixed: true
+# Navigation Bar Links (Define the main sections of your site)
+navbar:
+  - title: "About"
+    url: /about/
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+  - title: "CV"
+    url: /assets/pdf/your-cv.pdf # You will need to upload your CV PDF file later
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
@@ -642,3 +646,4 @@ jsonresume:
   - languages
   - interests
   - references
+
