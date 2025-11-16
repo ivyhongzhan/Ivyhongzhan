@@ -8,7 +8,7 @@ permalink: /cv/
 
 You can download my full CV here:
 
-👉 [Download PDF](../assets/pdf/ivyzhan_CV.pdf)
+👉 [Download PDF](../assets/pdf/Ivyzhan_CV.pdf)
 
 
 ---
