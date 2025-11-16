@@ -50,7 +50,7 @@ navbar:
   - title: "Projects"
     url: /projects/
   - title: "CV"
-    url: /assets/pdf/ivyzhan_CV.pdf
+    url: /assets/pdf/Ivyzhan_CV.pdf
 
 footer_fixed: true
 search_enabled: true
