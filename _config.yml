@@ -50,7 +50,7 @@ navbar:
   - title: "Projects"
     url: /projects/
   - title: "CV"
-    url: /assets/pdf/Ivy_Zhan_CV.pdf # You will need to upload your CV PDF file later
+    url: /assets/pdf/Ivyzhan_CV # You will need to upload your CV PDF file later
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
