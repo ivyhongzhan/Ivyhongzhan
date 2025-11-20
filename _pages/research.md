@@ -6,100 +6,63 @@ permalink: /research/
 
 # Research  
 
-My research aims to build **reliable, data-efficient, and deployment-ready AI for engineering and industrial systems**, with emphasis on robustness, uncertainty quantification, and learning under distribution shift.  
-I develop methods that remain stable and interpretable when deployed in safety-critical environments such as manufacturing, aerospace, and equipment health monitoring.
+My research sits at the intersection of **Applied AI for Engineering**, **Information Systems & Data Analytics**, and **Educational Technology / Learning Analytics**.  
+Across these domains, I focus on developing **reliable, interpretable, and data-efficient machine learning systems** that are deployable in real-world environments.
 
 ---
 
-## 🔍 Core Research Areas  
+## 1️⃣ Applied AI for Engineering & Industrial Systems  
 
-### **1. 🛡️ Robust & Trustworthy Machine Learning for Industrial Systems**  
-Modern engineering applications operate under shifting distributions, noisy measurements, and extreme class imbalance.  
-I study the principles that make machine learning **robust, generalizable, and causally reliable** outside of training conditions.
+I study how to build robust and trustworthy ML models for mission-critical engineering applications such as predictive maintenance and automated quality inspection.
 
-**Topics include:**  
-- Robustness under distribution shift  
-- Rare-event and class-imbalanced learning  
-- Causal interpretation of data interventions  
-- Reliability assessment for mission-critical decisions  
+**Topics:**
+- Transformer-based time-series modeling for multi-sensor data  
+- Robustness and distribution shift in degradation modeling  
+- Uncertainty quantification & Bayesian deep learning  
+- Data-efficient defect detection in industrial vision  
 
-My research focuses on developing algorithms that maintain **stable performance in real industrial pipelines**, not only in idealized benchmarks.
-
----
-
-### **2. ⏳ Transformer-Based Time-Series Modeling**  
-Industrial sensors produce multi-channel temporal signals with long-range dependencies.  
-I work on adapting **Transformer architectures** for prognostics and health monitoring.
-
-**Topics of interest:**  
-- Temporal Fusion Transformer (TFT)  
-- Multi-sensor representation learning  
-- Attention-based long-range dependency modeling  
-- Failure precursor identification  
-- Explainability via attention and SHAP analysis  
-
-My work shows that Transformers significantly outperform RNN baselines in degradation modeling and early anomaly detection.
+**Representative work:**
+- Temporal Fusion Transformer for turbofan engine prognostics (NASA C-MAPSS)  
+- Bayesian Active Learning for industrial visual inspection (MVTec AD)  
 
 ---
 
-### **3. 📉 Bayesian Learning & Data-Efficient AI**  
-Many industrial settings lack labeled data or have high annotation cost.  
-I explore Bayesian and Active Learning frameworks to improve sample efficiency and decision reliability.
+## 2️⃣ Information Systems & Data Analytics  
 
-**Focus areas:**  
-- Epistemic & aleatoric uncertainty quantification  
-- Bayesian neural networks (MC Dropout, ensembles)  
-- BALD & disagreement-based query strategies  
-- Data-efficient defect inspection and anomaly detection  
+Here I focus on using data to understand **organizational and socio-technical systems**: how algorithms shape behavior, how rebalancing strategies affect decisions, and how we can design more reliable data pipelines.
 
-My goal is to reduce human labeling requirements while ensuring **uncertainty-aware, reliable model decisions**.
+**Topics:**
+- Causal analysis of data preprocessing and rebalancing strategies  
+- Out-of-distribution performance in real-world analytics pipelines  
+- Algorithmic exposure and content amplification on social media  
+- Data-centric evaluation of model reliability  
 
----
-
-## 🎯 Representative Research Questions  
-
-1. **How can we design Transformer-based models that generalize under distribution shift in engineering systems?**  
-2. **What is the causal effect of oversampling and data rebalancing strategies on model robustness?**  
-3. **How can Bayesian uncertainty estimation guide reliable decision-making in industrial contexts?**  
-4. **How can AI systems remain interpretable and trustworthy for engineers—not only for ML practitioners?**
+**Representative work:**
+- Causal study of oversampling strategies under distribution shift  
+- MSc dissertation on algorithmic exposure & cross-context reposting behaviour  
 
 ---
 
-## 🌟 Current Projects (with Key Results)
+## 3️⃣ Educational Technology & Learning Analytics  
 
-### **🔧 Temporal Fusion Transformer for Predictive Maintenance (NASA C-MAPSS)**  
-- Designed Transformer-based degradation modeling pipeline  
-- **Achieved ~20% RMSE reduction vs. LSTM/GRU baselines**  
-- Applied SHAP to reveal early failure precursors  
+I am also interested in applying AI and analytics to **learning processes and education platforms**, leveraging behavioral and interaction data to support learners and instructors.
 
----
+**Topics:**
+- Learning analytics and behavioural modelling  
+- Data-driven feedback and intervention design  
+- Fairness and transparency of algorithmic recommendations in learning settings  
+- Applying uncertainty-aware models to student performance prediction  
 
-### **🎯 Causal Analysis of Oversampling under Distribution Shift**  
-- Used Propensity Score Matching (PSM) to isolate causal effect  
-- **Observed consistent 10–15% OOD accuracy drop** with oversampling  
-- Benchmarked alternative reweighting strategies  
-
----
-
-### **📉 Bayesian Active Learning for Industrial Visual Inspection (MVTec AD)**  
-- Implemented MC Dropout + BALD query strategy  
-- **Achieved 95% accuracy using 40% fewer labeled samples**  
-- Built reproducible defect inspection pipeline  
+**Current/Planned work:**
+- Extending my experience in algorithmic exposure and user behaviour modelling  
+  to learning platforms and technology-enhanced learning environments.  
 
 ---
 
-## 🚀 Long-Term Vision (PhD)  
+## 🎯 Long-Term Vision  
 
-My long-term research goal is to develop **next-generation industrial AI systems** that are:
+My long-term goal is to develop **reliable, interpretable, and data-efficient AI systems** that:  
 
-- **Robust** to sensor drift, noise, and environmental variation  
-- **Causally grounded** and interpretable  
-- **Uncertainty-aware** for safe deployment  
-- **Data-efficient** in annotation-scarce environments  
-- **Deployable** in real manufacturing and engineering systems  
-
-I aim to advance foundational methods at the intersection of **ML robustness, causal inference, Bayesian learning, and engineering systems**, with direct applications in manufacturing quality control, predictive maintenance, and intelligent industrial automation.
-
----
-
-If you are interested in discussing research collaboration or PhD supervision, feel free to reach out.
+- operate safely in engineering and industrial settings,  
+- support better decision-making in organizations and information systems, and  
+- enhance learning outcomes through responsible use of analytics and educational technology.
