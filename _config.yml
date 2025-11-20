@@ -2,17 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: "Ivy (Hong) Zhan"
 tagline: "Reliable Data-Driven & AI Systems for Engineering, Organizations, and Learning"
-first_name: You
-middle_name: R.
-last_name: Name
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: >
+description: >-
   I am a researcher working at the intersection of Applied AI, Data Analytics, and Learning Analytics.
   My work focuses on building reliable, data-efficient, and interpretable machine learning systems for
   engineering applications, organizational decision-making, and technology-enhanced learning.
+
+url: "https://ivyhongzhan.github.io"
+baseurl: ""
+
 
 > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -24,14 +23,6 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your o
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-# Site Settings
-title: Ivy (Hong) Zhan
-description: >-
-  PhD Applicant in AI and Machine Learning. Research interests include robust ML, uncertainty quantification, and causal inference for engineering systems.
-
-# Your Information
-url: "https://ivyhongzhan.github.io" 
-baseurl: ""
 
 author: "Ivy (Hong) Zhan"
 affiliation: "MSc, University of York"
