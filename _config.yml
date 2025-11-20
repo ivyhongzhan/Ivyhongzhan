@@ -12,24 +12,22 @@ description: >-
 url: "https://ivyhongzhan.github.io"
 baseurl: ""
 
-
-# the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-# the ">" symbol means to ignore newlines until "footer_text:"
-footer_text: >
+# Footer text
+footer_text: >-
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website
+lang: en
+icon: "⚛️"
 
 author: "Ivy (Hong) Zhan"
 affiliation: "MSc, University of York"
-email: "hz2030@alumni.york.ac.uk" 
-phone: "+44 7909 329936" 
+email: "hz2030@alumni.york.ac.uk"
+phone: "+44 7909 329936"
+
 
 # Social Links
 social:
