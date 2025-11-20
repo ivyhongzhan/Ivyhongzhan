@@ -1,7 +1,6 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-
 title: "Ivy (Hong) Zhan"
 tagline: "Reliable Data-Driven & AI Systems for Engineering, Organizations, and Learning"
 description: >-
@@ -15,9 +14,9 @@ baseurl: ""
 # Footer text
 footer_text: >-
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  Powered by Jekyll with al-folio theme.
+  Hosted by GitHub Pages.
+  Photos from Unsplash.
 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website
 lang: en
@@ -28,17 +27,14 @@ affiliation: "MSc, University of York"
 email: "hz2030@alumni.york.ac.uk"
 phone: "+44 7909 329936"
 
-
-# Social Links
+# Social Links (修正格式)
 social:
-  - icon: fab fa-linkedin
-    icon_pack: fab
+  - icon: fa-brands fa-linkedin
     link: https://linkedin.com/in/ivyhongzhan
-  - icon: fab fa-github
-    icon_pack: fab
+  - icon: fa-brands fa-github
     link: https://github.com/ivyhongzhan
 
-# Navigation Bar Links (Define the main sections of your site)
+# Navigation Bar Links
 navbar:
   - title: "About"
     url: /about/
@@ -61,29 +57,28 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
-serve_og_meta: false 
-serve_schema_org: false 
-og_image: 
+serve_og_meta: false
+serve_schema_org: false
+og_image:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
-google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
-cronitor_analytics: 
-pirsch_analytics: 
-openpanel_analytics: 
+google_analytics:
+cronitor_analytics:
+pirsch_analytics:
+openpanel_analytics:
 
-google_site_verification: 
-bing_site_verification: 
+google_site_verification:
+bing_site_verification:
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-
-blog_name: al-folio 
+blog_name: al-folio
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
-lsi: false 
+lsi: false
 
 # Pagination
 pagination:
@@ -93,25 +88,25 @@ related_blog_posts:
   enabled: true
   max_related: 5
 
-# Giscus comments (RECOMMENDED) - FILL THESE IN TO ENABLE COMMENTS
+# Giscus comments
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # 
-  category: Comments # 
-  category_id: # 
-  mapping: title 
-  strict: 1 
-  reactions_enabled: 1 
-  input_position: bottom 
-  dark_theme: dark 
-  light_theme: light 
+  repo:
+  repo_id:
+  category: Comments
+  category_id:
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  dark_theme: dark
+  light_theme: light
   emit_metadata: 0
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio 
+disqus_shortname: al-folio
 
-# External sources.
+# External sources
 external_sources:
   - name: medium.com
     rss_url: https://medium.com/@al-folio/feed
@@ -123,15 +118,13 @@ external_sources:
 # -----------------------------------------------------------------------------
 # Newsletter
 # -----------------------------------------------------------------------------
-
 newsletter:
   enabled: false
-  endpoint: 
+  endpoint:
 
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
-
 collections:
   books:
     output: true
@@ -145,10 +138,9 @@ collections:
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
-
-# Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
+
 kramdown:
   input: GFM
   syntax_highlighter_opts:
@@ -181,6 +173,7 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+
 keep_files:
   - CNAME
   - .nojekyll
@@ -213,20 +206,18 @@ defaults:
       sitemap: false
 
 sass:
-  style: compressed # Consider changing to 'expanded' or removing this line
+  style: compressed
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
-
 jekyll-minifier:
-  compress_javascript: false 
+  compress_javascript: false
   exclude: ["robots.txt", "assets/js/search/*.js"]
 
 # -----------------------------------------------------------------------------
 # Terser
 # -----------------------------------------------------------------------------
-
 terser:
   compress:
     drop_console: true
@@ -234,53 +225,47 @@ terser:
 # -----------------------------------------------------------------------------
 # Jekyll Archives
 # -----------------------------------------------------------------------------
-
 jekyll-archives:
   posts:
-    enabled: [year, tags, categories] 
+    enabled: [year, tags, categories]
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  # Removed the 'books' archive block as it might not be needed/functional
+  books:
+    enabled: [year, tags, categories]
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] 
-display_categories: ["external-services"] 
+display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"]
+display_categories: ["external-services"]
 
 # -----------------------------------------------------------------------------
-# Jekyll Scholar
+# Jekyll Scholar (修正为你的名字)
 # -----------------------------------------------------------------------------
-
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
-
+  last_name: [Zhan]
+  first_name: [Hong, H., Ivy]
   style: apa
   locale: en
-
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
   bibtex_filters: [latex, smallcaps, superscript]
-
   replace_strings: true
   join_strings: true
-
   details_dir: bibliography
   details_link: Details
-
   query: "@*"
   group_by: year
   group_order: descending
 
-# Display different badges withs stats for your publications
+# Display badges for publications
 enable_publication_badges:
-  altmetric: true 
-  dimensions: true 
-  google_scholar: true 
-  inspirehep: true 
+  altmetric: true
+  dimensions: true
+  google_scholar: true
+  inspirehep: true
 
-# Filter out certain bibtex entry keywords used internally from the bib output
+# Filter out certain bibtex entry keywords
 filtered_bibtex_keywords:
   [
     abbr,
@@ -307,11 +292,8 @@ filtered_bibtex_keywords:
     website,
   ]
 
-# Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 
-more_authors_animation_delay: 10 
-
-# Enables publication thumbnails.
+max_author_limit: 3
+more_authors_animation_delay: 10
 enable_publication_thumbnails: true
 
 # -----------------------------------------------------------------------------
@@ -326,10 +308,8 @@ external_links:
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
-
-# MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick.
 imagemagick:
-  enabled: true 
+  enabled: true
   widths:
     - 480
     - 800
@@ -345,35 +325,32 @@ imagemagick:
   output_formats:
     webp: "-quality 85"
 
-# Lazy loading images
-lazy_loading_images: true 
+lazy_loading_images: true
 
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
-
-enable_google_analytics: false 
-enable_cronitor_analytics: false 
-enable_pirsch_analytics: false 
-enable_openpanel_analytics: false 
-enable_google_verification: false 
-enable_bing_verification: false 
-enable_masonry: true 
-enable_math: true 
-enable_tooltips: false 
-enable_darkmode: true 
-enable_navbar_social: false 
-enable_project_categories: true 
-enable_medium_zoom: true 
-enable_progressbar: true 
-enable_video_embedding: false 
+enable_google_analytics: false
+enable_cronitor_analytics: false
+enable_pirsch_analytics: false
+enable_openpanel_analytics: false
+enable_google_verification: false
+enable_bing_verification: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: true
+enable_video_embedding: false
 
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
-
 third_party_libraries:
-  download: false 
+  download: false
   bootstrap-table:
     integrity:
       css: "sha256-uRX+PiRTR4ysKFRCykT8HLuRCub26LgXJZym3Yeom1c="
@@ -597,10 +574,9 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 # Get external JSON data
 # -----------------------------------------------------------------------------
-
 jekyll_get_json:
   - data: resume
-    json: assets/json/resume.json 
+    json: assets/json/resume.json
 
 jsonresume:
   - basics
