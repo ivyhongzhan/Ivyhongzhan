@@ -12,10 +12,7 @@ baseurl: ""
 
 # Footer text
 footer_text: >-
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-  Powered by Jekyll with al-folio theme.
-  Hosted by GitHub Pages.
-  Photos from Unsplash.
+  Independent research on human-AI interaction, trust, and online communities.
 
 keywords: HCI, Information Systems, human-AI interaction, trust in AI, online communities
 lang: en
@@ -74,8 +71,8 @@ bing_site_verification:
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: al-folio
-blog_description: a simple whitespace theme for academics
+blog_name: Hong Zhan
+blog_description: Research notes on HCI, Information Systems, and human-AI interaction
 permalink: /blog/:year/:title/
 lsi: false
 
@@ -132,7 +129,7 @@ collections:
       layout: post
     output: true
   projects:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
