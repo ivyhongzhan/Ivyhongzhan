@@ -4,17 +4,31 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/Ivyhongzhan/";
     },
-  },{id: "nav-publications",
-          title: "Publications",
+  },{id: "nav-about",
+          title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Ivyhongzhan/publications/";
+            window.location.href = "/Ivyhongzhan/";
+          },
+        },{id: "nav-research",
+          title: "Research",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Ivyhongzhan/research/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Ivyhongzhan/projects/";
           },
         },{id: "nav-teaching",
           title: "teaching",
@@ -23,28 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Ivyhongzhan/teaching/";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/Ivyhongzhan/people/";
-          },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/Ivyhongzhan/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/Ivyhongzhan/blog/";
-              },
-            },{id: "post-a-post-with-plotly-js",
+        },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
