@@ -3,7 +3,6 @@ layout: default
 permalink: /blog/
 title: blog
 
-
 pagination:
   enabled: true
   collection: posts
