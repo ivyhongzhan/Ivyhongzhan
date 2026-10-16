@@ -2,7 +2,6 @@
 layout: page
 title: submenus
 
-
 dropdown: true
 children:
   - title: bookshelf
