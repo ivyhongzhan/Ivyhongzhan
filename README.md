@@ -6,4 +6,3 @@ My current research examines how people discuss trust and distrust in generative
 
 - ORCID: [0009-0002-1862-0913](https://orcid.org/0009-0002-1862-0913)
 - Personal website: [ivyhongzhan.github.io](https://ivyhongzhan.github.io)
-
