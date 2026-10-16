@@ -1,12 +1,11 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-title: "Ivy (Hong) Zhan"
-tagline: "Reliable Data-Driven & AI Systems for Engineering, Organizations, and Learning"
+title: "Hong Zhan"
+tagline: "Human-AI Interaction, Trust, and Online Communities"
 description: >-
-  I am a researcher working at the intersection of Applied AI, Data Analytics, and Learning Analytics.
-  My work focuses on building reliable, data-efficient, and interpretable machine learning systems for
-  engineering applications, organizational decision-making, and technology-enhanced learning.
+  Hong Zhan is an independent researcher interested in human-computer interaction and information systems.
+  Their current research focuses on how people discuss trust and distrust in generative AI across technical online communities.
 
 url: "https://ivyhongzhan.github.io"
 baseurl: ""
@@ -18,14 +17,14 @@ footer_text: >-
   Hosted by GitHub Pages.
   Photos from Unsplash.
 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website
+keywords: HCI, Information Systems, human-AI interaction, trust in AI, online communities
 lang: en
 icon: "⚛️"
 
-author: "Ivy (Hong) Zhan"
-affiliation: "MSc, University of York"
-email: "hz2030@alumni.york.ac.uk"
-phone: "+44 7909 329936"
+author: "Hong Zhan"
+affiliation: "Independent Researcher"
+email: ""
+phone: ""
 
 # Social Links (修正格式)
 social:
@@ -38,12 +37,12 @@ social:
 navbar:
   - title: "About"
     url: /about/
-  - title: "Publications"
-    url: /publications/
+  - title: "Research"
+    url: /research/
   - title: "Projects"
     url: /projects/
-  - title: "CV"
-    url: /assets/pdf/Ivyzhan_CV.pdf
+  - title: "Publications"
+    url: /publications/
 
 footer_fixed: true
 search_enabled: true
