@@ -4,17 +4,31 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/Ivyhongzhan/";
     },
-  },{id: "nav-blog",
-          title: "blog",
+  },{id: "nav-about",
+          title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Ivyhongzhan/blog/";
+            window.location.href = "/Ivyhongzhan/";
+          },
+        },{id: "nav-research",
+          title: "Research",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Ivyhongzhan/research/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Ivyhongzhan/projects/";
           },
         },{id: "nav-publications",
           title: "Publications",
@@ -23,26 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Ivyhongzhan/publications/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/Ivyhongzhan/repositories/";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Materials for courses you taught. Replace this text with your description.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Ivyhongzhan/teaching/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/Ivyhongzhan/people/";
           },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
