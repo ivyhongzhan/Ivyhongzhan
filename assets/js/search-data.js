@@ -4,31 +4,24 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "About",
+    title: "about",
     section: "Navigation",
     handler: () => {
       window.location.href = "/Ivyhongzhan/";
     },
-  },{id: "nav-about",
-          title: "About",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/Ivyhongzhan/";
-          },
-        },{id: "nav-research",
+  },{id: "nav-research",
           title: "Research",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Ivyhongzhan/research/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
+        },{id: "nav-publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Ivyhongzhan/projects/";
+            window.location.href = "/Ivyhongzhan/publications/";
           },
         },{id: "nav-teaching",
           title: "teaching",
@@ -36,6 +29,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/Ivyhongzhan/teaching/";
+          },
+        },{id: "nav-people",
+          title: "people",
+          description: "members of the lab or group",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Ivyhongzhan/people/";
           },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
