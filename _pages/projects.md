@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Research Projects
+title: Projects
 permalink: /projects/
+
+nav: true
+nav_order: 3
 ---
 
 # Research Projects
