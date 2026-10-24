@@ -5,4 +5,4 @@ Independent researcher interested in **HCI** and **Information Systems**, especi
 My current research examines how people discuss trust and distrust in generative AI across online technical communities.
 
 - ORCID: [0009-0002-1862-0913](https://orcid.org/0009-0002-1862-0913)
-- Personal website: [ivyhongzhan.github.io](https://ivyhongzhan.github.io)
+- Personal website: [ivyhongzhan.github.io](https://ivyhongzhan.github.io/Ivyhongzhan/)
