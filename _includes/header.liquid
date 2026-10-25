@@ -5,8 +5,24 @@
         <a class="site-wordmark" href="{{ '/' | relative_url }}">Hong Zhan</a>
       {% endunless %}
       <ul class="site-navigation-links">
-        <li><a href="{{ '/' | relative_url }}"{% if page.permalink == '/' %} aria-current="page"{% endif %}>About</a></li>
-        <li><a href="{{ '/research/' | relative_url }}"{% if page.permalink contains '/research/' %} aria-current="page"{% endif %}>Research</a></li>
+        <li>
+          <a
+            href="{{ '/' | relative_url }}"
+            {% if page.permalink == '/' %}
+              aria-current="page"
+            {% endif %}
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ '/research/' | relative_url }}"
+            {% if page.permalink contains '/research/' %}
+              aria-current="page"
+            {% endif %}
+            >Research</a
+          >
+        </li>
       </ul>
     </div>
   </nav>
