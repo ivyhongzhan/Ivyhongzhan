@@ -1,14 +1,14 @@
 ---
-layout: about
+layout: academic-home
 title: About
 permalink: /
 nav: false
-nav_order: 1
+description: Hong Zhan is an independent researcher working across human–computer interaction, information science, and computational social science.
 ---
 
 ## About
 
-Hi! I'm Hong. I hold an MSc in Social Media and Management from the University of York, UK. My research interests lie at the intersection of **human–computer interaction (HCI), information science, and computational social science**.
+Hi! I'm Hong. I hold an MSc in Social Media and Management from the University of York, UK. My research interests lie at the intersection of human–computer interaction (HCI), information science, and computational social science.
 
 I'm interested in how people interact with AI systems, evaluate information, and develop perceptions of trust in digital environments. My research examines how social context and measurement choices shape the interpretation of online behavior and discourse.
 
@@ -16,20 +16,24 @@ With a background in computer science and social media research, I draw on compu
 
 ## Research Interests
 
-**Human–Computer Interaction:** Human–AI interaction, trust in AI, and technology evaluation.
+### Human–Computer Interaction
 
-**Information Science:** Online information behavior, information credibility, and digital information practices.
+Human–AI interaction, trust in AI, and technology evaluation.
 
-**Computational Social Science:** Social computing, online communities, and analysis of digital traces.
+### Information Science
+
+Online information behavior, information credibility, and digital information practices.
+
+### Computational Social Science
+
+Social computing, online communities, and computational analysis of digital traces.
 
 ## Education
 
-**University of York**  
+### University of York
+
 MSc Social Media and Management
 
-**Wuchang University of Technology**  
+### Wuchang University of Technology
+
 BEng Computer Science and Technology
-
-## Contact
-
-[GitHub](https://github.com/ivyhongzhan) · [LinkedIn](https://www.linkedin.com/in/ivyhongzhan/) · [ORCID](https://orcid.org/0009-0002-1862-0913) · [Email](mailto:hz2030@alumni.york.ac.uk)

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="academic-home">
+  <aside class="academic-profile" aria-labelledby="profile-name">
+    <img
+      class="academic-profile-photo"
+      src="{{ '/assets/img/hong-zhan-profile.jpg' | relative_url }}"
+      srcset="{{ '/assets/img/hong-zhan-profile-450.jpg' | relative_url }} 450w, {{ '/assets/img/hong-zhan-profile.jpg' | relative_url }} 900w"
+      sizes="(min-width: 992px) 220px, 42vw"
+      width="900"
+      height="1200"
+      alt="Hong Zhan smiling outdoors beside a lake"
+      fetchpriority="high"
+      decoding="async"
+    >
+    <h1 id="profile-name">Hong Zhan</h1>
+    <p class="academic-profile-areas">Human–Computer Interaction · Information Science · Computational Social Science</p>
+    <p class="academic-profile-role">Independent Researcher</p>
+    <nav class="academic-contact" aria-label="Contact and academic profiles">
+      <a href="https://github.com/ivyhongzhan" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ivyhongzhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hz2030@alumni.york.ac.uk">Email</a>
+      <a href="https://orcid.org/0009-0002-1862-0913" target="_blank" rel="noopener noreferrer">ORCID</a>
+    </nav>
+  </aside>
+  <article class="academic-home-content">{{ content }}</article>
+</div>

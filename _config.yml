@@ -4,7 +4,7 @@
 title: "Hong Zhan"
 tagline: "HCI, Information Science, and Computational Social Science"
 description: >-
-  Hong Zhan is a University of York graduate interested in human–computer interaction, information science, and computational social science.
+  Hong Zhan is an independent researcher working across human–computer interaction, information science, and computational social science.
 
 url: "https://ivyhongzhan.github.io"
 baseurl: "/Ivyhongzhan"
@@ -18,6 +18,9 @@ lang: en
 icon: "⚛️"
 
 author: "Hong Zhan"
+first_name: "Hong"
+middle_name: ""
+last_name: "Zhan"
 affiliation: ""
 email: ""
 phone: ""
@@ -32,27 +35,25 @@ social:
 # Navigation Bar Links
 navbar:
   - title: "About"
-    url: /about/
+    url: /
   - title: "Research"
     url: /research/
-  - title: "Projects"
-    url: /projects/
 
-footer_fixed: true
-search_enabled: true
+footer_fixed: false
+search_enabled: false
 socials_in_search: true
-posts_in_search: true
-bib_search: true
+posts_in_search: false
+bib_search: false
 
 # Dimensions
-max_width: 930px
+max_width: 1060px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
-serve_og_meta: false
+serve_og_meta: true
 serve_schema_org: false
-og_image:
+og_image: "https://ivyhongzhan.github.io/Ivyhongzhan/assets/img/hong-zhan-profile.jpg"
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -75,7 +76,7 @@ lsi: false
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: true
@@ -99,14 +100,8 @@ giscus:
 # Disqus comments (DEPRECATED)
 disqus_shortname: al-folio
 
-# External sources
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+# No external template posts are imported.
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -120,11 +115,11 @@ newsletter:
 # -----------------------------------------------------------------------------
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
     output: false
 
@@ -145,8 +140,76 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages", "_scripts"]
+include: ["_pages/about.md", "_pages/research.md", "_pages/404.md"]
 exclude:
+  - _posts/
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/cv.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/profiles.md
+  - _pages/projects.md
+  - _pages/publications.md
+  - _pages/repositories.md
+  - _pages/teaching.md
+  - assets/pdf/Ivyzhan_CV.pdf
+  - assets/pdf/example_pdf.pdf
+  - assets/video/
+  - assets/js/
+  - assets/fonts/
+  - assets/webfonts/
+  - assets/json/
+  - assets/bibliography/
+  - assets/css/mdb.min.css
+  - assets/css/mdb.min.css.map
+  - assets/css/bootstrap.min.css.map
+  - assets/css/jupyter.css
+  - assets/css/jupyter-grade3.css
+  - assets/css/jupyter-monokai.css
+  - assets/css/scholar-icons.css
+  - assets/css/academicons.min.css
+  - assets/css/bootstrap-toc.min.css
+  - assets/css/jekyll-pygments-themes-native.css
+  - assets/audio/
+  - assets/html/
+  - assets/plotly/
+  - assets/jupyter/
+  - assets/img/1.jpg
+  - assets/img/2.jpg
+  - assets/img/3.jpg
+  - assets/img/4.jpg
+  - assets/img/5.jpg
+  - assets/img/6.jpg
+  - assets/img/7.jpg
+  - assets/img/8.jpg
+  - assets/img/9.jpg
+  - assets/img/10.jpg
+  - assets/img/11.jpg
+  - assets/img/12.jpg
+  - assets/img/book_covers/
+  - assets/img/publication_preview/
+  - assets/img/prof_pic.jpg
+  - assets/img/prof_pic_color.png
+  - assets/img/rhino.png
+  - assets/img/template_error.png
+  - ALFOLIO_THEME_README.md
+  - _scripts/
+  - assets/css/main.scss
+  - assets/css/bootstrap.min.css
+  - assets/css/bootstrap.min.css.map
+  - assets/css/bootstrap-toc.min.css
+  - assets/css/academicons.min.css
+  - assets/css/scholar-icons.css
+  - assets/css/jekyll-pygments-themes-github.css
+  - assets/css/jekyll-pygments-themes-native.css
+  - assets/css/jupyter.css
+  - assets/css/jupyter-grade3.css
+  - assets/css/jupyter-monokai.css
+  - assets/css/mdb.min.css
+  - assets/css/mdb.min.css.map
+  - _layouts/bib.liquid
+  - feed.xml
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -161,7 +224,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -173,23 +235,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives-v2
-  - jekyll-email-protect
-  - jekyll-feed
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
-  - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
-  - jekyll-regex-replace
-  - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-tabs
-  - jekyll-terser
-  - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
 
 # Sitemap settings
 defaults:
@@ -200,11 +246,13 @@ defaults:
 
 sass:
   style: compressed
+  sourcemap: never
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
 jekyll-minifier:
+  compress_css: false
   compress_javascript: false
   exclude: ["robots.txt", "assets/js/search/*.js"]
 
@@ -220,13 +268,9 @@ terser:
 # -----------------------------------------------------------------------------
 jekyll-archives:
   posts:
-    enabled: [year, tags, categories]
-    permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+    enabled: []
   books:
-    enabled: [year, tags, categories]
+    enabled: []
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"]
 display_categories: ["external-services"]
@@ -302,7 +346,7 @@ external_links:
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 imagemagick:
-  enabled: true
+  enabled: false
   widths:
     - 480
     - 800
@@ -329,14 +373,14 @@ enable_pirsch_analytics: false
 enable_openpanel_analytics: false
 enable_google_verification: false
 enable_bing_verification: false
-enable_masonry: true
-enable_math: true
+enable_masonry: false
+enable_math: false
 enable_tooltips: false
-enable_darkmode: true
+enable_darkmode: false
 enable_navbar_social: false
 enable_project_categories: true
-enable_medium_zoom: true
-enable_progressbar: true
+enable_medium_zoom: false
+enable_progressbar: false
 enable_video_embedding: false
 
 # -----------------------------------------------------------------------------
@@ -567,20 +611,3 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 # Get external JSON data
 # -----------------------------------------------------------------------------
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
