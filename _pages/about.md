@@ -2,19 +2,34 @@
 layout: about
 title: About
 permalink: /
-
-nav: true
+nav: false
 nav_order: 1
 ---
 
-# Hong Zhan
+## About
 
-**Independent researcher in HCI and Information Systems**
+Hi! I'm Hong. I hold an MSc in Social Media and Management from the University of York, UK. My research interests lie at the intersection of **human–computer interaction (HCI), information science, and computational social science**.
 
-I study how people make sense of generative AI and discuss trust and distrust in technical online communities. I am interested in how these conversations vary across communities and over time.
+I'm interested in how people interact with AI systems, evaluate information, and develop perceptions of trust in digital environments. My research examines how social context and measurement choices shape the interpretation of online behavior and discourse.
 
-My broader interests include human-AI interaction, social computing, and the design and evaluation of AI systems in their social contexts. I am preparing for doctoral study in HCI and Information Systems.
+With a background in computer science and social media research, I draw on computational analysis and qualitative methods to study human–AI interaction, online communities, and digital information practices.
 
-- [GitHub](https://github.com/ivyhongzhan)
-- [ORCID](https://orcid.org/0009-0002-1862-0913)
-- [LinkedIn](https://linkedin.com/in/ivyhongzhan)
+## Research Interests
+
+**Human–Computer Interaction:** Human–AI interaction, trust in AI, and technology evaluation.
+
+**Information Science:** Online information behavior, information credibility, and digital information practices.
+
+**Computational Social Science:** Social computing, online communities, and analysis of digital traces.
+
+## Education
+
+**University of York**  
+MSc Social Media and Management
+
+**Wuchang University of Technology**  
+BEng Computer Science and Technology
+
+## Contact
+
+[GitHub](https://github.com/ivyhongzhan) · [LinkedIn](https://www.linkedin.com/in/ivyhongzhan/) · [ORCID](https://orcid.org/0009-0002-1862-0913) · [Email](mailto:hz2030@alumni.york.ac.uk)
