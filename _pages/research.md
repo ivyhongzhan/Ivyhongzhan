@@ -2,19 +2,24 @@
 layout: page
 title: Research
 permalink: /research/
-
 nav: true
 nav_order: 2
 ---
 
-# Research
+I study how people interact with AI systems, evaluate online information, and discuss trust in digital environments. My interests connect three research areas.
 
-My research interests are in **human-computer interaction** and **Information Systems**, especially human-AI interaction, trust in AI, and social computing.
+### Human–Computer Interaction
 
-## Current focus
+Human–AI interaction, trust in AI, and the evaluation of emerging technologies.
 
-I examine how people discuss trust and distrust in generative AI across technical online communities, and how these conversations vary across communities and over time. This work uses secondary analysis of previously released research data.
+### Information Science
 
-## Doctoral interests
+Online information behavior, credibility judgments, and digital information practices.
 
-For doctoral study, I hope to explore how people understand, use, and evaluate AI systems in social and organizational contexts. I am particularly interested in research that connects users' experiences with the communities and settings in which AI is adopted.
+### Computational Social Science
+
+Social computing, online communities, and descriptive analysis of digital traces.
+
+### Current Focus
+
+My current work examines trust and distrust discourse in technical online communities through secondary analysis of previously released research data. I am interested in preserving community context and clearly documenting the measurement decisions and limitations that shape computational findings.
