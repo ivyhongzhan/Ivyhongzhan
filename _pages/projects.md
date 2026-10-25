@@ -2,15 +2,12 @@
 layout: page
 title: Projects
 permalink: /projects/
-
-nav: true
+nav: false
 nav_order: 3
 ---
 
 # Research Projects
 
-## Trust and distrust in generative AI across online communities
+I investigate how generative AI is discussed and evaluated in online communities, including the role of community context and transparent computational measurement.
 
-This independent research project examines how people discuss trust and distrust in generative AI across technical online communities, including how these discussions vary across communities and over time.
-
-The project uses secondary analysis of previously released research data. Further details and materials will be shared when they are ready for public release.
+Research papers and associated materials will be linked here when cleared for public release.
