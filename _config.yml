@@ -2,24 +2,23 @@
 # Site settings
 # -----------------------------------------------------------------------------
 title: "Hong Zhan"
-tagline: "Human-AI Interaction, Trust, and Online Communities"
+tagline: "HCI, Information Science, and Computational Social Science"
 description: >-
-  Hong Zhan is an independent researcher interested in human-computer interaction and information systems.
-  Their current research focuses on how people discuss trust and distrust in generative AI across technical online communities.
+  Hong Zhan is a University of York graduate interested in human–computer interaction, information science, and computational social science.
 
 url: "https://ivyhongzhan.github.io"
 baseurl: "/Ivyhongzhan"
 
 # Footer text
 footer_text: >-
-  Independent research on human-AI interaction, trust, and online communities.
+  Research interests in human–computer interaction, information science, and computational social science.
 
-keywords: HCI, Information Systems, human-AI interaction, trust in AI, online communities
+keywords: HCI, information science, computational social science, human–AI interaction, online communities
 lang: en
 icon: "⚛️"
 
 author: "Hong Zhan"
-affiliation: "Independent Researcher"
+affiliation: ""
 email: ""
 phone: ""
 
@@ -70,7 +69,7 @@ bing_site_verification:
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: Hong Zhan
-blog_description: Research notes on HCI, Information Systems, and human-AI interaction
+blog_description: Research notes on HCI, information science, and computational social science
 permalink: /blog/:year/:title/
 lsi: false
 
