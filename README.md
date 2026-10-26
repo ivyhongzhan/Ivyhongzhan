@@ -9,9 +9,9 @@ MSc Social Media and Management (Merit), University of York · BEng Computer Sci
 ## Featured Research
 
 **[Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** (2026)  
-*Manuscript submitted to PACM HCI (CSCW)*
+_Manuscript submitted to PACM HCI (CSCW)_
 
-Across 8,519 valid trust/distrust classifications from five technical Reddit communities, *Neither* led the pooled archive (41.7%), whereas *Trust* led ChatGPTCoding (43.1%) and programming (46.2%).
+Across 8,519 valid trust/distrust classifications from five technical Reddit communities, _Neither_ led the pooled archive (41.7%), whereas _Trust_ led ChatGPTCoding (43.1%) and programming (46.2%).
 
 [Research Code & Figures](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo Research Artifacts (v2)](https://doi.org/10.5281/zenodo.23655847) · [Research Page](https://ivyhongzhan.github.io/Ivyhongzhan/research/)
 
