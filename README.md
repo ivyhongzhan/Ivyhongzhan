@@ -4,7 +4,6 @@
 
 I study how people interact with digital technologies, navigate information, and express trust in AI. Across separate projects, I have used **qualitative and quantitative research methods**, including interviews, thematic analysis, and descriptive computational analysis, alongside human-centered software design.
 
-
 ## Featured Research
 
 **[Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** (2026)  
