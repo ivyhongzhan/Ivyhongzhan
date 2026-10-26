@@ -4,7 +4,6 @@
 
 I study how people interact with digital technologies, navigate information, and express trust in AI. Across separate projects, I have used **qualitative and quantitative research methods**, including interviews, thematic analysis, and descriptive computational analysis, alongside human-centered software design.
 
-MSc Social Media and Management (Merit), University of York · BEng Computer Science and Technology, Wuchang University of Technology.
 
 ## Featured Research
 
