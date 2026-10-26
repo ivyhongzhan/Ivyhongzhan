@@ -11,7 +11,7 @@ My methodological interests include computational social science, digital trace 
 ## Featured Research
 
 ### Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
-
+*Manuscript submitted to PACM HCI (CSCW)*
 A descriptive study of trust and distrust in generative AI discourse across five technical Reddit communities, examining differences between pooled statistics and community- and time-stratified patterns.
 
 **[Explore Research Code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** · **[Research Artifacts on Zenodo](https://doi.org/10.5281/zenodo.23655847)**
