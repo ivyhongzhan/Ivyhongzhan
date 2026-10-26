@@ -18,7 +18,7 @@ My methodological interests include computational social science, digital trace 
 
 [Explore Research Code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Research Artifacts on Zenodo](https://zenodo.org/)
 
-**[Ex
+
 ## Links
 
 [Academic Website](https://ivyhongzhan.github.io/Ivyhongzhan/) · [ORCID](https://orcid.org/0009-0002-1862-0913) · [LinkedIn](https://www.linkedin.com/in/ivyhongzhan/)
