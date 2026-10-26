@@ -140,7 +140,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages/about.md", "_pages/research.md", "_pages/404.md"]
+include: ["_pages/about.md", "_pages/research.md", "_pages/projects.md", "_pages/repositories.md", "_pages/404.md"]
 exclude:
   - _posts/
   - _pages/blog.md
@@ -149,9 +149,7 @@ exclude:
   - _pages/dropdown.md
   - _pages/news.md
   - _pages/profiles.md
-  - _pages/projects.md
   - _pages/publications.md
-  - _pages/repositories.md
   - _pages/teaching.md
   - assets/pdf/Ivyzhan_CV.pdf
   - assets/pdf/example_pdf.pdf

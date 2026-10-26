@@ -3,37 +3,39 @@ layout: academic-home
 title: About
 permalink: /
 nav: false
-description: Hong Zhan is an independent researcher working across human–computer interaction, information science, and computational social science.
+description: Hong Zhan is an independent researcher in human–AI interaction, information science, and computational social science.
 ---
 
-## About
+# Hong Zhan
 
-Hi! I'm Hong. I hold an MSc in Social Media and Management from the University of York, UK. My research interests lie at the intersection of human–computer interaction (HCI), information science, and computational social science.
+**Independent Researcher**
 
-I'm interested in how people interact with AI systems, evaluate information, and develop perceptions of trust in digital environments. My research examines how social context and measurement choices shape the interpretation of online behavior and discourse.
+I am an independent researcher working at the intersection of human–computer interaction, information science, and computational social science.
 
-With a background in computer science and social media research, I draw on computational analysis and qualitative methods to study human–AI interaction, online communities, and digital information practices.
+My research explores how people evaluate artificial intelligence, navigate digital information environments, and communicate within online communities.
+
+I am particularly interested in trust in AI, social computing, and the methodological challenges of interpreting computational measurements of human behavior and discourse.
+
+My background combines computer science and social media research, with experience in computational analysis, qualitative interviewing, and thematic analysis.
 
 ## Research Interests
 
-### Human–Computer Interaction
+- **Human–AI Interaction:** Trust in AI, human evaluations of AI technologies, and technology-mediated interaction.
+- **Information Science:** Information credibility, online information behavior, and digital information practices.
+- **Computational Social Science:** Online communities, digital trace analysis, and computational measurement.
 
-Human–AI interaction, trust in AI, and technology evaluation.
+## Selected Research
 
-### Information Science
+### Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
 
-Online information behavior, information credibility, and digital information practices.
+A descriptive secondary analysis of trust and distrust classifications across five technical Reddit communities, examining how pooled measurements relate to community-specific and temporal patterns.
 
-### Computational Social Science
-
-Social computing, online communities, and computational analysis of digital traces.
+[Research Code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Research Artifacts (Zenodo)](https://doi.org/10.5281/zenodo.23655847)
 
 ## Education
 
-### University of York
-
+**University of York, United Kingdom**  
 MSc Social Media and Management
 
-### Wuchang University of Technology
-
+**Wuchang University of Technology, China**  
 BEng Computer Science and Technology

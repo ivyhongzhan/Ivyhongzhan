@@ -1,13 +1,21 @@
 # Hong Zhan
 
-I hold an MSc in Social Media and Management from the University of York, UK. My research interests connect **human–computer interaction**, **information science**, and **computational social science**.
+**Independent Researcher | Human–AI Interaction · Information Science · Computational Social Science**
 
-I study human–AI interaction, trust in AI, online communities, and digital information practices. My work draws on computational analysis and qualitative research.
+I am an independent researcher with an MSc in Social Media and Management from the University of York and a BEng in Computer Science and Technology.
 
-**Website:** https://ivyhongzhan.github.io/Ivyhongzhan/  
-**ORCID:** https://orcid.org/0009-0002-1862-0913  
-**LinkedIn:** https://www.linkedin.com/in/ivyhongzhan/
+My research focuses on human–AI interaction, trust in AI, online communities, and digital information practices. I am particularly interested in how social context and measurement decisions shape the interpretation of computational findings.
 
-## Research Projects
+My methodological interests include computational social science, digital trace analysis, qualitative interviewing, and thematic analysis.
 
-- **Trust and distrust in generative AI discourse:** [research artifacts and code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo v2](https://doi.org/10.5281/zenodo.23655847). Associated manuscript submitted to PACM HCI (CSCW Rolling, Quantitative Track), currently under review; not accepted or published. The repository and Zenodo record do not grant an open-source license.
+## Featured Research
+
+### Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
+
+A descriptive study of trust and distrust in generative AI discourse across five technical Reddit communities, examining differences between pooled statistics and community- and time-stratified patterns.
+
+**[Explore Research Code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** · **[Research Artifacts on Zenodo](https://doi.org/10.5281/zenodo.23655847)**
+
+## Links
+
+[Academic Website](https://ivyhongzhan.github.io/Ivyhongzhan/) · [ORCID](https://orcid.org/0009-0002-1862-0913) · [LinkedIn](https://www.linkedin.com/in/ivyhongzhan/)
