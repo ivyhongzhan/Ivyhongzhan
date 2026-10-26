@@ -1,24 +1,25 @@
-# Hong Zhan
+# Hong (Ivy) Zhan
 
-**Independent Researcher | Human–AI Interaction · Information Science · Computational Social Science**
+**Human–AI Interaction · Information Science & Systems · Computational Social Science**
 
-I am an independent researcher with an MSc in Social Media and Management from the University of York and a BEng in Computer Science and Technology.
+I study how people interact with digital technologies, navigate information, and express trust in AI. Across separate projects, I have used **qualitative and quantitative research methods**, including interviews, thematic analysis, and descriptive computational analysis, alongside human-centered software design.
 
-My research focuses on human–AI interaction, trust in AI, online communities, and digital information practices. I am particularly interested in how social context and measurement decisions shape the interpretation of computational findings.
-
-I employ a mixed-methods framework that integrates quantitative approaches (computational social science, digital trace analysis) with qualitative inquiry (interviews, thematic analysis) to examine the sociotechnical dynamics of human–AI interaction, trust, and digital information practices.
+MSc Social Media and Management (Merit), University of York · BEng Computer Science and Technology, Wuchang University of Technology.
 
 ## Featured Research
 
-### [Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://ivyhongzhan.github.io/Ivyhongzhan/research/)
-**Hong Zhan** 
+**[Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** (2026)  
 *Manuscript submitted to PACM HCI (CSCW)*
 
-> A descriptive study of trust and distrust in generative AI discourse across five technical Reddit communities, examining differences between pooled statistics and community- and time-stratified patterns.
+Across 8,519 valid trust/distrust classifications from five technical Reddit communities, *Neither* led the pooled archive (41.7%), whereas *Trust* led ChatGPTCoding (43.1%) and programming (46.2%).
 
-[Explore Research Code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Research Artifacts on Zenodo](https://zenodo.org/)
+[Research Code & Figures](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo Research Artifacts (v2)](https://doi.org/10.5281/zenodo.23655847) · [Research Page](https://ivyhongzhan.github.io/Ivyhongzhan/research/)
 
+## Additional Research & Technical Experience
 
-## Links
+- **MSc dissertation — Cross-cultural social media practices:** Conducted 15 semi-structured interviews with Chinese students in the UK and analyzed digital media practices using qualitative coding and thematic analysis.
+- **BEng capstone — Recruitment Management System:** Designed and implemented an information system involving user requirements, interface prototyping, and usability evaluation.
 
-[Academic Website](https://ivyhongzhan.github.io/Ivyhongzhan/) · [ORCID](https://orcid.org/0009-0002-1862-0913) · [LinkedIn](https://www.linkedin.com/in/ivyhongzhan/)
+## Contact
+
+[Email](mailto:hz2030@alumni.york.ac.uk) · [Academic Website](https://ivyhongzhan.github.io/Ivyhongzhan/) · [ORCID](https://orcid.org/0009-0002-1862-0913) · [LinkedIn](https://www.linkedin.com/in/ivyhongzhan/)
