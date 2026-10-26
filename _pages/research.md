@@ -4,55 +4,44 @@ title: Research
 permalink: /research/
 nav: true
 nav_order: 2
-description: Research on human–AI interaction, computational social science, and information science.
+description: Research on trust in generative AI across technical online communities.
 ---
 
-# Research
+## 01. Beyond the Aggregate
 
-My research focuses on human–AI interaction, trust in artificial intelligence, and the interpretation of digital information within socially differentiated online environments.
+*Trust and Distrust in Generative AI Across Technical Reddit Communities and Time*
 
-I am interested in combining computational analysis with contextual approaches to understand how digital discourse is measured and interpreted.
+**Independent Researcher · 2026**  
+*Manuscript submitted to PACM HCI (CSCW)*
 
-## Featured Research
+**Human–AI Interaction · Computational Social Science · Information Science**
 
-### Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
+### Overview
 
-**Research area:** Human–AI Interaction · Computational Social Science · Social Computing
+How do aggregate measures of trust and distrust in generative AI relate to the community-specific and temporal patterns underlying them?
 
-**Research question**
+This study examines released computational classifications across five technical Reddit communities, comparing pooled results with community- and time-stratified patterns.
 
-How do pooled descriptions of generative AI trust and distrust relate to the community-specific and temporal patterns underlying them?
+### Key Findings
 
-**Approach**
+**1. Aggregate patterns differ across communities.**
 
-A descriptive secondary analysis of released computational classifications across five technical Reddit communities, using archive-separated measures and community- and half-year-level reporting.
+_Neither_ is the most frequent classification overall (41.7%), while _Trust_ leads in ChatGPTCoding (43.1%) and programming (46.2%).
 
-**Selected findings**
+**2. Trust-related indicators capture multiple dimensions.**
 
-- _Neither_ is the most frequent classification in the pooled archive (41.7%), while _Trust_ is the most frequent classification in ChatGPTCoding (43.1%) and programming (46.2%).
-- Competence (70.6%), Reliability (49.4%), and Familiarity (45.2%) are the most frequently observed indicators in the separate dimensions archive.
-- Community and temporal stratification make the composition, coverage, and measurement boundaries of pooled summaries visible.
+Competence (70.6%), Reliability (49.4%), and Familiarity (45.2%) are the most frequently observed indicators in the separate dimensions archive.
 
-**Research Figure**
+**3. Context matters when interpreting aggregate measurements.**
 
-![Pooled and community-level trust and distrust profiles](https://raw.githubusercontent.com/ivyhongzhan/genai-trust-reddit-analysis/main/figures/rq1_figure.png)
+Community- and half-year-level reporting makes differences in distributions, temporal coverage, and measurement boundaries visible.
 
-The figure presents released trust/distrust classifications and dimension indicators across the five sampled communities. Its panels use distinct analytical archives and denominators.
+### Research Figure
 
-**Research materials**
+![Pooled and community-specific distributions of trust and distrust](https://raw.githubusercontent.com/ivyhongzhan/genai-trust-reddit-analysis/main/figures/rq1_figure.png)
 
-[Explore Code and Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Download Research Artifacts](https://doi.org/10.5281/zenodo.23655847) · [Reproduction Documentation](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/reproduce.md)
+*Figure 1. Classification and dimension profiles across five technical Reddit communities. The panels use separate analytical archives.*
 
-## Research Directions
+### Research Materials
 
-### Human–AI Interaction
-
-Trust in AI, human evaluation of AI systems, and contextual factors in technology-mediated interaction.
-
-### Information Science
-
-Information credibility, digital information practices, and behavior within online information environments.
-
-### Computational Social Science
-
-Computational analysis of social-media discourse, online communities, measurement validity, and reproducible research.
+[GitHub: Code & Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Research Artifacts](https://doi.org/10.5281/zenodo.23655847) · [Research Figure (PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure.pdf)
