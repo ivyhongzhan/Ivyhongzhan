@@ -29,7 +29,7 @@ A descriptive secondary analysis of released computational classifications acros
 
 **Selected findings**
 
-- *Neither* is the most frequent classification in the pooled archive (41.7%), while *Trust* is the most frequent classification in ChatGPTCoding (43.1%) and programming (46.2%).
+- _Neither_ is the most frequent classification in the pooled archive (41.7%), while _Trust_ is the most frequent classification in ChatGPTCoding (43.1%) and programming (46.2%).
 - Competence (70.6%), Reliability (49.4%), and Familiarity (45.2%) are the most frequently observed indicators in the separate dimensions archive.
 - Community and temporal stratification make the composition, coverage, and measurement boundaries of pooled summaries visible.
 
