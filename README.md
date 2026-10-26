@@ -6,7 +6,7 @@ I am an independent researcher with an MSc in Social Media and Management from t
 
 My research focuses on human–AI interaction, trust in AI, online communities, and digital information practices. I am particularly interested in how social context and measurement decisions shape the interpretation of computational findings.
 
-My methodological interests include computational social science, digital trace analysis, qualitative interviewing, and thematic analysis.
+I employ a mixed-methods framework that integrates quantitative approaches (computational social science, digital trace analysis) with qualitative inquiry (interviews, thematic analysis) to examine the sociotechnical dynamics of human–AI interaction, trust, and digital information practices.
 
 ## Featured Research
 
