@@ -63,12 +63,6 @@ button:focus-visible {
   align-items: center;
   gap: 2rem;
 }
-.site-wordmark {
-  margin-right: auto;
-  color: var(--academic-ink) !important;
-  font-weight: 600;
-  text-decoration: none !important;
-}
 .site-navigation-links {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +115,10 @@ button:focus-visible {
   font-weight: 650;
   line-height: 1.2;
   letter-spacing: -0.025em;
+}
+.academic-home-content p,
+.post article p {
+  font-weight: 400;
 }
 .academic-profile-tagline {
   color: var(--academic-ink);
@@ -186,6 +184,9 @@ button:focus-visible {
 .academic-home-content strong {
   font-weight: 650;
 }
+.post article strong {
+  font-weight: 650;
+}
 .academic-home-content h2:nth-of-type(2) + p {
   margin-top: 0.15rem;
 }
@@ -224,11 +225,13 @@ button:focus-visible {
   padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--academic-rule);
   font-size: 1.35rem;
+  font-weight: 650;
   line-height: 1.35;
 }
 .post article h3 {
   margin: 1.25rem 0 0.35rem;
   font-size: 1.05rem;
+  font-weight: 650;
   line-height: 1.45;
 }
 .post article p {
@@ -264,10 +267,6 @@ footer {
     min-height: 56px;
     padding: 0.55rem 1rem;
     gap: 1rem;
-  }
-  .site-wordmark {
-    font-size: 0.92rem;
-    white-space: nowrap;
   }
   .site-navigation-links {
     gap: 1.2rem;

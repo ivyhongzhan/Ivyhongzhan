@@ -11,10 +11,10 @@ description: Research on trust in generative AI across technical online communit
 
 _Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
 
-**Sole-author research · 2026**  
+Sole-author research · 2026<br>
 _Manuscript submitted to PACM HCI (CSCW)_
 
-**Human–AI Interaction · Information Science · Computational Social Science**
+Human–AI Interaction · Information Science · Computational Social Science
 
 ### Overview
 
