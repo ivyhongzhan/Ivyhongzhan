@@ -1,4 +1,4 @@
-/* Focused styling for Hong Zhan's public academic website. */
+/* Focused styling for Hong (Ivy) Zhan's public academic website. */
 :root {
   --academic-ink: #202a35;
   --academic-muted: #536273;
@@ -108,19 +108,25 @@ button:focus-visible {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: center 86%;
-  border-radius: 2px;
+  object-position: center;
+  border-radius: 8px;
   margin-bottom: 1.25rem;
 }
 .academic-profile h1 {
   margin: 0 0 0.45rem;
   color: var(--academic-ink);
-  font-size: 1.9rem;
+  font-size: clamp(1.55rem, 2vw, 1.9rem);
   font-weight: 650;
   line-height: 1.2;
   letter-spacing: -0.025em;
+}
+.academic-profile-tagline {
+  color: var(--academic-ink);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin: 0 0 0.65rem;
 }
 .academic-profile-areas {
   color: var(--academic-muted);
@@ -138,6 +144,15 @@ button:focus-visible {
   flex-wrap: wrap;
   gap: 0.4rem 0.8rem;
   font-size: 0.9rem;
+}
+.academic-contact a {
+  text-decoration: none;
+}
+.academic-contact a:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin-left: 0.8rem;
+  color: #97a3ae;
 }
 .academic-home-content {
   min-width: 0;
@@ -163,6 +178,9 @@ button:focus-visible {
 .academic-home-content p {
   margin: 0 0 1rem;
   color: #303b47;
+}
+.academic-home-content h3 + p {
+  margin-top: 0.25rem;
 }
 .post {
   color: var(--academic-ink);

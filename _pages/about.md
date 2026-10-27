@@ -3,31 +3,33 @@ layout: academic-home
 title: About
 permalink: /
 nav: false
-description: Hong (Ivy) Zhan researches human–AI interaction, digital information practices, and computational social science.
+description: Hong (Ivy) Zhan studies trust in generative AI through large-scale analysis of online communities.
 ---
 
-Hi! I'm Hong (Ivy) Zhan. I study how people interact with digital technologies, evaluate information, and express trust in AI.
+## About
 
-My experience spans qualitative and quantitative research, including interviews, thematic analysis, computational analysis of online communities, and human-centered software design.
+My research examines how measurement and aggregation shape interpretations of trust and distrust in generative AI. In _Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_, I conduct a descriptive secondary analysis of released classification records: 8,519 eligible classifications across five technical Reddit communities, compared in pooled, community-specific, and UTC half-year views. A separate archive of 4,964 dimension records is analyzed independently, with archive-specific eligibility and denominators. The dimension analysis uses a transparent uniform-field replacement estimand. These records describe released classifications, not users’ directly measured trust.
 
-## Research Interests
-
-- **Human–AI Interaction:** Trust in AI, human evaluations of AI technologies, and technology-mediated interaction.
-- **Information Science:** Information credibility, online information behavior, and digital information practices.
-- **Computational Social Science:** Online communities, digital trace analysis, and computational measurement.
+My background spans computer science and social media research. I have conducted qualitative interviews and thematic analysis, analyzed computational records, and developed information systems. Together, these experiences inform my interest in context-sensitive ways to study human–AI interaction and online communities.
 
 ## Selected Research
 
 ### Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
 
-A descriptive secondary analysis of trust and distrust classifications across five technical Reddit communities, examining how pooled measurements relate to community-specific and temporal patterns.
+I examine how pooled summaries of released trust and distrust classifications relate to community-specific and temporal patterns, while keeping the classification and dimensions archives separate.
 
-[Research Code](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Research Artifacts (Zenodo)](https://doi.org/10.5281/zenodo.23655847)
+[Read the Research page]({{ '/research/' | relative_url }})
+
+## Additional Projects
+
+**York master's research:** A qualitative study based on 15 interviews, analyzed in NVivo using thematic analysis.
+
+**Undergraduate project:** Design and implementation of a recruitment management system.
 
 ## Education
 
-**University of York, United Kingdom**  
-MSc Social Media and Management
+**University of York, United Kingdom** · 2022–2024<br>
+MSc Social Media and Management (degree awarded 2024)
 
-**Wuchang University of Technology, China**  
+**Wuchang University of Technology, China** · 2017–2021<br>
 BEng Computer Science and Technology

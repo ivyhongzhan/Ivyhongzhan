@@ -1,10 +1,10 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-title: "Hong Zhan"
-tagline: "HCI, Information Science, and Computational Social Science"
+title: "Hong (Ivy) Zhan"
+tagline: "Computational Social Science · Human–AI Interaction · Information Science"
 description: >-
-  Hong (Ivy) Zhan studies trust in AI, digital information practices, and online communities using qualitative and quantitative approaches.
+  Hong (Ivy) Zhan studies trust in generative AI through large-scale analysis of online communities.
 
 url: "https://ivyhongzhan.github.io"
 baseurl: "/Ivyhongzhan"
@@ -17,7 +17,7 @@ keywords: HCI, information science, computational social science, human–AI int
 lang: en
 icon: "⚛️"
 
-author: "Hong Zhan"
+author: "Hong (Ivy) Zhan"
 first_name: "Hong"
 middle_name: ""
 last_name: "Zhan"
@@ -69,7 +69,7 @@ bing_site_verification:
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: Hong Zhan
+blog_name: Hong (Ivy) Zhan
 blog_description: Research notes on HCI, information science, and computational social science
 permalink: /blog/:year/:title/
 lsi: false
