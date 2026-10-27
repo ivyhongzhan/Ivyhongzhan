@@ -36,7 +36,7 @@ Conducted 15 semi-structured interviews with Chinese students studying in the UK
 
 **Recruitment Management System**
 
-_BEng Capstone Project · Wuchang University of Technology, China_
+_BEng Capstone Project · Wuchang University of Technology_
 
 Designed and implemented a recruitment management system to support recruitment-related information management and workflows.
 
