@@ -14,13 +14,19 @@ _Trust and Distrust in Generative AI Across Technical Reddit Communities and Tim
 **Independent Researcher · 2026**  
 _Manuscript submitted to PACM HCI (CSCW)_
 
-**Human–AI Interaction · Computational Social Science · Information Science**
+**Human–AI Interaction · Information Science · Computational Social Science**
 
 ### Overview
 
 How do aggregate measures of trust and distrust in generative AI relate to the community-specific and temporal patterns underlying them?
 
 This study examines released computational classifications across five technical Reddit communities, comparing pooled results with community- and time-stratified patterns.
+
+### Methods & Contributions
+
+- **Research design:** Conducted an archive-separated descriptive secondary analysis of 8,519 eligible classification records and a separate archive of 4,964 dimension records across five technical Reddit communities.
+- **Analytical approach:** Compared pooled, community-specific, and UTC half-year distributions, documenting archive-specific denominators, eligibility rules, and a uniform-field replacement estimand for the dimensions analysis.
+- **Reproducibility:** Produced research visualizations, frozen aggregate results, and verification materials, including automated checks of 12 frozen file hashes and selected numerical outputs.
 
 ### Key Findings
 
@@ -40,8 +46,8 @@ Community- and half-year-level reporting makes differences in distributions, tem
 
 ![Pooled and community-specific distributions of trust and distrust](https://raw.githubusercontent.com/ivyhongzhan/genai-trust-reddit-analysis/main/figures/rq1_figure.png)
 
-_Figure 1. Classification and dimension profiles across five technical Reddit communities. The panels use separate analytical archives._
+_Figure 1. Classification and dimension profiles across five technical Reddit communities. The panels use separate analytical archives and denominators._
 
 ### Research Materials
 
-[GitHub: Code & Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Research Artifacts](https://doi.org/10.5281/zenodo.23655847) · [Research Figure (PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure.pdf)
+[GitHub: Code & Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Research Artifacts](https://doi.org/10.5281/zenodo.23655847) · [Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/reproduce.md) · [Figure 1 (PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure.pdf)
