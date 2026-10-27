@@ -3,7 +3,7 @@ layout: academic-home
 title: About
 permalink: /
 nav: false
-description: Hong Zhan is an independent researcher in human–AI interaction, information science, and computational social science.
+description: Hong (Ivy) Zhan researches human–AI interaction, digital information practices, and computational social science.
 ---
 
 Hi! I'm Hong (Ivy) Zhan. I study how people interact with digital technologies, evaluate information, and express trust in AI.
