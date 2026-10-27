@@ -10,7 +10,7 @@ description: Hong (Ivy) Zhan studies trust in generative AI through large-scale 
 
 Hello! I’m Hong Zhan, though you can call me Ivy. My research examines how the **measurement and aggregation of AI-related discourse** influence interpretations of **trust and distrust**. My current work uses **descriptive secondary analysis** of **released classification data** to compare aggregate findings with **community- and time-specific patterns**, with particular attention to **measurement boundaries and data provenance**.
 
-My background spans **computer science and social media research**, including **qualitative interviewing, thematic analysis, and information-system development**. These experiences inform my interest in context-sensitive approaches to studying **human–AI interaction**.
+My background spans **computer science and social media research**, including **qualitative interviewing, thematic analysis, quantitative analysis, and information-system development**. These experiences inform my interest in context-sensitive approaches to studying **human–AI interaction**.
 
 Outside academia, I enjoy traveling, hiking, and learning languages. I’ve visited more than 100 countries and enjoy exploring new places on foot. I’m also studying Spanish, Italian, German, Japanese, and Chinese. Thanks for stopping by!
 
