@@ -109,7 +109,7 @@ button:focus-visible {
   margin-bottom: 1.25rem;
 }
 .academic-profile h1 {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.7rem;
   color: var(--academic-ink);
   font-size: clamp(1.55rem, 2vw, 1.9rem);
   font-weight: 650;
@@ -130,7 +130,7 @@ button:focus-visible {
   color: var(--academic-muted);
   font-size: 0.97rem;
   line-height: 1.55;
-  margin: 0 0 0.75rem;
+  margin: 0 0 1.15rem;
 }
 .academic-contact {
   display: flex;
@@ -151,8 +151,8 @@ button:focus-visible {
   min-width: 0;
 }
 .academic-home-content h2 {
-  margin: 0 0 0.8rem;
-  padding-bottom: 0.35rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.45rem;
   border-bottom: 1px solid var(--academic-rule);
   color: var(--academic-ink);
   font-size: 1.3rem;
@@ -160,7 +160,7 @@ button:focus-visible {
   line-height: 1.35;
 }
 .academic-home-content h2:not(:first-child) {
-  margin-top: 2rem;
+  margin-top: 2.8rem;
 }
 .academic-home-content h3 {
   margin: 1rem 0 0.2rem;
@@ -169,7 +169,7 @@ button:focus-visible {
   font-weight: 650;
 }
 .academic-home-content p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.3rem;
   color: #303b47;
 }
 .academic-home-content h3 + p {
@@ -179,7 +179,7 @@ button:focus-visible {
   margin-top: 0;
 }
 .academic-home-content p + p {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 }
 .academic-home-content strong {
   font-weight: 650;
@@ -221,21 +221,25 @@ button:focus-visible {
   display: none;
 }
 .post article h2 {
-  margin: 2rem 0 0.65rem;
-  padding-bottom: 0.3rem;
+  margin: 2.8rem 0 0.85rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--academic-rule);
   font-size: 1.35rem;
   font-weight: 650;
   line-height: 1.35;
 }
 .post article h3 {
-  margin: 1.25rem 0 0.35rem;
+  margin: 1.7rem 0 0.5rem;
   font-size: 1.05rem;
   font-weight: 650;
   line-height: 1.45;
 }
 .post article p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.3rem;
+  line-height: 1.8;
+}
+.post article li {
+  margin-bottom: 0.35rem;
   line-height: 1.75;
 }
 .post article img {
@@ -279,7 +283,7 @@ footer {
   }
   .academic-home {
     grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
+    gap: 2.1rem;
     margin-top: 0.5rem;
   }
   .academic-profile {
@@ -289,14 +293,14 @@ footer {
     width: min(100%, 230px);
   }
   .academic-home-content h2:not(:first-child) {
-    margin-top: 1.7rem;
+    margin-top: 2.3rem;
   }
   .post {
     width: 100%;
     margin-bottom: 2rem;
   }
   .post article h2 {
-    margin-top: 1.7rem;
+    margin-top: 2.2rem;
   }
   .academic-contact {
     gap: 0.35rem 0.3rem;
