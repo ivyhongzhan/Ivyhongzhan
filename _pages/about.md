@@ -46,6 +46,6 @@ Designed and implemented a recruitment management system, translating user requi
 
 MSc Social Media and Management · 2022–2024
 
-**[Wuchang University of Technology](https://en.wut.edu.cn/), China**
+**[Wuchang University of Technology](https://www.wut.edu.cn/), China**
 
 BEng Computer Science and Technology · 2017–2021
