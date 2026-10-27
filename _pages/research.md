@@ -12,7 +12,7 @@ description: Research on trust in generative AI across technical online communit
 _Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
 
 **Sole-author research · 2026**  
-_Manuscript under review_
+_Manuscript submitted to PACM HCI (CSCW)_
 
 **Human–AI Interaction · Information Science · Computational Social Science**
 
@@ -25,7 +25,7 @@ This study examines released computational classifications across five technical
 ### Methods & Contributions
 
 - **Research design:** Re-analyzed 8,519 eligible trust/distrust classifications across five technical Reddit communities, comparing pooled, community-level, and half-year patterns.
-- **Rigor and reproducibility:** Examined 4,964 trust-related dimension records in a separate archive, documented denominators and eligibility rules, and verified 12 frozen file hashes and selected numerical outputs.
+- **Measurement and reproducibility:** Analyzed 4,964 dimension records in a separate archive; documented archive-specific denominators, eligibility criteria, and a uniform-field replacement estimand; released frozen results with automated verification checks.
 
 ### Key Findings
 
@@ -37,9 +37,9 @@ _Neither_ is the most frequent classification overall (41.7%), while _Trust_ lea
 
 Competence (70.6%), Reliability (49.4%), and Familiarity (45.2%) are the most frequently observed indicators in the separate dimensions archive.
 
-**3. Context matters when interpreting aggregate measurements.**
+**3. Stratification reveals the limits of pooled summaries.**
 
-Community- and half-year-level reporting makes differences in distributions, temporal coverage, and measurement boundaries visible.
+Pooled summaries do not show community-specific distributions or differences in half-year coverage. Stratified reporting makes these patterns and measurement boundaries explicit.
 
 This work contributes to my broader research interest in how trust in AI is measured and interpreted across social contexts.
 

@@ -8,28 +8,42 @@ description: Hong (Ivy) Zhan studies trust in generative AI through large-scale 
 
 ## About
 
-My research examines how measurement and aggregation shape interpretations of trust and distrust in generative AI. In _Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_, I conduct a descriptive secondary analysis of released classification records: 8,519 eligible classifications across five technical Reddit communities, compared in pooled, community-specific, and UTC half-year views. A separate archive of 4,964 dimension records is analyzed independently, with archive-specific eligibility and denominators. The dimension analysis uses a transparent uniform-field replacement estimand. These records describe released classifications, not users’ directly measured trust.
+My research examines how the measurement and aggregation of AI-related discourse influence interpretations of trust and distrust. My current work uses descriptive secondary analysis of released classification data to compare aggregate findings with community- and time-specific patterns, with particular attention to measurement boundaries and data provenance.
 
-My background spans computer science and social media research. I have conducted qualitative interviews and thematic analysis, analyzed computational records, and developed information systems. Together, these experiences inform my interest in context-sensitive ways to study human–AI interaction and online communities.
+My background spans computer science and social media research, including qualitative interviewing, thematic analysis, and information-system development. These experiences inform my interest in context-sensitive approaches to studying human–AI interaction.
 
 ## Selected Research
 
-### Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
+**Beyond the Aggregate**
+
+_Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
 
 I examine how pooled summaries of released trust and distrust classifications relate to community-specific and temporal patterns, while keeping the classification and dimensions archives separate.
 
-[Read the Research page]({{ '/research/' | relative_url }})
+**Key Finding:** In the released classifications, _Neither_ was the most frequent label overall (41.7%), while _Trust_ led in ChatGPTCoding (43.1%) and programming (46.2%).
+
+[Research Details](https://ivyhongzhan.github.io/Ivyhongzhan/research/) · [GitHub](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo](https://doi.org/10.5281/zenodo.23655847)
 
 ## Additional Projects
 
-**York master's research:** A qualitative study based on 15 interviews, analyzed in NVivo using thematic analysis.
+**Cross-Cultural Social Media Use**
 
-**Undergraduate project:** Design and implementation of a recruitment management system.
+_Master&#39;s Dissertation · University of York_
+
+Conducted 15 semi-structured interviews with Chinese students studying in the UK, examining cross-cultural social media practices through qualitative coding and thematic analysis.
+
+**Recruitment Management System**
+
+_BEng Capstone Project · Wuchang University of Technology, China_
+
+Designed and implemented a recruitment management system to support recruitment-related information management and workflows.
 
 ## Education
 
-**University of York, United Kingdom** · 2022–2024<br>
-MSc Social Media and Management (degree awarded 2024)
+**University of York, United Kingdom**
 
-**Wuchang University of Technology, China** · 2017–2021<br>
-BEng Computer Science and Technology
+MSc Social Media and Management · 2022–2024
+
+**Wuchang University of Technology, China**
+
+BEng Computer Science and Technology · 2017–2021

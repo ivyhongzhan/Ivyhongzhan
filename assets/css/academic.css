@@ -54,7 +54,7 @@ button:focus-visible {
 }
 .site-navigation-inner {
   box-sizing: border-box;
-  max-width: 1060px;
+  max-width: 1100px;
   min-height: 64px;
   margin: 0 auto;
   padding: 0.75rem 1.25rem;
@@ -87,7 +87,7 @@ button:focus-visible {
   text-underline-offset: 0.35em;
 }
 .container {
-  width: min(1060px, calc(100% - 2.5rem));
+  width: min(1100px, calc(100% - 2.5rem));
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,8 +98,8 @@ button:focus-visible {
   display: grid;
   grid-template-columns: minmax(190px, 220px) minmax(0, 1fr);
   align-items: start;
-  gap: clamp(2.5rem, 7vw, 5.5rem);
-  margin: 0 auto 4rem;
+  gap: clamp(2.5rem, 6vw, 4.75rem);
+  margin: 0 auto 3rem;
 }
 .academic-profile {
   min-width: 0;
@@ -137,8 +137,8 @@ button:focus-visible {
 .academic-contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 0.8rem;
-  font-size: 0.9rem;
+  gap: 0.4rem 0.3rem;
+  font-size: 0.86rem;
 }
 .academic-contact a {
   text-decoration: none;
@@ -146,26 +146,26 @@ button:focus-visible {
 .academic-contact a:not(:last-child)::after {
   content: "/";
   display: inline-block;
-  margin-left: 0.8rem;
+  margin-left: 0.35rem;
   color: #97a3ae;
 }
 .academic-home-content {
   min-width: 0;
 }
 .academic-home-content h2 {
-  margin: 0 0 1rem;
-  padding-bottom: 0.45rem;
+  margin: 0 0 0.8rem;
+  padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--academic-rule);
   color: var(--academic-ink);
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 650;
   line-height: 1.35;
 }
 .academic-home-content h2:not(:first-child) {
-  margin-top: 2.4rem;
+  margin-top: 2rem;
 }
 .academic-home-content h3 {
-  margin: 1.15rem 0 0.2rem;
+  margin: 1rem 0 0.2rem;
   color: var(--academic-ink);
   font-size: 1.02rem;
   font-weight: 650;
@@ -176,6 +176,70 @@ button:focus-visible {
 }
 .academic-home-content h3 + p {
   margin-top: 0.25rem;
+}
+.academic-home-content h2 + p {
+  margin-top: 0;
+}
+.academic-home-content p + p {
+  margin-top: 0.8rem;
+}
+.academic-home-content strong {
+  font-weight: 650;
+}
+.academic-home-content h2:nth-of-type(2) + p {
+  margin-top: 0.15rem;
+}
+.academic-home-content h2:nth-of-type(2) + p strong {
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+.academic-home-content h2:nth-of-type(2) + p + p {
+  margin-top: 0.15rem;
+}
+.academic-home-content h2:nth-of-type(2) + p + p + p {
+  margin-top: 0.7rem;
+}
+.academic-home-content h2:nth-of-type(3) ~ p strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.post {
+  width: min(100%, 760px);
+  margin: 0 auto 3rem;
+}
+.post .post-header {
+  margin-bottom: 1.6rem;
+}
+.post .post-title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.8rem, 4vw, 2.15rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+.post .post-description:empty {
+  display: none;
+}
+.post article h2 {
+  margin: 2rem 0 0.65rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--academic-rule);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+.post article h3 {
+  margin: 1.25rem 0 0.35rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+.post article p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+}
+.post article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto 0.5rem;
 }
 .post {
   color: var(--academic-ink);
@@ -199,6 +263,11 @@ footer {
   .site-navigation-inner {
     min-height: 56px;
     padding: 0.55rem 1rem;
+    gap: 1rem;
+  }
+  .site-wordmark {
+    font-size: 0.92rem;
+    white-space: nowrap;
   }
   .site-navigation-links {
     gap: 1.2rem;
@@ -211,8 +280,8 @@ footer {
   }
   .academic-home {
     grid-template-columns: minmax(0, 1fr);
-    gap: 2rem;
-    margin-top: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
   }
   .academic-profile {
     max-width: 420px;
@@ -221,7 +290,17 @@ footer {
     width: min(100%, 230px);
   }
   .academic-home-content h2:not(:first-child) {
-    margin-top: 2rem;
+    margin-top: 1.7rem;
+  }
+  .post {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .post article h2 {
+    margin-top: 1.7rem;
+  }
+  .academic-contact {
+    gap: 0.35rem 0.3rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
