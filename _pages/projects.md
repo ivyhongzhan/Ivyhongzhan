@@ -6,11 +6,10 @@ nav: false
 nav_order: 3
 ---
 
-# Research Projects
-
 ## Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time
 
-**Human–AI Interaction · Computational Social Science**
+**Human–AI Interaction · Computational Social Science**  
+_Sole-author research · Manuscript under review_
 
 A descriptive analysis of computational trust and distrust classifications across five technical Reddit communities.
 

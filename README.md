@@ -7,9 +7,9 @@ I study how people interact with digital technologies, navigate information, and
 ## Featured Research
 
 **[Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** (2026)  
-_Manuscript submitted to PACM HCI (CSCW)_
+_Sole-author research · Manuscript under review_
 
-Across 8,519 valid trust/distrust classifications from five technical Reddit communities, _Neither_ led the pooled archive (41.7%), whereas _Trust_ led ChatGPTCoding (43.1%) and programming (46.2%).
+Across 8,519 valid trust/distrust classifications from five technical Reddit communities, _Neither_ led the pooled archive (41.7%), whereas _Trust_ led ChatGPTCoding (43.1%) and programming (46.2%). This finding motivates my interest in context-sensitive measurement of AI trust.
 
 [Research Code & Figures](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo Research Artifacts (v2)](https://doi.org/10.5281/zenodo.23655847) · [Research Page](https://ivyhongzhan.github.io/Ivyhongzhan/research/)
 

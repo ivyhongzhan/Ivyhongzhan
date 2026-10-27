@@ -11,8 +11,8 @@ description: Research on trust in generative AI across technical online communit
 
 _Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
 
-**Independent Researcher · 2026**  
-_Manuscript submitted to PACM HCI (CSCW)_
+**Sole-author research · 2026**  
+_Manuscript under review_
 
 **Human–AI Interaction · Information Science · Computational Social Science**
 
@@ -24,9 +24,8 @@ This study examines released computational classifications across five technical
 
 ### Methods & Contributions
 
-- **Research design:** Conducted an archive-separated descriptive secondary analysis of 8,519 eligible classification records and a separate archive of 4,964 dimension records across five technical Reddit communities.
-- **Analytical approach:** Compared pooled, community-specific, and UTC half-year distributions, documenting archive-specific denominators, eligibility rules, and a uniform-field replacement estimand for the dimensions analysis.
-- **Reproducibility:** Produced research visualizations, frozen aggregate results, and verification materials, including automated checks of 12 frozen file hashes and selected numerical outputs.
+- **Research design:** Re-analyzed 8,519 eligible trust/distrust classifications across five technical Reddit communities, comparing pooled, community-level, and half-year patterns.
+- **Rigor and reproducibility:** Examined 4,964 trust-related dimension records in a separate archive, documented denominators and eligibility rules, and verified 12 frozen file hashes and selected numerical outputs.
 
 ### Key Findings
 
@@ -41,6 +40,8 @@ Competence (70.6%), Reliability (49.4%), and Familiarity (45.2%) are the most fr
 **3. Context matters when interpreting aggregate measurements.**
 
 Community- and half-year-level reporting makes differences in distributions, temporal coverage, and measurement boundaries visible.
+
+This work contributes to my broader research interest in how trust in AI is measured and interpreted across social contexts.
 
 ### Research Figure
 
