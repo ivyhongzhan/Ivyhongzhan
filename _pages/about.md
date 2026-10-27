@@ -12,7 +12,7 @@ Hello! I’m Hong Zhan, though you can call me Ivy. My research examines how the
 
 My background spans **computer science and social media research**, including **qualitative interviewing, thematic analysis, quantitative analysis, and information-system development**. These experiences inform my interest in context-sensitive approaches to studying **human–AI interaction**.
 
-Outside academia, I enjoy traveling, hiking, and learning languages. I’ve visited more than 100 countries and enjoy exploring new places on foot. I’m also studying Spanish, Italian, German, Japanese, and Chinese.
+Outside academia, I enjoy traveling, hiking, and learning languages. I’ve visited more than 100 countries and enjoy exploring new places on foot. I’m also studying Spanish, Italian, German, and Japanese.
 
 ## Selected Research
 
