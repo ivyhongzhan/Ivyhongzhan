@@ -127,10 +127,12 @@ button:focus-visible {
   margin: 0 0 2rem;
 }
 .academic-profile-areas {
+  margin: 0;
+  padding: 0;
   color: var(--academic-muted);
   font-size: 0.97rem;
   line-height: 1.55;
-  margin: 0 0 0;
+  list-style: none;
 }
 .academic-contact {
   display: flex;
