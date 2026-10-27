@@ -30,15 +30,15 @@ I examine how pooled summaries of released trust and distrust classifications re
 
 **Cross-Cultural Social Media Use**
 
-_Master&#39;s Dissertation · University of York_
+_Master's Dissertation · University of York_
 
-Conducted 15 semi-structured interviews with Chinese students studying in the UK, examining cross-cultural social media practices through qualitative coding and thematic analysis.
+Conducted 15 semi-structured interviews with Chinese students in the UK, using thematic analysis to examine cross-platform communication and information practices. Platform norms and perceived content restrictions shaped how participants navigated cross-cultural interaction and cultural identity.
 
 **Recruitment Management System**
 
 _BEng Capstone Project · Wuchang University of Technology_
 
-Designed and implemented a recruitment management system to support recruitment-related information management and workflows.
+Designed and implemented a recruitment management system, translating user requirements into workflows, interaction flows, and interface prototypes.
 
 ## Education
 
