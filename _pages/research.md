@@ -12,7 +12,7 @@ description: Research on trust in generative AI across technical online communit
 _Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
 
 Sole-author research · 2026<br>
-_Manuscript submitted to PACM HCI (CSCW)_
+_Manuscript under review at PACM HCI (CSCW)_
 
 Human–AI Interaction · Information Science · Computational Social Science
 
@@ -51,4 +51,4 @@ _Figure 1. Classification and dimension profiles across five technical Reddit co
 
 ### Research Materials
 
-[GitHub: Code & Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Research Artifacts](https://doi.org/10.5281/zenodo.23655847) · [Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/reproduce.md) · [Figure 1 (PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure.pdf)
+[SSRN: Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [GitHub: Code & Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Research Artifacts](https://doi.org/10.5281/zenodo.23666151) · [Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/reproduce.md) · [Figure 1 (PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure.pdf)

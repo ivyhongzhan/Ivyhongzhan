@@ -24,7 +24,7 @@ I examine how pooled summaries of released trust and distrust classifications re
 
 **Key Finding:** In the released classifications, _Neither_ was the most frequent label overall (41.7%), while _Trust_ led in ChatGPTCoding (43.1%) and programming (46.2%).
 
-[Research Details](https://ivyhongzhan.github.io/Ivyhongzhan/research/) · [GitHub](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo](https://doi.org/10.5281/zenodo.23655847)
+[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [Research Details](https://ivyhongzhan.github.io/Ivyhongzhan/research/) · [GitHub](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo](https://doi.org/10.5281/zenodo.23666151)
 
 ## Additional Projects
 

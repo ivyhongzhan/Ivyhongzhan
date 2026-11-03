@@ -10,7 +10,7 @@ description: Research code, results, and reproducibility materials.
 
 The accompanying research code, aggregate results, figures, and verification resources are available in the repository below.
 
-[Research Artifacts on Zenodo](https://doi.org/10.5281/zenodo.23655847)
+[Research Artifacts on Zenodo](https://doi.org/10.5281/zenodo.23666151)
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
 {% for repo in site.data.repositories.github_repos %}
