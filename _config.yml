@@ -150,6 +150,7 @@ include:
     "_pages/repositories.md",
     "_pages/masters-research.md",
     "_pages/recruitment-system.md",
+    "_pages/recruitment-demo.html",
     "_pages/404.md",
   ]
 exclude:
