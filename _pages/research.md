@@ -43,6 +43,14 @@ Pooled summaries do not show community-specific distributions or differences in 
 
 This work contributes to my broader research interest in how trust in AI is measured and interpreted across social contexts.
 
+### Code & Reproducibility
+
+The public analysis pipeline reconstructs the study's **main numerical results and three principal figures** from the two openly released source archives, without redistributing record-level data. A documented clean-checkout run completed **68/68 specified reproduction checks**; the frozen files and 11 automated unit tests also passed.
+
+This is a bounded computational reproduction, **not** independent validation of the underlying computational labels, construct validity, or the complete anonymized submission. Historical Day 17 workflow gating and the unavailable Day 24 supporting-figure renderer remain explicitly documented.
+
+**[Reproduce from public data](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md)** · [Audit and limitations](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION_AUDIT_20261105.md)
+
 ### Research Figure
 
 ![Pooled and community-specific distributions of trust and distrust](https://raw.githubusercontent.com/ivyhongzhan/genai-trust-reddit-analysis/main/figures/rq1_figure.png)
@@ -51,4 +59,4 @@ _Figure 1. Classification and dimension profiles across five technical Reddit co
 
 ### Research Materials
 
-[SSRN: Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [GitHub: Code & Results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Research Artifacts](https://doi.org/10.5281/zenodo.23666151) · [Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/reproduce.md) · [Figure 1 (PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure.pdf)
+[SSRN: Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [GitHub: Code & Reproducibility](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Archived Artifacts](https://doi.org/10.5281/zenodo.23666151) · [Public Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md) · [Figure 1 (320 dpi PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure_300dpi.pdf)
