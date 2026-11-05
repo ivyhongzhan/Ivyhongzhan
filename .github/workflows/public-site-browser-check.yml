@@ -1,0 +1,47 @@
+name: Verify public website in a real browser
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/public-site-browser-check.yml"
+      - ".github/e2e/public-site.cjs"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-browser:
+    name: External Chromium accessibility, workflow and persistence
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout site tests
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Playwright isolated from site packages
+        run: |
+          mkdir -p "$RUNNER_TEMP/live-e2e"
+          npm install --prefix "$RUNNER_TEMP/live-e2e" --no-save --no-audit --no-fund playwright@1.56.1
+          cd "$RUNNER_TEMP/live-e2e"
+          npx playwright install --with-deps chromium
+
+      - name: Test actual public site from GitHub-hosted network
+        env:
+          NODE_PATH: ${{ runner.temp }}/live-e2e/node_modules
+        run: node .github/e2e/public-site.cjs
+
+      - name: Upload screenshots and check results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-site-browser-evidence
+          path: public-site-e2e-results/
+          if-no-files-found: warn
+          retention-days: 14
