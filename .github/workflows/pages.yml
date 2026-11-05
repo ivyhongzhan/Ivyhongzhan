@@ -47,6 +47,14 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
 
+      - name: Verify recruitment demo in generated site
+        run: |
+          test -s _site/assets/recruitment-demo.html
+          grep -q 'Recruitment management workspace' _site/assets/recruitment-demo.html
+          grep -q 'hz-add-person' _site/assets/recruitment-demo.html
+          printf 'Verified generated recruitment demo (%s bytes)\\n' "$(wc -c < _site/assets/recruitment-demo.html)"
+          find _site/research -maxdepth 5 -name index.html -print | head -30
+
       - name: Upload build folder
         uses: actions/upload-pages-artifact@v3
         with:
