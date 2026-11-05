@@ -27,7 +27,7 @@ Across 8,519 valid trust/distrust classifications from five technical Reddit com
 
 **Research/design question:** How can a hiring workflow expose stage-specific actions and an inspectable record of candidate progression?
 
-**Engineering:** FastAPI, SQLite and browser UI; six-stage application pipeline, validation, stage transitions, persistence and action history. The public browser demo is a standalone implementation using fictional data and local browser storage. No real hiring outcomes or user-study results are claimed.
+**Engineering:** FastAPI, SQLite and browser UI; six-stage application pipeline, validation, stage transitions, persistence and action history. The public browser demo is a standalone implementation using fictional data and local browser storage. 
 
 [Systems case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/recruitment-system/) · [Interactive synthetic-data demo](https://ivyhongzhan.github.io/Ivyhongzhan/assets/recruitment-demo.html)
 
