@@ -30,17 +30,23 @@ I examine how pooled summaries of released trust and distrust classifications re
 
 ## Additional Projects
 
+These projects connect qualitative social-media research with interactive information-system design.
+
 **Cross-Cultural Social Media Use**
 
 _Master's Dissertation · University of York_
 
 Conducted 15 semi-structured interviews with Chinese students in the UK, using thematic analysis to examine cross-platform communication and information practices. Platform norms and perceived content restrictions shaped how participants navigated cross-cultural interaction and cultural identity.
 
+**[Read the MSc research case study]({{ '/research/masters/' | relative_url }})**
+
 **Recruitment Management System**
 
 _BEng Capstone Project · Wuchang University of Technology_
 
-Designed and implemented a recruitment management system, translating user requirements into workflows, interaction flows, and interface prototypes.
+Designed and implemented a recruitment management system, translating user requirements into workflows, interaction flows, and interface prototypes. The current interactive demo supports fictional applicant management and browser-local stage history.
+
+**[Read the system case study]({{ '/research/recruitment-system/' | relative_url }})** · **[Try the recruitment demo]({{ '/research/recruitment-system/demo/' | relative_url }})**
 
 ## Education
 
