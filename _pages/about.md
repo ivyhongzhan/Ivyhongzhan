@@ -54,7 +54,7 @@ Research, empirical methods, and a working software prototype—three complement
   <h3>Cross-platform Social Media & Information Practices</h3>
   <p class="hz-featured-question">How do different platform and cultural environments shape Chinese students' communication and sense of belonging in the UK?</p>
   <p><span class="hz-featured-label">My work.</span> Designed and conducted 15 semi-structured interviews; recorded, transcribed, translated and organized materials; used NVivo-assisted thematic coding and Excel.</p>
-  <p><span class="hz-featured-label">Research focus.</span> Cross-platform communication, language barriers, information credibility and cultural adaptation. No identifiable participant materials are displayed.</p>
+  <p><span class="hz-featured-label">Research focus.</span> Cross-platform communication, language barriers, information credibility and cultural adaptation, informed by interview coding and analysis of social-media posts. No identifiable participant materials are displayed.</p>
   <div class="hz-featured-links">
     <a href="{{ '/research/masters/' | relative_url }}">Research case study & methods</a>
   </div>
