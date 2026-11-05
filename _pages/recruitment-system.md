@@ -40,6 +40,10 @@ The system does **not** score candidates, recommend hiring decisions, or analyze
 4. Reload the system and confirm persisted changes.
 5. Test duplicate applications and invalid transitions to observe safeguards.
 
+## Interactive preview
+
+**[Open the read-only recruitment pipeline demo]({{ '/research/recruitment-system/demo/' | relative_url }})** — explore fictional records, filter job openings, and inspect stage states without submitting applicant data. The complete local application (with SQLite persistence, updates and audit events) is described below.
+
 ## Engineering checks
 
 The implementation has automated API tests covering core workflow behavior, data validation, persistence and read-only preview controls. In a real local HTTP run on **5 November 2026**, nine integrated assertions passed, including creating jobs and applicants, preventing duplicate applications, updating stages, checking history and blocking applications to closed jobs.
