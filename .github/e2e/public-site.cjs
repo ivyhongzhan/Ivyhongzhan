@@ -31,6 +31,13 @@ async function go(page, url, label) {
     assert.equal(await page.locator("#hz-board .column").count(), 6);
     assert.equal((await page.locator("#hz-total").innerText()).trim(), "14");
     passed("Six-stage demo and seeded applicant count render");
+    assert.equal(await page.locator(".post-header").count(), 0, "Duplicate title remains above demo");
+    await page.getByText("Design decisions and trade-offs").waitFor({timeout:10000});
+    const heroText = await page.locator(".hero").innerText();
+    assert.match(heroText, /Zero Point HR/);
+    assert.match(heroText, /Alex Rivera/);
+    assert.match(await page.locator("footer").innerText(), /Fictional data, for portfolio demonstration only/);
+    passed("Hero, design rationale and demo-specific footer render");
     await page.screenshot({ path: resultsDir + "/desktop-demo.png", fullPage: true });
 
     // Use a unique fictional identifier to make it impossible to confuse with real applicants.
@@ -85,6 +92,16 @@ async function go(page, url, label) {
     ]) {
       await go(mobile, base + path, label);
       await mobile.getByText(expected, { exact: false }).first().waitFor({ timeout: 12000 });
+      if(path === "/research/masters/"){
+        assert.match(await mobile.locator("body").innerText(), /analyzed social-media posts/i);
+        passed("MSc case study aligns with CV social-media-post analysis");
+      }
+      if(path === "/research/recruitment-system/"){
+        const content = await mobile.locator("body").innerText();
+        assert.match(content,/Spring Boot and MySQL/);
+        assert.match(content,/FastAPI, SQLite/);
+        passed("2021 and 2026 engineering stacks are clearly distinguished");
+      }
     }
     await go(mobile, base + "/", "Research homepage mobile reread");
     const cards = mobile.locator(".hz-featured-card");
