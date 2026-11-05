@@ -14,7 +14,7 @@ async function go(page, url, label) {
   const response = await page.goto(url, { waitUntil: "domcontentloaded", timeout: 50000 });
   assert.ok(response, label + ": no HTTP response");
   assert.equal(response.status(), 200, label + ": expected HTTP 200, got " + response.status());
-  assert.notEqual(new URL(page.url()).pathname, "/Ivyhongzhan/", label + ": unexpectedly redirected to homepage");
+  if (new URL(url).pathname !== "/Ivyhongzhan/") assert.notEqual(new URL(page.url()).pathname, "/Ivyhongzhan/", label + ": unexpectedly redirected to homepage");
   await page.waitForTimeout(3500); // The site's previous 404 template redirected after 3 seconds.
   assert.equal(new URL(page.url()).pathname, new URL(url).pathname, label + ": URL changed after 3.5 sec");
   passed(label + " reachable (HTTP 200, no delayed redirect)");
