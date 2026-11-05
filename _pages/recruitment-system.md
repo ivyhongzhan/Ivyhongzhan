@@ -8,10 +8,12 @@ description: "A hiring-workflow prototype with state transitions, audit history 
 
 # Recruitment Management System
 
-**BEng capstone topic · Wuchang University of Technology · 2021**  
-**Current software implementation · 2026**
+**BEng capstone · Wuchang University of Technology · 2021**  
+**Current portfolio implementation · 2026**
 
-An interactive recruitment-workflow system that makes candidate progression, workflow states and record histories inspectable. The latest implementation uses **FastAPI, SQLite, HTML, CSS and JavaScript**.
+The **2021 BEng thesis** covered job postings, application tracking and candidate management using **Spring Boot and MySQL**, as described in my CV. The separate **2026 portfolio implementation** uses **FastAPI, SQLite, HTML, CSS and JavaScript** and makes recruitment states and record histories inspectable. The [public browser demo]({{ '/assets/recruitment-demo.html' | relative_url }}) stores fictional data locally in each visitor's browser.
+
+The demo draws on my professional recruitment operations experience at Zero Point HR. It demonstrates the application and screening-to-decision workflow, not shift scheduling or placement management.
 
 ## What the system does
 
@@ -52,6 +54,6 @@ The public presentation is intended to use a read-only or isolated synthetic-dat
 
 ## Evidence and limitations
 
-This is a **software design and engineering artifact**, not a completed usability experiment. Real-user completion times, success rates, satisfaction scores and claims of improved efficiency are **not reported**. A formative evaluation protocol and blank observation templates are included with the source package for a future consent-based study.
+The **2026 portfolio implementation** is a software design and engineering artifact, not a completed usability experiment. Real-user completion times, success rates, satisfaction scores and claims of improved efficiency are **not reported**. A formative evaluation protocol and blank observation templates are included with the source package for a future consent-based study.
 
 [Back to research overview]({{ '/research/' | relative_url }})
