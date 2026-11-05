@@ -1,6 +1,11 @@
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.author }}. {{ site.footer_text }}
+  {{ site.author }}.
+  {% if page.portfolio_demo %}
+    Fictional data, for portfolio demonstration only.
+  {% else %}
+    {{ site.footer_text }}
+  {% endif %}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
