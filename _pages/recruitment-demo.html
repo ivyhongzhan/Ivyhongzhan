@@ -44,7 +44,7 @@ description: "An interactive browser-based recruitment workflow with fictional d
     <h1 id="hz-demo-heading">Recruitment management workspace</h1>
     <p>Explore a six-stage recruitment pipeline. Add fictional applicants and job openings, review stage history, and move applications through structured transitions. Your changes stay in this browser.</p>
   </header>
-  <p class="notice"><strong>Interactive portfolio demo.</strong> Seed names and positions are fictional. Add fictional records only: changes are saved in your browser storage, not uploaded to a server or shared with other visitors. Reset restores the example dataset. For server-side SQLite persistence and API tests, see the full-stack project documentation.</p>
+  <p class="notice"><strong>Interactive portfolio demo.</strong> Seed names and positions are fictional. Add fictional records only: JavaScript saves changes in this browser with <code>localStorage</code>; records are not uploaded to a server or shared with other visitors. Reset restores the example dataset. This demo is not connected to MySQL. The separate Java/Spring Boot/MySQL implementation, API tests and Docker Compose setup are available in the <a href="https://github.com/ivyhongzhan/recruitment-management-system">project repository</a>.</p>
   <div class="metrics" aria-label="Snapshot metrics">
     <div class="metric"><div class="value" id="hz-positions">4</div><div class="label">Job openings</div></div>
     <div class="metric"><div class="value" id="hz-total">14</div><div class="label">Applications</div></div>
@@ -82,7 +82,7 @@ description: "An interactive browser-based recruitment workflow with fictional d
   <p id="hz-message" class="hz-message" role="status" aria-live="polite"></p>
   <p class="count" id="hz-count" role="status" aria-live="polite"></p>
   <div class="board-scroll" tabindex="0" aria-label="Horizontally scrollable hiring board"><div id="hz-board" class="board"></div></div>
-  <p class="footnote">Measurement boundary: dashboard counts are current application-stage snapshots, not unique individuals over time or estimates of hiring outcomes. This demo records only local transitions; the separately developed full-stack application uses SQLite, server-side workflow validation, and an audit log.</p>
+  <p class="footnote">Measurement boundary: dashboard counts are current application-stage snapshots, not unique individuals over time or estimates of hiring outcomes. This demo records only local transitions in browser storage; the separately developed Java/Spring Boot application uses MySQL, server-side workflow validation, and an audit log.</p>
   <p><a href="{{ '/research/recruitment-system/' | relative_url }}">Read the systems case study</a> · <a href="{{ '/research/' | relative_url }}">Research portfolio</a></p>
   <dialog id="hz-details" aria-labelledby="hz-detail-heading">
     <h2 id="hz-detail-heading">Application detail</h2>

@@ -11,7 +11,7 @@ description: "A hiring-workflow prototype with state transitions, audit history 
 **BEng capstone · Wuchang University of Technology · 2021**  
 **Current portfolio implementation · 2026**
 
-The **2021 BEng thesis** covered job postings, application tracking and candidate management using **Spring Boot and MySQL**, as described in my CV. The separate **2026 portfolio implementation** uses **FastAPI, SQLite, HTML, CSS and JavaScript** and makes recruitment states and record histories inspectable. The [public browser demo]({{ '/assets/recruitment-demo.html' | relative_url }}) stores fictional data locally in each visitor's browser.
+The **2021 BEng graduation design** used **Spring Boot and MySQL**. The **2026 system reconstruction** also uses **Java, Spring Boot, Spring Data JPA and MySQL**, while preserving the reviewed HTML, CSS and JavaScript interface. It implements job and application management, validated six-stage transitions, persistent records and audit history. [View the complete source, Docker Compose setup and integration tests on GitHub](https://github.com/ivyhongzhan/recruitment-management-system). The [public browser demo]({{ '/assets/recruitment-demo.html' | relative_url }}) is a separate JavaScript prototype that stores synthetic records in the visitor's browser with `localStorage`; it is **not connected to the project's MySQL database**.
 
 The demo draws on my professional recruitment operations experience at Zero Point HR. It demonstrates the application and screening-to-decision workflow, not shift scheduling or placement management.
 
@@ -44,11 +44,11 @@ The system does **not** score candidates, recommend hiring decisions, or analyze
 
 ## Interactive preview
 
-**[Open the interactive recruitment management demo]({{ '/assets/recruitment-demo.html' | relative_url }})** — add fictional applicants or job openings, filter applications, update hiring stages, inspect event history, and export example data. The public version saves changes only in your own browser; the separate FastAPI/SQLite implementation provides server-side persistence and workflow validation.
+**[Open the interactive recruitment management demo]({{ '/assets/recruitment-demo.html' | relative_url }})** — add fictional applicants or job openings, filter applications, update hiring stages, inspect event history, and export example data. The public version saves changes only in your own browser through JavaScript `localStorage`; it is not connected to MySQL. The independently runnable Java/Spring Boot project provides MySQL persistence and server-side workflow validation. [Open the GitHub repository](https://github.com/ivyhongzhan/recruitment-management-system).
 
 ## Engineering checks
 
-The implementation has automated API tests covering core workflow behavior, data validation, persistence and read-only preview controls. In a real local HTTP run on **5 November 2026**, nine integrated assertions passed, including creating jobs and applicants, preventing duplicate applications, updating stages, checking history and blocking applications to closed jobs.
+The repository includes Java integration tests against MySQL 8.4 for job/application operations, validation, stage transitions, audit history, persistence and frontend/API serving. [View the verified GitHub Actions run](https://github.com/ivyhongzhan/recruitment-management-system/actions/runs/42068376340): five integration tests passed with no failures or skips, and a restart check confirmed MySQL persistence.
 
 The public presentation is intended to use a read-only or isolated synthetic-data environment. A writable recruitment backend without authentication must not be exposed publicly.
 
