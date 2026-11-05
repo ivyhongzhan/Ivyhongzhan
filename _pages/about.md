@@ -62,7 +62,7 @@ Research, empirical methods, and a working software prototype—three complement
 <article class="hz-featured-card">
   <div class="hz-featured-eyebrow">2021 · BEng capstone topic | 2026 · Interactive software</div>
   <h3>Recruitment Management System</h3>
-  <p class="hz-featured-question">How can recruitment workflows support clear task progression, traceability and inspection of process decisions?</p>
+  <p class="hz-featured-question">An interactive recruitment pipeline informed by practical screening and placement workflows at Zero Point HR.</p>
   <p><span class="hz-featured-label">My work.</span> Implemented a recruitment workflow with six-stage pipeline, job/application management, validation, history and persistent storage in a FastAPI/SQLite project.</p>
   <p><span class="hz-featured-label">Try it.</span> The browser demo supports fictional applicant creation, search, stage transitions and local history. It uses synthetic data and browser-local storage.</p>
   <div class="hz-featured-links">
