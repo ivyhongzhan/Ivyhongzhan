@@ -81,4 +81,4 @@ A working information-system prototype with searchable applicants, six-stage rec
 
 **[Explore the systems case study]({{ '/research/recruitment-system/' | relative_url }})**
 
-**[Try the interactive synthetic-data demo]({{ '/research/recruitment-system/demo/' | relative_url }})**
+**[Try the interactive synthetic-data demo]({{ '/assets/recruitment-demo.html' | relative_url }})**
