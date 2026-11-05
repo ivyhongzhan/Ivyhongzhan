@@ -42,7 +42,7 @@ The system does **not** score candidates, recommend hiring decisions, or analyze
 
 ## Interactive preview
 
-**[Open the read-only recruitment pipeline demo]({{ '/research/recruitment-system/demo/' | relative_url }})** — explore fictional records, filter job openings, and inspect stage states without submitting applicant data. The complete local application (with SQLite persistence, updates and audit events) is described below.
+**[Open the interactive recruitment management demo]({{ '/research/recruitment-system/demo/' | relative_url }})** — add fictional applicants or job openings, filter applications, update hiring stages, inspect event history, and export example data. The public version saves changes only in your own browser; the separate FastAPI/SQLite implementation provides server-side persistence and workflow validation.
 
 ## Engineering checks
 
