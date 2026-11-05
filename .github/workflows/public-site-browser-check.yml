@@ -1,11 +1,10 @@
 name: Verify public website in a real browser
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Build and deploy al-folio to GitHub Pages"]
+    types: [completed]
     branches: [main]
-    paths:
-      - ".github/workflows/public-site-browser-check.yml"
-      - ".github/e2e/public-site.cjs"
   workflow_dispatch:
 
 permissions:
@@ -14,6 +13,7 @@ permissions:
 jobs:
   public-browser:
     name: External Chromium accessibility, workflow and persistence
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
