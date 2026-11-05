@@ -1,21 +1,23 @@
 ---
-layout: page
+layout: default
+portfolio_demo: true
 title: "Recruitment Workflow — Interactive Demo"
 permalink: /assets/recruitment-demo.html
 nav: false
-description: "An interactive browser-based recruitment workflow with fictional data and local persistence."
+description: "Explore a six-stage recruitment workflow, demo applicant management and stage history with fictional data."
 ---
 
 <section class="hz-demo" aria-labelledby="hz-demo-heading">
   <style>
     .hz-demo{--ink:#162438;--muted:#536477;--line:#dce4ed;--panel:#fff;--bg:#f5f7fb;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     .hz-demo *{box-sizing:border-box}.hz-demo button,.hz-demo input,.hz-demo select{font:inherit}.hz-demo button:focus-visible,.hz-demo input:focus-visible,.hz-demo select:focus-visible{outline:3px solid #4f76d6;outline-offset:2px}
+    .hz-demo .hero p + p{margin-top:12px}
     .hz-demo .hero{background:#142b43;color:#fff;border-radius:16px;padding:clamp(22px,4vw,42px);margin:10px 0 20px}
     .hz-demo .eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.11em;color:#a9d1f4;text-transform:uppercase}.hz-demo h1{color:#fff!important;font-size:clamp(1.45rem,3vw,2.25rem);margin:8px 0 12px!important;line-height:1.22}.hz-demo .hero p{max-width:72ch;color:#e3edf6;margin:0}
     .hz-demo .notice{background:#eef4fa;border:1px solid #cbd9ec;padding:12px 16px;border-radius:10px;font-size:.87rem;line-height:1.55;margin:0 0 18px}
     .hz-demo .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:22px}.hz-demo .metric{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px}.hz-demo .metric .value{font-size:1.85rem;font-weight:750;line-height:1.3}.hz-demo .metric .label{font-size:.8rem;color:var(--muted)}
     .hz-demo .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin:22px 0 12px}.hz-demo .controls{display:flex;gap:10px;flex-wrap:wrap}.hz-demo label{display:flex;flex-direction:column;font-size:.8rem;font-weight:650;gap:5px}.hz-demo input,.hz-demo select{background:#fff;color:var(--ink);border:1px solid #aab9c8;border-radius:8px;padding:10px 12px;min-height:42px}.hz-demo input{width:min(260px,85vw)}.hz-demo .count{font-size:.88rem;color:var(--muted);padding:0 0 8px}
-    .hz-demo .board-scroll{overflow-x:auto;padding:0 0 15px}.hz-demo .board{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1210px}.hz-demo .column{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px;min-height:185px}.hz-demo .column h2{display:flex;align-items:center;justify-content:space-between;font-size:.88rem!important;font-weight:700!important;margin:0 0 12px!important;color:var(--ink)!important}.hz-demo .total{background:#e2e9f2;border-radius:20px;padding:2px 8px;color:#334761;font-size:.76rem}
+    .hz-demo .board-scroll{overflow-x:auto;padding:0 0 15px;scrollbar-width:thin;scrollbar-color:#7792ad #edf2f7}.hz-demo .board{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1210px}.hz-demo .column{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px;min-height:185px}.hz-demo .column h2{display:flex;align-items:center;justify-content:space-between;font-size:.88rem!important;font-weight:700!important;margin:0 0 12px!important;color:var(--ink)!important}.hz-demo .total{background:#e2e9f2;border-radius:20px;padding:2px 8px;color:#334761;font-size:.76rem}
     .hz-demo .person{width:100%;text-align:left;display:block;background:#fff;border:1px solid #dce4eb;border-radius:10px;margin:0 0 9px;padding:12px;cursor:pointer;color:var(--ink)}.hz-demo .person:hover{border-color:#4879a9;box-shadow:0 2px 10px #1d395416}.hz-demo .person strong{display:block;font-size:.84rem}.hz-demo .person span{display:block;font-size:.75rem;color:var(--muted);margin-top:5px;line-height:1.45}.hz-demo .empty{font-size:.77rem;color:var(--muted);padding:8px}
     .hz-demo .footnote{font-size:.81rem;color:var(--muted);line-height:1.6}.hz-demo dialog{max-width:490px;width:calc(100% - 36px);border:0;border-radius:16px;padding:25px;background:#fff;color:var(--ink);box-shadow:0 30px 80px #182d4e55}.hz-demo dialog::backdrop{background:#10223890}.hz-demo dialog h2{color:var(--ink);font-size:1.32rem;margin:0 0 12px}.hz-demo dialog p{margin:8px 0}.hz-demo .close{background:#173652;color:#fff;border:0;border-radius:8px;padding:9px 15px;cursor:pointer;margin-top:15px}.hz-demo .detail-grid{display:grid;grid-template-columns:100px 1fr;gap:6px 12px;font-size:.91rem}.hz-demo .detail-grid dt{color:var(--muted)}.hz-demo .detail-grid dd{margin:0;font-weight:600}.hz-demo a{color:#195f9e}
     @media(max-width:740px){.hz-demo .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.hz-demo .toolbar{display:block}.hz-demo .controls{margin-top:12px}.hz-demo .controls label{flex:1}.hz-demo .controls input{max-width:100%;width:100%}.hz-demo .hero{border-radius:12px}}
@@ -38,13 +40,23 @@ description: "An interactive browser-based recruitment workflow with fictional d
     .hz-demo .hz-history{padding-left:20px;margin:0;max-height:170px;overflow:auto}
     .hz-demo .hz-history li{font-size:.83rem;margin:7px 0;color:#536477}
     .hz-demo .hz-stage-control[hidden]{display:none}
+    .hz-demo .hz-board-hint{display:inline-flex;gap:8px;align-items:center;margin:3px 0 10px;padding:7px 11px;background:#edf4fb;border:1px solid #cedcec;border-radius:999px;color:#244c70;font-size:.78rem;font-weight:650}
+    .hz-demo .hz-design{margin:24px 0 16px;padding:20px 22px;background:#f8fafc;border:1px solid var(--line);border-radius:13px}
+    .hz-demo .hz-design h2{font-size:1.19rem!important;color:var(--ink)!important;margin:0 0 14px!important}
+    .hz-demo .hz-design-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+    .hz-demo .hz-design-list section{min-width:0;border-top:3px solid #97acc5;padding-top:12px}
+    .hz-demo .hz-design-list h3{font-size:.92rem!important;color:var(--ink)!important;margin:0 0 8px!important;line-height:1.45}
+    .hz-demo .hz-design-list p{font-size:.81rem;line-height:1.65;color:#40546a;margin:0 0 8px}
+    .hz-demo .hz-design-list .hz-tradeoff{color:#5d6374}
+    @media(max-width:740px){.hz-demo .hz-design-list{grid-template-columns:1fr}.hz-demo .hz-design{padding:17px}.hz-demo .hz-design-list section{padding-top:10px}}
   </style>
   <header class="hero">
-    <div class="eyebrow">Interactive workflow · Fictional data</div>
+    <div class="eyebrow">Hong Zhan · Software portfolio · Fictional data</div>
     <h1 id="hz-demo-heading">Recruitment management workspace</h1>
-    <p>Explore a six-stage recruitment pipeline. Add fictional applicants and job openings, review stage history, and move applications through structured transitions. Your changes stay in this browser.</p>
+    <p>A six-stage recruitment pipeline, from application through hiring decisions. Its workflow draws on my experience operating Zero Point HR in Wuhan, where I coordinated approximately 30 staff and managed candidate screening, shift scheduling and placement tracking. This demo focuses on application screening and hiring stages; it does not include shift scheduling.</p>
+    <p><strong>Try this:</strong> Select Alex Rivera in <strong>Screening</strong>, choose <strong>Interview</strong>, then click <strong>Save transition</strong> to see the change in the candidate's history. All sample names are fictional; changes stay in your browser.</p>
   </header>
-  <p class="notice"><strong>Interactive portfolio demo.</strong> Seed names and positions are fictional. Add fictional records only: changes are saved in your browser storage, not uploaded to a server or shared with other visitors. Reset restores the example dataset. For server-side SQLite persistence and API tests, see the full-stack project documentation.</p>
+  <p class="notice"><strong>Portfolio demo with fictional data.</strong> Please add made-up records only. Your changes are saved in this browser, are not uploaded anywhere and are not visible to other visitors. “Reset demo” brings back the original examples. The full-stack version, with a database and automated API tests, is described in the <a href="{{ '/research/recruitment-system/' | relative_url }}">project documentation</a>.</p>
   <div class="metrics" aria-label="Snapshot metrics">
     <div class="metric"><div class="value" id="hz-positions">4</div><div class="label">Job openings</div></div>
     <div class="metric"><div class="value" id="hz-total">14</div><div class="label">Applications</div></div>
@@ -52,7 +64,7 @@ description: "An interactive browser-based recruitment workflow with fictional d
     <div class="metric"><div class="value">6</div><div class="label">Workflow stages</div></div>
   </div>
   <div class="toolbar">
-    <div><strong>Candidate pipeline</strong><div class="footnote">Select a card to inspect its state. Scroll horizontally for all stages.</div></div>
+    <div><strong>Candidate pipeline</strong><div class="footnote">Click an applicant card to see its history and move it to another stage. Scroll sideways to see all six stages.</div></div>
     <div class="controls">
       <label for="hz-search">Search applicants<input id="hz-search" type="search" autocomplete="off" placeholder="e.g. Alex Rivera"></label>
       <label for="hz-job">Filter position<select id="hz-job"><option value="">All positions</option></select></label>
@@ -81,9 +93,30 @@ description: "An interactive browser-based recruitment workflow with fictional d
   </div>
   <p id="hz-message" class="hz-message" role="status" aria-live="polite"></p>
   <p class="count" id="hz-count" role="status" aria-live="polite"></p>
+  <div class="hz-board-hint" aria-hidden="true">Scroll → Offer · Hired · Rejected</div>
   <div class="board-scroll" tabindex="0" aria-label="Horizontally scrollable hiring board"><div id="hz-board" class="board"></div></div>
-  <p class="footnote">Measurement boundary: dashboard counts are current application-stage snapshots, not unique individuals over time or estimates of hiring outcomes. This demo records only local transitions; the separately developed full-stack application uses SQLite, server-side workflow validation, and an audit log.</p>
-  <p><a href="{{ '/research/recruitment-system/' | relative_url }}">Read the systems case study</a> · <a href="{{ '/research/' | relative_url }}">Research portfolio</a></p>
+  <section class="hz-design" aria-labelledby="hz-design-heading">
+    <h2 id="hz-design-heading">Design decisions and trade-offs</h2>
+    <div class="hz-design-list">
+      <section>
+        <h3>1. Six fixed recruitment stages</h3>
+        <p>Each application has one current stage and a defined next action, making status easier to interpret.</p>
+        <p class="hz-tradeoff"><strong>Trade-off:</strong> The ordered workflow does not support skipping directly over stages.</p>
+      </section>
+      <section>
+        <h3>2. History in the detail view</h3>
+        <p>Stage changes made in this browser are recorded with each applicant. The cards themselves show only the name and position.</p>
+        <p class="hz-tradeoff"><strong>Trade-off:</strong> Inspecting the history requires opening a card. Seeded records have no historical events until changed.</p>
+      </section>
+      <section>
+        <h3>3. Board view with stage counts</h3>
+        <p>One column per stage gives an overview of the current pipeline.</p>
+        <p class="hz-tradeoff"><strong>Trade-off:</strong> Six columns require horizontal scrolling on narrower screens.</p>
+      </section>
+    </div>
+  </section>
+  <p class="footnote"><strong>What the numbers mean:</strong> The counts show where applications are right now. They do not count unique people over time and say nothing about hiring outcomes. This demo keeps changes only in your browser. The separately built full-stack version adds a database, server-side checks on stage changes and an audit log.</p>
+  <p><a href="{{ '/research/recruitment-system/' | relative_url }}">Read the systems case study</a> · <a href="{{ '/research/' | relative_url }}">Research portfolio</a> · <a href="{{ '/assets/pdf/Hong_Zhan_CV_Master_2026-11-04.pdf' | relative_url }}">Academic CV</a> · <a href="https://github.com/ivyhongzhan">GitHub</a></p>
   <dialog id="hz-details" aria-labelledby="hz-detail-heading">
     <h2 id="hz-detail-heading">Application detail</h2>
     <dl class="detail-grid" id="hz-detail-body"></dl>
