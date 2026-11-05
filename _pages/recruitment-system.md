@@ -26,11 +26,11 @@ The system does **not** score candidates, recommend hiring decisions, or analyze
 
 ## Design rationale
 
-| Research lens | Design choice | What it demonstrates |
+| Research lens                    | Design choice                                                                                                   | What it demonstrates                                                              |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **HCI** | Board/table alternatives, a short guided workflow, stage-specific actions, accessible labels and error messages | Explicit interaction design decisions to be evaluated with users |
-| **Information Systems** | Relational entities, persistence, job and stage rules, version checks, event history | Traceable workflow implementation and data integrity |
-| **Computational Social Science** | Stage snapshot counts with synthetic data and declared denominators | Measurement transparency and caution about interpreting cross-sectional summaries |
+| **HCI**                          | Board/table alternatives, a short guided workflow, stage-specific actions, accessible labels and error messages | Explicit interaction design decisions to be evaluated with users                  |
+| **Information Systems**          | Relational entities, persistence, job and stage rules, version checks, event history                            | Traceable workflow implementation and data integrity                              |
+| **Computational Social Science** | Stage snapshot counts with synthetic data and declared denominators                                             | Measurement transparency and caution about interpreting cross-sectional summaries |
 
 ### Inspectable workflow
 
