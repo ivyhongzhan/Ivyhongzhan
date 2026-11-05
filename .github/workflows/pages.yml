@@ -49,6 +49,12 @@ jobs:
 
       - name: Verify recruitment demo in generated site
         run: |
+          echo "Source candidate:"
+          ls -l assets/recruitment-demo.html _pages/recruitment-demo.html
+          echo "Generated matching files:"
+          find _site -iname '*recruit*' -print
+          echo "Generated site directories:"
+          find _site -maxdepth 3 -type d | head -65
           test -s _site/assets/recruitment-demo.html
           grep -q 'Recruitment management workspace' _site/assets/recruitment-demo.html
           grep -q 'hz-add-person' _site/assets/recruitment-demo.html
