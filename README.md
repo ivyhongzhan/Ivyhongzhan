@@ -13,10 +13,23 @@ Across 8,519 valid trust/distrust classifications from five technical Reddit com
 
 [SSRN Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · **[Code & Reproducibility](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** · [Public Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md) · [Zenodo Archived Artifacts (v3)](https://doi.org/10.5281/zenodo.23666151) · [Research Page](https://ivyhongzhan.github.io/Ivyhongzhan/research/)
 
-## Additional Research & Technical Experience
+## Selected Research & Systems Work
 
-- **MSc dissertation — Cross-cultural social media practices:** Conducted 15 semi-structured interviews with Chinese students in the UK and analyzed digital media practices using qualitative coding and thematic analysis.
-- **BEng capstone — Recruitment Management System:** Designed and implemented an information system involving user requirements, interface prototyping, and usability evaluation.
+### MSc — Cross-platform Social Media & Information Practices (2023)
+
+**Research question:** How do cross-platform communication experiences, information credibility and cultural differences shape Chinese students' social-media use in the UK?
+
+**Methods:** Designed and conducted 15 semi-structured interviews; transcribed, translated and organized materials; conducted NVivo-assisted thematic analysis. This qualitative study examined participation barriers, cross-platform information practices and cultural belonging. Interview transcripts and identifying participant records are not public.
+
+[Read the MSc research case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/masters/)
+
+### Recruitment Management System — BEng Topic (2021), Software Implementation (2026)
+
+**Research/design question:** How can a hiring workflow expose stage-specific actions and an inspectable record of candidate progression?
+
+**Engineering:** FastAPI, SQLite and browser UI; six-stage application pipeline, validation, stage transitions, persistence and action history. The public browser demo is a standalone implementation using fictional data and local browser storage. No real hiring outcomes or user-study results are claimed.
+
+[Systems case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/recruitment-system/) · [Interactive synthetic-data demo](https://ivyhongzhan.github.io/Ivyhongzhan/assets/recruitment-demo.html)
 
 ## Contact
 
