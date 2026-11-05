@@ -58,6 +58,13 @@ jobs:
           test -s _site/assets/recruitment-demo.html
           grep -q 'Recruitment management workspace' _site/assets/recruitment-demo.html
           grep -q 'hz-add-person' _site/assets/recruitment-demo.html
+          test -s _site/index.html
+          test -s _site/research/index.html
+          test -s _site/research/masters/index.html
+          test -s _site/research/recruitment-system/index.html
+          grep -q 'hz-featured-grid' _site/index.html
+          grep -q '15 semi-structured interviews' _site/research/masters/index.html
+          grep -q 'recruitment-demo.html' _site/index.html
           printf 'Verified generated recruitment demo (%s bytes)\\n' "$(wc -c < _site/assets/recruitment-demo.html)"
           find _site/research -maxdepth 5 -name index.html -print | head -30
 
