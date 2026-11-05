@@ -19,12 +19,12 @@ This project examined Chinese international students’ social-media experiences
 
 ## Research design and my contributions
 
-| Component | Research activity |
+| Component        | Research activity                                                                                                                                               |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Study design | Developed an interview-based study of cross-platform experiences and cultural adaptation. |
-| Data collection | Conducted **15 semi-structured interviews** with Chinese students studying in the UK. |
-| Data preparation | Recorded, transcribed, translated and organized interview materials. |
-| Analysis | Used **NVivo-assisted thematic analysis** with Excel-supported data organization. |
+| Study design     | Developed an interview-based study of cross-platform experiences and cultural adaptation.                                                                       |
+| Data collection  | Conducted **15 semi-structured interviews** with Chinese students studying in the UK.                                                                           |
+| Data preparation | Recorded, transcribed, translated and organized interview materials.                                                                                            |
+| Analysis         | Used **NVivo-assisted thematic analysis** with Excel-supported data organization.                                                                               |
 | Platform context | Examined communication and information practices across social-media environments; the ethics application named WeChat, Weibo and Twitter in its planned scope. |
 
 ## Themes and interpretive contributions
