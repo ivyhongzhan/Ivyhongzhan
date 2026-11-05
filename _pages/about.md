@@ -14,39 +14,65 @@ My background spans **computer science and social media research**, including **
 
 Outside academia, I enjoy traveling, hiking, and learning languages. I’ve visited more than 100 countries and enjoy exploring new places on foot. I’m also studying Spanish, Italian, German, and Japanese.
 
-## Selected Research
+## Selected Work
 
-**Beyond the Aggregate**
+Research, empirical methods, and a working software prototype—three complementary ways of investigating digital technologies and human experience.
 
-_Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
+<style>
+.hz-featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 27px}
+.hz-featured-card{min-width:0;display:flex;flex-direction:column;padding:23px 21px 19px;border:1px solid #dce4ec;border-radius:15px;background:#fff;box-shadow:0 6px 22px rgba(22,42,67,.055);color:#172a41}
+.hz-featured-card:first-child{border-top:4px solid #325d8d}.hz-featured-card:nth-child(2){border-top:4px solid #3d777c}.hz-featured-card:nth-child(3){border-top:4px solid #685b88}
+.hz-featured-eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;font-weight:750;color:#496279;margin-bottom:12px}
+.hz-featured-card h3{font-size:1.22rem!important;line-height:1.3!important;letter-spacing:-.015em;margin:0 0 13px!important;color:#172a41!important}
+.hz-featured-card p{font-size:.86rem;line-height:1.6;color:#45566b;margin:0 0 12px}
+.hz-featured-card .hz-featured-question{font-size:.87rem;font-weight:600;color:#263e58}
+.hz-featured-divider{height:1px;background:#e5eaf0;margin:8px 0 13px}
+.hz-featured-label{font-weight:750;color:#223c57}
+.hz-featured-links{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center;margin-top:auto;padding-top:9px}
+.hz-featured-links a{font-size:.84rem;font-weight:700;text-decoration:underline;text-underline-offset:3px;color:#205988}
+.hz-featured-links a:focus-visible{outline:3px solid #205988;outline-offset:3px}
+.hz-featured-note{font-size:.79rem;color:#53667b}
+@media(max-width:950px){.hz-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hz-featured-card:last-child{grid-column:1/-1}}
+@media(max-width:630px){.hz-featured-grid{grid-template-columns:minmax(0,1fr)}.hz-featured-card:last-child{grid-column:auto}.hz-featured-card{padding:19px}}
+</style>
 
-I examine how pooled summaries of released trust and distrust classifications relate to community-specific and temporal patterns, while keeping the classification and dimensions archives separate.
+<section class="hz-featured-grid" aria-label="Selected research and software work">
+<article class="hz-featured-card">
+  <div class="hz-featured-eyebrow">2026 · Sole-author manuscript · PACM HCI (CSCW) under review</div>
+  <h3>Beyond the Aggregate: Trust and Distrust in Generative AI</h3>
+  <p class="hz-featured-question">How do aggregated AI-trust classifications differ from patterns across communities and time?</p>
+  <p><span class="hz-featured-label">My work.</span> Secondary computational analysis of 8,519 classification records from five technical Reddit communities, with a separate 4,964-record dimension archive; community- and half-year-level descriptive summaries.</p>
+  <p><span class="hz-featured-label">Evidence.</span> <em>Neither</em> is the largest pooled category (41.7%); <em>Trust</em> leads in two communities. Source provenance, denominators and reproduction limits are documented.</p>
+  <div class="hz-featured-links">
+    <a href="{{ '/research/' | relative_url }}">Study & findings</a>
+    <a href="https://github.com/ivyhongzhan/genai-trust-reddit-analysis">Code & verification</a>
+    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698">Preprint</a>
+  </div>
+</article>
+<article class="hz-featured-card">
+  <div class="hz-featured-eyebrow">2023 · MSc dissertation · University of York</div>
+  <h3>Cross-platform Social Media & Information Practices</h3>
+  <p class="hz-featured-question">How do different platform and cultural environments shape Chinese students' communication and sense of belonging in the UK?</p>
+  <p><span class="hz-featured-label">My work.</span> Designed and conducted 15 semi-structured interviews; recorded, transcribed, translated and organized materials; used NVivo-assisted thematic coding and Excel.</p>
+  <p><span class="hz-featured-label">Research focus.</span> Cross-platform communication, language barriers, information credibility and cultural adaptation. No identifiable participant materials are displayed.</p>
+  <div class="hz-featured-links">
+    <a href="{{ '/research/masters/' | relative_url }}">Research case study & methods</a>
+  </div>
+</article>
+<article class="hz-featured-card">
+  <div class="hz-featured-eyebrow">2021 · BEng capstone topic | 2026 · Interactive software</div>
+  <h3>Recruitment Management System</h3>
+  <p class="hz-featured-question">How can recruitment workflows support clear task progression, traceability and inspection of process decisions?</p>
+  <p><span class="hz-featured-label">My work.</span> Implemented a recruitment workflow with six-stage pipeline, job/application management, validation, history and persistent storage in a FastAPI/SQLite project.</p>
+  <p><span class="hz-featured-label">Try it.</span> The browser demo supports fictional applicant creation, search, stage transitions and local history. It uses synthetic data and browser-local storage.</p>
+  <div class="hz-featured-links">
+    <a href="{{ '/research/recruitment-system/' | relative_url }}">System design & tests</a>
+    <a href="{{ '/assets/recruitment-demo.html' | relative_url }}">Interactive demo</a>
+  </div>
+</article>
+</section>
 
-**Key Finding:** In the released classifications, _Neither_ was the most frequent label overall (41.7%), while _Trust_ led in ChatGPTCoding (43.1%) and programming (46.2%).
-
-**Code & Reproducibility:** The public-source reproduction pipeline regenerated the main numerical results and three figures, passing 68 specified checks in a clean checkout. The audit records the limits of this validation.
-
-[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [Research Details](https://ivyhongzhan.github.io/Ivyhongzhan/research/) · [Code & Reproducibility](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Reproduction Audit](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION_AUDIT_20261105.md) · [Zenodo](https://doi.org/10.5281/zenodo.23666151)
-
-## Additional Projects
-
-These projects connect qualitative social-media research with interactive information-system design.
-
-**Cross-Cultural Social Media Use**
-
-_Master's Dissertation · University of York_
-
-Conducted 15 semi-structured interviews with Chinese students in the UK, using thematic analysis to examine cross-platform communication and information practices. Platform norms and perceived content restrictions shaped how participants navigated cross-cultural interaction and cultural identity.
-
-**[Read the MSc research case study]({{ '/research/masters/' | relative_url }})**
-
-**Recruitment Management System**
-
-_BEng Capstone Project · Wuchang University of Technology_
-
-Designed and implemented a recruitment management system, translating user requirements into workflows, interaction flows, and interface prototypes. The current interactive demo supports fictional applicant management and browser-local stage history.
-
-**[Read the system case study]({{ '/research/recruitment-system/' | relative_url }})** · **[Try the recruitment demo]({{ '/research/recruitment-system/demo/' | relative_url }})**
+<p class="hz-featured-note">Public materials distinguish empirical findings, qualitative interpretations and synthetic software demonstration data. No new usability-study outcomes are claimed.</p>
 
 ## Education
 
