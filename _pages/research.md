@@ -67,7 +67,7 @@ _Figure 1. Classification and dimension profiles across five technical Reddit co
 
 **MSc dissertation · University of York · 2023**
 
-Designed and conducted **15 semi-structured interviews** with Chinese students studying in the UK. Used NVivo-assisted thematic analysis to examine platform-specific communication, language barriers, information credibility and cultural belonging. This study demonstrates primary user research, cross-language qualitative data preparation and interpretive analysis.
+Designed and conducted **15 semi-structured interviews** with Chinese students studying in the UK. Transcribed and coded interviews in NVivo and analyzed social-media posts to examine platform-specific communication, participation, information credibility and cultural adaptation. This study demonstrates primary user research, cross-language qualitative data preparation and interpretive analysis.
 
 **[Read the MSc research case study]({{ '/research/masters/' | relative_url }})**
 
