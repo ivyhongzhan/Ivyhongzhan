@@ -80,3 +80,5 @@ Designed and conducted **15 semi-structured interviews** with Chinese students s
 A working information-system prototype with searchable applicants, six-stage recruitment boards, persisted records, state-transition rules and inspectable event history. The engineering artifact supports HCI interaction-design analysis and information-systems workflow evaluation. All demonstration records are synthetic; no empirical usability outcomes are claimed.
 
 **[Explore the systems case study]({{ '/research/recruitment-system/' | relative_url }})**
+
+**[Try the interactive synthetic-data demo]({{ '/research/recruitment-system/demo/' | relative_url }})**
