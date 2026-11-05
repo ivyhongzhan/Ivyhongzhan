@@ -11,7 +11,7 @@ description: "MSc research on cross-platform social media, information credibili
 **MSc Dissertation · University of York · 2023**  
 **Hong Zhan · Supervisor: Dr Daniel Robins**
 
-**Dissertation:** *Differences between the Use of Social Media by Chinese Students in the UK and Their Home Country's Mainstream Media Culture*
+**Dissertation:** _Differences between the Use of Social Media by Chinese Students in the UK and Their Home Country's Mainstream Media Culture_
 
 > How does the use of social media by Chinese students studying in the UK impact their sense of cultural identity and belonging?
 
@@ -20,7 +20,7 @@ This project examined Chinese international students’ social-media experiences
 ## Research design and my contributions
 
 | Component | Research activity |
-|---|---|
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Study design | Developed an interview-based study of cross-platform experiences and cultural adaptation. |
 | Data collection | Conducted **15 semi-structured interviews** with Chinese students studying in the UK. |
 | Data preparation | Recorded, transcribed, translated and organized interview materials. |
