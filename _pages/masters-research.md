@@ -22,7 +22,7 @@ This project examined Chinese international students’ social-media experiences
 | Component        | Research activity                                                                                                                                               |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Study design     | Developed an interview-based study of cross-platform experiences and cultural adaptation.                                                                       |
-| Data collection  | Designed and conducted **15 semi-structured interviews** (approximately 60 minutes each, as described in my CV) with Chinese students studying in the UK.                                                                           |
+| Data collection  | Designed and conducted **15 semi-structured interviews** (approximately 60 minutes each) with Chinese students studying in the UK.                                                                           |
 | Data preparation | Recorded, transcribed, translated and organized interview materials.                                                                                            |
 | Analysis         | Transcribed and thematically coded interviews using **NVivo**, with Excel-supported organization.                                                                               |
 | Platform context | Examined cross-platform communication practices and analyzed social-media posts to investigate participation and information evaluation. |
@@ -32,7 +32,7 @@ This project examined Chinese international students’ social-media experiences
 1. **Study framing:** focused on Chinese students’ cross-platform social-media practices and cultural adaptation in the UK.
 2. **Primary data collection:** conducted 15 semi-structured interviews, approximately 60 minutes each, to examine participants' experiences.
 3. **Qualitative preparation and coding:** transcribed interviews, organized cross-language materials and used NVivo for thematic coding.
-4. **Additional analysis:** examined social-media posts in relation to participation and information evaluation. The CV does not specify the post sample size, so no numerical claim is made here.
+4. **Additional analysis:** examined social-media posts in relation to participation and information evaluation.
 5. **Interpretation:** developed themes concerning platform-specific communication, language barriers and credibility checking against perceived media differences.
 
 This work is qualitative; its themes should not be interpreted as representative survey estimates or numerical prevalence rates.
