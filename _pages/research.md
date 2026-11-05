@@ -60,3 +60,23 @@ _Figure 1. Classification and dimension profiles across five technical Reddit co
 ### Research Materials
 
 [SSRN: Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [GitHub: Code & Reproducibility](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Archived Artifacts](https://doi.org/10.5281/zenodo.23666151) · [Public Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md) · [Figure 1 (320 dpi PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure_300dpi.pdf)
+
+---
+
+## 02. Cross-platform information practices
+
+**MSc dissertation · University of York · 2023**
+
+Designed and conducted **15 semi-structured interviews** with Chinese students studying in the UK. Used NVivo-assisted thematic analysis to examine platform-specific communication, language barriers, information credibility and cultural belonging. This study demonstrates primary user research, cross-language qualitative data preparation and interpretive analysis.
+
+**[Read the MSc research case study]({{ '/research/masters/' | relative_url }})**
+
+---
+
+## 03. Recruitment Management System
+
+**BEng capstone topic · 2021 | Current web implementation · 2026**
+
+A working information-system prototype with searchable applicants, six-stage recruitment boards, persisted records, state-transition rules and inspectable event history. The engineering artifact supports HCI interaction-design analysis and information-systems workflow evaluation. All demonstration records are synthetic; no empirical usability outcomes are claimed.
+
+**[Explore the systems case study]({{ '/research/recruitment-system/' | relative_url }})**
