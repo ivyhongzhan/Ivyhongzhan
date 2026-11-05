@@ -3,7 +3,7 @@ layout: page
 title: "Recruitment Workflow — Interactive Demo"
 permalink: /research/recruitment-system/demo/
 nav: false
-description: "Explore an interactive, read-only recruitment pipeline with fictional data."
+description: "An interactive browser-based recruitment workflow with fictional data and local persistence."
 ---
 
 <section class="hz-demo" aria-labelledby="hz-demo-heading">
@@ -19,78 +19,297 @@ description: "Explore an interactive, read-only recruitment pipeline with fictio
     .hz-demo .person{width:100%;text-align:left;display:block;background:#fff;border:1px solid #dce4eb;border-radius:10px;margin:0 0 9px;padding:12px;cursor:pointer;color:var(--ink)}.hz-demo .person:hover{border-color:#4879a9;box-shadow:0 2px 10px #1d395416}.hz-demo .person strong{display:block;font-size:.84rem}.hz-demo .person span{display:block;font-size:.75rem;color:var(--muted);margin-top:5px;line-height:1.45}.hz-demo .empty{font-size:.77rem;color:var(--muted);padding:8px}
     .hz-demo .footnote{font-size:.81rem;color:var(--muted);line-height:1.6}.hz-demo dialog{max-width:490px;width:calc(100% - 36px);border:0;border-radius:16px;padding:25px;background:#fff;color:var(--ink);box-shadow:0 30px 80px #182d4e55}.hz-demo dialog::backdrop{background:#10223890}.hz-demo dialog h2{color:var(--ink);font-size:1.32rem;margin:0 0 12px}.hz-demo dialog p{margin:8px 0}.hz-demo .close{background:#173652;color:#fff;border:0;border-radius:8px;padding:9px 15px;cursor:pointer;margin-top:15px}.hz-demo .detail-grid{display:grid;grid-template-columns:100px 1fr;gap:6px 12px;font-size:.91rem}.hz-demo .detail-grid dt{color:var(--muted)}.hz-demo .detail-grid dd{margin:0;font-weight:600}.hz-demo a{color:#195f9e}
     @media(max-width:740px){.hz-demo .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.hz-demo .toolbar{display:block}.hz-demo .controls{margin-top:12px}.hz-demo .controls label{flex:1}.hz-demo .controls input{max-width:100%;width:100%}.hz-demo .hero{border-radius:12px}}
+
+    .hz-demo .hz-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;margin:14px 0 8px}
+    .hz-demo .hz-creator{border:1px solid var(--line);border-radius:10px;background:#fff;min-width:205px;flex:1 1 220px}
+    .hz-demo .hz-creator summary{padding:12px 14px;cursor:pointer;font-weight:700;font-size:.86rem}
+    .hz-demo .hz-creator[open] summary{border-bottom:1px solid var(--line)}
+    .hz-demo .hz-form{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;padding:13px}
+    .hz-demo .hz-form label{flex:1 1 160px}
+    .hz-demo .hz-form input,.hz-demo .hz-form select{width:100%;min-width:0}
+    .hz-demo .hz-primary,.hz-demo .hz-secondary{border-radius:8px;padding:10px 14px;border:1px solid #1d4369;min-height:42px;cursor:pointer}
+    .hz-demo .hz-primary{background:#163f66;color:white}.hz-demo .hz-primary:hover{background:#265b8d}
+    .hz-demo .hz-secondary{background:white;color:#173a5a;border-color:#9aaec2}.hz-demo .hz-secondary:hover{background:#f1f6fb}
+    .hz-demo .hz-right-actions{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto;align-self:center}
+    .hz-demo .hz-message{min-height:1.4em;font-size:.87rem;color:#22543d;margin:4px 0 7px}
+    .hz-demo .hz-stage-control{display:flex;gap:10px;align-items:flex-end;margin:20px 0 14px;flex-wrap:wrap}
+    .hz-demo .hz-stage-control label{flex:1 1 180px}
+    .hz-demo .hz-history-title{font-size:1rem!important;margin:16px 0 7px!important}
+    .hz-demo .hz-history{padding-left:20px;margin:0;max-height:170px;overflow:auto}
+    .hz-demo .hz-history li{font-size:.83rem;margin:7px 0;color:#536477}
+    .hz-demo .hz-stage-control[hidden]{display:none}
   </style>
   <header class="hero">
-    <div class="eyebrow">Interactive system preview · Synthetic data</div>
-    <h1 id="hz-demo-heading">Recruitment workflow explorer</h1>
-    <p>Explore a six-stage hiring pipeline, filter applications, and inspect record-level status. This browser-only preview is read-only; the full FastAPI/SQLite implementation supports persisted stage changes and an audit trail.</p>
+    <div class="eyebrow">Interactive workflow · Fictional data</div>
+    <h1 id="hz-demo-heading">Recruitment management workspace</h1>
+    <p>Explore a six-stage recruitment pipeline. Add fictional applicants and job openings, review stage history, and move applications through structured transitions. Your changes stay in this browser.</p>
   </header>
-  <p class="notice"><strong>Read-only demonstration.</strong> Every name, position and count is fictional. This preview contains no real applicant data and does not assess or rank people. It is a static interface; data edits and database persistence are available only in the local full-stack version.</p>
+  <p class="notice"><strong>Interactive portfolio demo.</strong> Seed names and positions are fictional. Add fictional records only: changes are saved in your browser storage, not uploaded to a server or shared with other visitors. Reset restores the example dataset. For server-side SQLite persistence and API tests, see the full-stack project documentation.</p>
   <div class="metrics" aria-label="Snapshot metrics">
-    <div class="metric"><div class="value" id="hz-positions">4</div><div class="label">Fictional openings</div></div>
-    <div class="metric"><div class="value" id="hz-total">14</div><div class="label">Fictional applications</div></div>
+    <div class="metric"><div class="value" id="hz-positions">4</div><div class="label">Job openings</div></div>
+    <div class="metric"><div class="value" id="hz-total">14</div><div class="label">Applications</div></div>
     <div class="metric"><div class="value" id="hz-active">0</div><div class="label">Applications in progress</div></div>
     <div class="metric"><div class="value">6</div><div class="label">Workflow stages</div></div>
   </div>
   <div class="toolbar">
     <div><strong>Candidate pipeline</strong><div class="footnote">Select a card to inspect its state. Scroll horizontally for all stages.</div></div>
     <div class="controls">
-      <label for="hz-search">Search fictional names<input id="hz-search" type="search" autocomplete="off" placeholder="e.g. Alex Rivera"></label>
+      <label for="hz-search">Search applicants<input id="hz-search" type="search" autocomplete="off" placeholder="e.g. Alex Rivera"></label>
       <label for="hz-job">Filter position<select id="hz-job"><option value="">All positions</option></select></label>
     </div>
   </div>
+  <div class="hz-actions" aria-label="Workspace actions">
+    <details class="hz-creator">
+      <summary>Add fictional applicant</summary>
+      <form id="hz-add-person" class="hz-form">
+        <label for="hz-new-name">Applicant display name<input id="hz-new-name" name="name" type="text" maxlength="70" minlength="2" required placeholder="e.g. Robin Carter" autocomplete="off"></label>
+        <label for="hz-new-role">Job opening<select id="hz-new-role" name="job" required></select></label>
+        <button type="submit" class="hz-primary">Add applicant</button>
+      </form>
+    </details>
+    <details class="hz-creator">
+      <summary>Create job opening</summary>
+      <form id="hz-add-job" class="hz-form">
+        <label for="hz-new-job">Job title<input id="hz-new-job" name="title" type="text" minlength="3" maxlength="80" required placeholder="e.g. UX Research Intern" autocomplete="off"></label>
+        <button type="submit" class="hz-primary">Create opening</button>
+      </form>
+    </details>
+    <div class="hz-right-actions">
+      <button id="hz-export" type="button" class="hz-secondary">Export local JSON</button>
+      <button id="hz-reset" type="button" class="hz-secondary">Reset demo</button>
+    </div>
+  </div>
+  <p id="hz-message" class="hz-message" role="status" aria-live="polite"></p>
   <p class="count" id="hz-count" role="status" aria-live="polite"></p>
   <div class="board-scroll" tabindex="0" aria-label="Horizontally scrollable hiring board"><div id="hz-board" class="board"></div></div>
-  <p class="footnote">Measurement boundary: counts describe the current application-stage snapshot for this fictional dataset, not unique people over time, platform behavior, hiring success or causal effects. The full application provides real SQLite transactions, version-checked transitions and an audit log for software testing.</p>
+  <p class="footnote">Measurement boundary: dashboard counts are current application-stage snapshots, not unique individuals over time or estimates of hiring outcomes. This demo records only local transitions; the separately developed full-stack application uses SQLite, server-side workflow validation, and an audit log.</p>
   <p><a href="{{ '/research/recruitment-system/' | relative_url }}">Read the systems case study</a> · <a href="{{ '/research/' | relative_url }}">Research portfolio</a></p>
   <dialog id="hz-details" aria-labelledby="hz-detail-heading">
     <h2 id="hz-detail-heading">Application detail</h2>
     <dl class="detail-grid" id="hz-detail-body"></dl>
-    <p class="footnote">Synthetic seed snapshot. This static preview has no individual change events. Use the full-stack version to create and inspect real software audit records.</p>
+    <div class="hz-stage-control" id="hz-stage-controls">
+      <label for="hz-next">Change stage<select id="hz-next"></select></label>
+      <button type="button" id="hz-update" class="hz-primary">Save transition</button>
+    </div>
+    <h3 class="hz-history-title">Local transition history</h3>
+    <ol id="hz-history" class="hz-history"></ol>
+    <p class="footnote">This history records actions performed in this browser demo. Initial seeded stages do not imply any recorded individual decisions.</p>
     <form method="dialog"><button class="close">Close</button></form>
   </dialog>
   <script>
   (() => {
-    const jobs=['Product Design Researcher','Data Analyst','Frontend Engineer','Community Operations Associate'];
-    const stages=['Applied','Screening','Interview','Offer','Hired','Rejected'];
-    const people=[
-      ['Alex Rivera',0,1],['Morgan Chen',0,2],['Sam Taylor',0,0],['Casey Patel',0,3],
-      ['Jordan Lee',1,0],['Riley Kim',1,1],['Avery Thompson',1,4],['Drew Nguyen',1,5],
-      ['Jamie Park',2,2],['Charlie Brown',2,1],['Taylor Brooks',2,0],
-      ['Reese Davis',3,0],['Blair Wilson',3,2],['Skylar James',3,5]
-    ].map(([name,job,stage],index)=>({id:index+1,name,job,stage}));
-    const byId=(id)=>document.getElementById(id);
-    const search=byId('hz-search'),job=byId('hz-job'),board=byId('hz-board'),count=byId('hz-count');
-    jobs.forEach((label,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=label;job.append(option)});
-    byId('hz-total').textContent=String(people.length);
-    byId('hz-active').textContent=String(people.filter(p=>p.stage<4).length);
-    function render(){
-      const q=search.value.toLowerCase().trim();
-      const selected=job.value;
-      const matches=people.filter(p=>p.name.toLowerCase().includes(q)&&(selected===''||String(p.job)===selected));
-      count.textContent='Showing '+matches.length+' of '+people.length+' fictional applications.';
+    "use strict";
+    const storageKey = "hong-zhan-recruitment-workflow-demo-v2";
+    const stages = ["Applied", "Screening", "Interview", "Offer", "Hired", "Rejected"];
+    const seedJobs = ["Product Design Researcher", "Data Analyst", "Frontend Engineer", "Community Operations Associate"];
+    const sample = [
+      ["Alex Rivera",0,1],["Morgan Chen",0,2],["Sam Taylor",0,0],["Casey Patel",0,3],
+      ["Jordan Lee",1,0],["Riley Kim",1,1],["Avery Thompson",1,4],["Drew Nguyen",1,5],
+      ["Jamie Park",2,2],["Charlie Brown",2,1],["Taylor Brooks",2,0],
+      ["Reese Davis",3,0],["Blair Wilson",3,2],["Skylar James",3,5]
+    ];
+    const seed = () => ({
+      jobs: seedJobs.map((title,id) => ({id,title})),
+      people: sample.map(([name,job,stage],i) => ({id:i+1,name,job,stage})),
+      events: [],
+      nextPersonId: sample.length+1,
+      nextJobId: seedJobs.length
+    });
+    const byId = (id) => document.getElementById(id);
+    const search = byId("hz-search");
+    const jobFilter = byId("hz-job");
+    const addRole = byId("hz-new-role");
+    const board = byId("hz-board");
+    const count = byId("hz-count");
+    const message = byId("hz-message");
+    const dialog = byId("hz-details");
+    let selectedId = null;
+    let storeAvailable = true;
+
+    function load() {
+      try {
+        const raw = localStorage.getItem(storageKey);
+        if (!raw) return seed();
+        const data = JSON.parse(raw);
+        if (!data || !Array.isArray(data.jobs) || !Array.isArray(data.people) || !Array.isArray(data.events)) throw Error("invalid data");
+        const uniqueIds = new Set(data.people.map(p=>p.id));
+        if (uniqueIds.size !== data.people.length) throw Error("duplicate IDs");
+        if (!data.jobs.every(j=>Number.isInteger(j.id) && typeof j.title==="string") ||
+            !data.people.every(p=>Number.isInteger(p.id) && typeof p.name==="string" && Number.isInteger(p.job) && Number.isInteger(p.stage) && p.stage>=0 && p.stage<stages.length)) throw Error("invalid records");
+        const validJobs = new Set(data.jobs.map(j=>j.id));
+        if(!data.people.every(p=>validJobs.has(p.job))) throw Error("unknown job");
+        return {
+          jobs:data.jobs,people:data.people,events:data.events,
+          nextPersonId:Math.max(0,...data.people.map(p=>p.id))+1,
+          nextJobId:Math.max(-1,...data.jobs.map(j=>j.id))+1
+        };
+      } catch (error) {
+        storeAvailable = false;
+        return seed();
+      }
+    }
+    let data = load();
+
+    function announce(value) {message.textContent=value;}
+    function persist() {
+      if (!storeAvailable) {
+        announce("Changes are temporary: browser storage is unavailable.");
+        return;
+      }
+      try {
+        localStorage.setItem(storageKey,JSON.stringify(data));
+      } catch (error) {
+        storeAvailable=false;
+        announce("Browser storage is unavailable. Changes last only until this page is closed or refreshed.");
+      }
+    }
+    function jobTitle(id){return data.jobs.find(j=>j.id===id)?.title || "Unknown position";}
+    function option(value,label){const o=document.createElement("option");o.value=String(value);o.textContent=label;return o;}
+    function refreshJobs() {
+      const chosen=jobFilter.value;
+      jobFilter.replaceChildren(option("","All positions"));
+      addRole.replaceChildren();
+      for(const j of data.jobs){
+        jobFilter.append(option(j.id,j.title));
+        addRole.append(option(j.id,j.title));
+      }
+      if ([...jobFilter.options].some(o=>o.value===chosen))jobFilter.value=chosen;
+    }
+    function render() {
+      refreshJobs();
+      byId("hz-positions").textContent=String(data.jobs.length);
+      byId("hz-total").textContent=String(data.people.length);
+      byId("hz-active").textContent=String(data.people.filter(p=>p.stage<4).length);
+      const q=search.value.toLocaleLowerCase().trim();
+      const chosen=jobFilter.value;
+      const matches=data.people.filter(p=>(p.name.toLocaleLowerCase().includes(q)||jobTitle(p.job).toLocaleLowerCase().includes(q)) && (chosen===""||String(p.job)===chosen));
+      count.textContent="Showing "+matches.length+" of "+data.people.length+" application records.";
       board.replaceChildren();
       stages.forEach((stage,index)=>{
-        const section=document.createElement('section');section.className='column';section.setAttribute('aria-label',stage+' applications');
-        const heading=document.createElement('h2');heading.textContent=stage;
-        const badge=document.createElement('span');badge.className='total';const rows=matches.filter(p=>p.stage===index);badge.textContent=String(rows.length);heading.append(badge);section.append(heading);
-        if(!rows.length){const empty=document.createElement('p');empty.className='empty';empty.textContent='No matching applications';section.append(empty)}
-        rows.forEach(p=>{const button=document.createElement('button');button.type='button';button.className='person';
-          const name=document.createElement('strong');name.textContent=p.name;
-          const position=document.createElement('span');position.textContent=jobs[p.job];
-          button.append(name,position);button.addEventListener('click',()=>show(p));section.append(button)
-        });board.append(section);
+        const section=document.createElement("section");
+        section.className="column";
+        section.setAttribute("aria-label",stage+" applications");
+        const heading=document.createElement("h2");
+        heading.textContent=stage;
+        const badge=document.createElement("span");
+        badge.className="total";
+        const rows=matches.filter(p=>p.stage===index);
+        badge.textContent=String(rows.length);
+        heading.append(badge);
+        section.append(heading);
+        if(!rows.length){const empty=document.createElement("p");empty.className="empty";empty.textContent="No matching applications";section.append(empty);}
+        for(const p of rows){
+          const button=document.createElement("button");
+          button.type="button";button.className="person";
+          const name=document.createElement("strong");name.textContent=p.name;
+          const role=document.createElement("span");role.textContent=jobTitle(p.job);
+          button.append(name,role);
+          button.addEventListener("click",()=>show(p.id));
+          section.append(button);
+        }
+        board.append(section);
       });
     }
-    function show(p){
-      byId('hz-detail-heading').textContent=p.name;
-      const details=byId('hz-detail-body');details.replaceChildren();
-      [['Record','#'+p.id],['Position',jobs[p.job]],['Current stage',stages[p.stage]],['Next eligible stage',p.stage===4||p.stage===5?'Terminal state':p.stage===3?'Hired or Rejected':stages[p.stage+1]+' or Rejected']].forEach(([key,value])=>{
-        const dt=document.createElement('dt');dt.textContent=key;const dd=document.createElement('dd');dd.textContent=value;details.append(dt,dd)
-      });
-      byId('hz-details').showModal();
+    function allowedNext(current) {
+      if(current===4||current===5)return [];
+      const result=[5];
+      if(current<4)result.unshift(current+1);
+      return result;
     }
-    search.addEventListener('input',render);job.addEventListener('change',render);render();
+    function show(id) {
+      const p=data.people.find(person=>person.id===id);
+      if(!p)return;
+      selectedId=p.id;
+      byId("hz-detail-heading").textContent=p.name;
+      const details=byId("hz-detail-body");
+      details.replaceChildren();
+      const values=[
+        ["Application", "#"+p.id],
+        ["Position",jobTitle(p.job)],
+        ["Current stage",stages[p.stage]],
+        ["Stage options",allowedNext(p.stage).map(i=>stages[i]).join(" or ") || "Terminal state"]
+      ];
+      values.forEach(([key,val])=>{
+        const dt=document.createElement("dt");dt.textContent=key;
+        const dd=document.createElement("dd");dd.textContent=val;
+        details.append(dt,dd);
+      });
+      const next=byId("hz-next");
+      next.replaceChildren();
+      for(const target of allowedNext(p.stage))next.append(option(target,stages[target]));
+      byId("hz-update").disabled=!next.options.length;
+      const controls=byId("hz-stage-controls");
+      controls.hidden=!next.options.length;
+      const history=byId("hz-history");
+      history.replaceChildren();
+      const events=data.events.filter(event=>event.applicationId===p.id).slice().reverse();
+      if(!events.length){
+        const li=document.createElement("li");li.textContent="No local stage changes recorded.";history.append(li);
+      } else {
+        for(const event of events){
+          const li=document.createElement("li");
+          li.textContent=event.date+" · "+stages[event.from]+" → "+stages[event.to];
+          history.append(li);
+        }
+      }
+      if(!dialog.open)dialog.showModal();
+    }
+    byId("hz-add-person").addEventListener("submit",(event)=>{
+      event.preventDefault();
+      const name=byId("hz-new-name").value.trim().replace(/\s+/g," ");
+      const jobId=Number(addRole.value);
+      if(name.length<2||name.length>70||!data.jobs.some(j=>j.id===jobId)){
+        announce("Enter a fictional name (2–70 characters) and choose an existing job.");return;
+      }
+      if(data.people.some(p=>p.job===jobId&&p.name.toLocaleLowerCase()===name.toLocaleLowerCase())){
+        announce("An application with that name and job already exists.");return;
+      }
+      data.people.push({id:data.nextPersonId++,name,job:jobId,stage:0});
+      persist();render();
+      byId("hz-add-person").reset();
+      announce("Added an application for "+name+". Open its card to change its stage.");
+    });
+    byId("hz-add-job").addEventListener("submit",(event)=>{
+      event.preventDefault();
+      const title=byId("hz-new-job").value.trim().replace(/\s+/g," ");
+      if(title.length<3||title.length>80){announce("Enter a job title of 3–80 characters.");return;}
+      if(data.jobs.some(j=>j.title.toLocaleLowerCase()===title.toLocaleLowerCase())){announce("That job opening already exists.");return;}
+      data.jobs.push({id:data.nextJobId++,title});
+      persist();render();
+      byId("hz-add-job").reset();
+      announce("Created the fictional job opening: "+title);
+    });
+    byId("hz-update").addEventListener("click",()=>{
+      const p=data.people.find(person=>person.id===selectedId);
+      if(!p)return;
+      const to=Number(byId("hz-next").value);
+      if(!allowedNext(p.stage).includes(to)){announce("Invalid stage transition.");return;}
+      const from=p.stage;
+      p.stage=to;
+      data.events.push({applicationId:p.id,from,to,date:new Date().toLocaleString()});
+      persist();render();show(p.id);
+      announce("Saved stage change: "+stages[from]+" → "+stages[to]+".");
+    });
+    byId("hz-export").addEventListener("click",()=>{
+      const payload=JSON.stringify({description:"Fictional local recruitment demo",jobs:data.jobs,applications:data.people,localChanges:data.events},null,2);
+      const blob=new Blob([payload],{type:"application/json"});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement("a");
+      a.href=url;a.download="recruitment-demo-local-data.json";
+      document.body.append(a);a.click();a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),1500);
+      announce("Exported the local fictional dataset.");
+    });
+    byId("hz-reset").addEventListener("click",()=>{
+      if(!confirm("Reset this browser's fictional applicants, jobs and stage history?"))return;
+      data=seed();persist();
+      search.value="";jobFilter.value="";
+      render();announce("The fictional example dataset has been restored.");
+    });
+    search.addEventListener("input",render);
+    jobFilter.addEventListener("change",render);
+    if(!storeAvailable)announce("Saved browser data was unavailable or invalid. Showing a fresh demo.");
+    render();
   })();
   </script>
 </section>
