@@ -1,0 +1,96 @@
+---
+layout: page
+title: "Recruitment Workflow — Interactive Demo"
+permalink: /research/recruitment-system/demo/
+nav: false
+description: "Explore an interactive, read-only recruitment pipeline with fictional data."
+---
+
+<section class="hz-demo" aria-labelledby="hz-demo-heading">
+  <style>
+    .hz-demo{--ink:#162438;--muted:#536477;--line:#dce4ed;--panel:#fff;--bg:#f5f7fb;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .hz-demo *{box-sizing:border-box}.hz-demo button,.hz-demo input,.hz-demo select{font:inherit}.hz-demo button:focus-visible,.hz-demo input:focus-visible,.hz-demo select:focus-visible{outline:3px solid #4f76d6;outline-offset:2px}
+    .hz-demo .hero{background:#142b43;color:#fff;border-radius:16px;padding:clamp(22px,4vw,42px);margin:10px 0 20px}
+    .hz-demo .eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.11em;color:#a9d1f4;text-transform:uppercase}.hz-demo h1{color:#fff!important;font-size:clamp(1.45rem,3vw,2.25rem);margin:8px 0 12px!important;line-height:1.22}.hz-demo .hero p{max-width:72ch;color:#e3edf6;margin:0}
+    .hz-demo .notice{background:#eef4fa;border:1px solid #cbd9ec;padding:12px 16px;border-radius:10px;font-size:.87rem;line-height:1.55;margin:0 0 18px}
+    .hz-demo .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:22px}.hz-demo .metric{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px}.hz-demo .metric .value{font-size:1.85rem;font-weight:750;line-height:1.3}.hz-demo .metric .label{font-size:.8rem;color:var(--muted)}
+    .hz-demo .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin:22px 0 12px}.hz-demo .controls{display:flex;gap:10px;flex-wrap:wrap}.hz-demo label{display:flex;flex-direction:column;font-size:.8rem;font-weight:650;gap:5px}.hz-demo input,.hz-demo select{background:#fff;color:var(--ink);border:1px solid #aab9c8;border-radius:8px;padding:10px 12px;min-height:42px}.hz-demo input{width:min(260px,85vw)}.hz-demo .count{font-size:.88rem;color:var(--muted);padding:0 0 8px}
+    .hz-demo .board-scroll{overflow-x:auto;padding:0 0 15px}.hz-demo .board{display:grid;grid-template-columns:repeat(6,minmax(190px,1fr));gap:12px;min-width:1210px}.hz-demo .column{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px;min-height:185px}.hz-demo .column h2{display:flex;align-items:center;justify-content:space-between;font-size:.88rem!important;font-weight:700!important;margin:0 0 12px!important;color:var(--ink)!important}.hz-demo .total{background:#e2e9f2;border-radius:20px;padding:2px 8px;color:#334761;font-size:.76rem}
+    .hz-demo .person{width:100%;text-align:left;display:block;background:#fff;border:1px solid #dce4eb;border-radius:10px;margin:0 0 9px;padding:12px;cursor:pointer;color:var(--ink)}.hz-demo .person:hover{border-color:#4879a9;box-shadow:0 2px 10px #1d395416}.hz-demo .person strong{display:block;font-size:.84rem}.hz-demo .person span{display:block;font-size:.75rem;color:var(--muted);margin-top:5px;line-height:1.45}.hz-demo .empty{font-size:.77rem;color:var(--muted);padding:8px}
+    .hz-demo .footnote{font-size:.81rem;color:var(--muted);line-height:1.6}.hz-demo dialog{max-width:490px;width:calc(100% - 36px);border:0;border-radius:16px;padding:25px;background:#fff;color:var(--ink);box-shadow:0 30px 80px #182d4e55}.hz-demo dialog::backdrop{background:#10223890}.hz-demo dialog h2{color:var(--ink);font-size:1.32rem;margin:0 0 12px}.hz-demo dialog p{margin:8px 0}.hz-demo .close{background:#173652;color:#fff;border:0;border-radius:8px;padding:9px 15px;cursor:pointer;margin-top:15px}.hz-demo .detail-grid{display:grid;grid-template-columns:100px 1fr;gap:6px 12px;font-size:.91rem}.hz-demo .detail-grid dt{color:var(--muted)}.hz-demo .detail-grid dd{margin:0;font-weight:600}.hz-demo a{color:#195f9e}
+    @media(max-width:740px){.hz-demo .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.hz-demo .toolbar{display:block}.hz-demo .controls{margin-top:12px}.hz-demo .controls label{flex:1}.hz-demo .controls input{max-width:100%;width:100%}.hz-demo .hero{border-radius:12px}}
+  </style>
+  <header class="hero">
+    <div class="eyebrow">Interactive system preview · Synthetic data</div>
+    <h1 id="hz-demo-heading">Recruitment workflow explorer</h1>
+    <p>Explore a six-stage hiring pipeline, filter applications, and inspect record-level status. This browser-only preview is read-only; the full FastAPI/SQLite implementation supports persisted stage changes and an audit trail.</p>
+  </header>
+  <p class="notice"><strong>Read-only demonstration.</strong> Every name, position and count is fictional. This preview contains no real applicant data and does not assess or rank people. It is a static interface; data edits and database persistence are available only in the local full-stack version.</p>
+  <div class="metrics" aria-label="Snapshot metrics">
+    <div class="metric"><div class="value" id="hz-positions">4</div><div class="label">Fictional openings</div></div>
+    <div class="metric"><div class="value" id="hz-total">14</div><div class="label">Fictional applications</div></div>
+    <div class="metric"><div class="value" id="hz-active">0</div><div class="label">Applications in progress</div></div>
+    <div class="metric"><div class="value">6</div><div class="label">Workflow stages</div></div>
+  </div>
+  <div class="toolbar">
+    <div><strong>Candidate pipeline</strong><div class="footnote">Select a card to inspect its state. Scroll horizontally for all stages.</div></div>
+    <div class="controls">
+      <label for="hz-search">Search fictional names<input id="hz-search" type="search" autocomplete="off" placeholder="e.g. Alex Rivera"></label>
+      <label for="hz-job">Filter position<select id="hz-job"><option value="">All positions</option></select></label>
+    </div>
+  </div>
+  <p class="count" id="hz-count" role="status" aria-live="polite"></p>
+  <div class="board-scroll" tabindex="0" aria-label="Horizontally scrollable hiring board"><div id="hz-board" class="board"></div></div>
+  <p class="footnote">Measurement boundary: counts describe the current application-stage snapshot for this fictional dataset, not unique people over time, platform behavior, hiring success or causal effects. The full application provides real SQLite transactions, version-checked transitions and an audit log for software testing.</p>
+  <p><a href="{{ '/research/recruitment-system/' | relative_url }}">Read the systems case study</a> · <a href="{{ '/research/' | relative_url }}">Research portfolio</a></p>
+  <dialog id="hz-details" aria-labelledby="hz-detail-heading">
+    <h2 id="hz-detail-heading">Application detail</h2>
+    <dl class="detail-grid" id="hz-detail-body"></dl>
+    <p class="footnote">Synthetic seed snapshot. This static preview has no individual change events. Use the full-stack version to create and inspect real software audit records.</p>
+    <form method="dialog"><button class="close">Close</button></form>
+  </dialog>
+  <script>
+  (() => {
+    const jobs=['Product Design Researcher','Data Analyst','Frontend Engineer','Community Operations Associate'];
+    const stages=['Applied','Screening','Interview','Offer','Hired','Rejected'];
+    const people=[
+      ['Alex Rivera',0,1],['Morgan Chen',0,2],['Sam Taylor',0,0],['Casey Patel',0,3],
+      ['Jordan Lee',1,0],['Riley Kim',1,1],['Avery Thompson',1,4],['Drew Nguyen',1,5],
+      ['Jamie Park',2,2],['Charlie Brown',2,1],['Taylor Brooks',2,0],
+      ['Reese Davis',3,0],['Blair Wilson',3,2],['Skylar James',3,5]
+    ].map(([name,job,stage],index)=>({id:index+1,name,job,stage}));
+    const byId=(id)=>document.getElementById(id);
+    const search=byId('hz-search'),job=byId('hz-job'),board=byId('hz-board'),count=byId('hz-count');
+    jobs.forEach((label,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=label;job.append(option)});
+    byId('hz-total').textContent=String(people.length);
+    byId('hz-active').textContent=String(people.filter(p=>p.stage<4).length);
+    function render(){
+      const q=search.value.toLowerCase().trim();
+      const selected=job.value;
+      const matches=people.filter(p=>p.name.toLowerCase().includes(q)&&(selected===''||String(p.job)===selected));
+      count.textContent='Showing '+matches.length+' of '+people.length+' fictional applications.';
+      board.replaceChildren();
+      stages.forEach((stage,index)=>{
+        const section=document.createElement('section');section.className='column';section.setAttribute('aria-label',stage+' applications');
+        const heading=document.createElement('h2');heading.textContent=stage;
+        const badge=document.createElement('span');badge.className='total';const rows=matches.filter(p=>p.stage===index);badge.textContent=String(rows.length);heading.append(badge);section.append(heading);
+        if(!rows.length){const empty=document.createElement('p');empty.className='empty';empty.textContent='No matching applications';section.append(empty)}
+        rows.forEach(p=>{const button=document.createElement('button');button.type='button';button.className='person';
+          const name=document.createElement('strong');name.textContent=p.name;
+          const position=document.createElement('span');position.textContent=jobs[p.job];
+          button.append(name,position);button.addEventListener('click',()=>show(p));section.append(button)
+        });board.append(section);
+      });
+    }
+    function show(p){
+      byId('hz-detail-heading').textContent=p.name;
+      const details=byId('hz-detail-body');details.replaceChildren();
+      [['Record','#'+p.id],['Position',jobs[p.job]],['Current stage',stages[p.stage]],['Next eligible stage',p.stage===4||p.stage===5?'Terminal state':p.stage===3?'Hired or Rejected':stages[p.stage+1]+' or Rejected']].forEach(([key,value])=>{
+        const dt=document.createElement('dt');dt.textContent=key;const dd=document.createElement('dd');dd.textContent=value;details.append(dt,dd)
+      });
+      byId('hz-details').showModal();
+    }
+    search.addEventListener('input',render);job.addEventListener('change',render);render();
+  })();
+  </script>
+</section>
