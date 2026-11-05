@@ -42,7 +42,7 @@ The system does **not** score candidates, recommend hiring decisions, or analyze
 
 ## Interactive preview
 
-**[Open the interactive recruitment management demo]({{ '/research/recruitment-system/demo/' | relative_url }})** — add fictional applicants or job openings, filter applications, update hiring stages, inspect event history, and export example data. The public version saves changes only in your own browser; the separate FastAPI/SQLite implementation provides server-side persistence and workflow validation.
+**[Open the interactive recruitment management demo]({{ '/assets/recruitment-demo.html' | relative_url }})** — add fictional applicants or job openings, filter applications, update hiring stages, inspect event history, and export example data. The public version saves changes only in your own browser; the separate FastAPI/SQLite implementation provides server-side persistence and workflow validation.
 
 ## Engineering checks
 
