@@ -24,7 +24,7 @@ Research, empirical methods, and a working software prototype—three complement
 /* Subtle elevation only on pointer-hover devices, without moving neighboring cards. */
 @media (hover:hover) and (pointer:fine){
   .hz-featured-card{position:relative;transition:transform .22s ease,box-shadow .22s ease;transform-origin:center center}
-  .hz-featured-card:hover,.hz-featured-card:focus-within{transform:scale(1.02);z-index:2;box-shadow:0 14px 34px rgba(22,42,67,.14)}
+  .hz-featured-card:hover,.hz-featured-card:focus-within{transform:scale(1.05);z-index:2;box-shadow:0 14px 34px rgba(22,42,67,.14)}
 }
 @media (prefers-reduced-motion:reduce){
   .hz-featured-card{transition:none!important}
