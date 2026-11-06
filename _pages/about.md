@@ -3,7 +3,7 @@ layout: academic-home
 title: About
 permalink: /
 nav: false
-description: Academic website of Hong Zhan, featuring research in human–AI interaction, computational social science, information science, and software projects.
+description: Academic website of Hong (Ivy) Zhan, featuring research in human–AI interaction, computational social science, information science, and software projects.
 ---
 
 ## About
