@@ -110,6 +110,75 @@ async function go(page, url, label) {
     assert.ok(homeDemoHref && homeDemoHref.endsWith("/assets/recruitment-demo.html"), "Homepage demo link incorrect: " + homeDemoHref);
     await mobile.screenshot({ path: resultsDir + "/mobile-home.png", fullPage: true });
     passed("Three research cards and demo link are present on live homepage");
+
+    // Verify the current homepage itself, not only the recruitment demo.
+    const desktopHome = await context.newPage();
+    desktopHome.on("pageerror", (error) => runtimeErrors.push(error.message));
+    await desktopHome.setViewportSize({ width: 1440, height: 900 });
+    await go(desktopHome, base + "/", "Desktop academic homepage");
+    const desktopCards = desktopHome.locator(".hz-featured-card");
+    assert.equal(await desktopCards.count(), 3);
+    const desktopGeometry = await desktopCards.evaluateAll((items) => items.map((card) => ({
+      box: (() => { const r = card.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width, height: r.height }; })(),
+      rows: Array.from(card.children).map((element) => element.getBoundingClientRect().top)
+    })));
+    assert.ok(desktopGeometry.every((item) => Math.abs(item.box.y - desktopGeometry[0].box.y) < 2), "Desktop cards must start at the same vertical position");
+    assert.ok(desktopGeometry.every((item) => Math.abs(item.box.height - desktopGeometry[0].box.height) < 2), "Desktop cards must have identical heights");
+    assert.ok(desktopGeometry.every((item) => item.rows.length === 6), "Each card must have six alignment rows");
+    for (let row = 0; row < 6; row++) {
+      const positions = desktopGeometry.map((item) => item.rows[row]);
+      assert.ok(Math.max(...positions) - Math.min(...positions) < 2, "Desktop card content row " + (row + 1) + " is misaligned: " + JSON.stringify(positions));
+    }
+    const desktopOverflow = await desktopHome.evaluate(() => ({
+      viewport: document.documentElement.clientWidth,
+      content: document.documentElement.scrollWidth
+    }));
+    assert.ok(desktopOverflow.content <= desktopOverflow.viewport + 2, "Desktop overflow: " + JSON.stringify(desktopOverflow));
+    await desktopHome.screenshot({ path: resultsDir + "/desktop-home.png", fullPage: true });
+    passed("Desktop: three equal-height cards, all six content rows aligned, no horizontal overflow");
+
+    const dropdown = desktopHome.locator(".site-navigation-dropdown");
+    await dropdown.locator("summary").click();
+    assert.equal(await dropdown.locator(".site-navigation-dropdown-menu a").count(), 3);
+    assert.ok(await dropdown.locator(".site-navigation-dropdown-menu").isVisible());
+    await desktopHome.keyboard.press("Escape");
+    assert.equal(await dropdown.getAttribute("open"), null, "Escape should close dropdown");
+    await dropdown.locator("summary").focus();
+    await desktopHome.keyboard.press("Enter");
+    assert.ok(await dropdown.locator(".site-navigation-dropdown-menu").isVisible(), "Keyboard Enter must open dropdown");
+    await desktopHome.locator("h1").first().click();
+    assert.equal(await dropdown.getAttribute("open"), null, "Outside click should close dropdown");
+    passed("Projects dropdown opens with click/keyboard and closes with Escape/outside click");
+    for (const route of ["/research/genai-trust/", "/research/masters/", "/research/recruitment-system/"]) {
+      await dropdown.locator("summary").click();
+      await dropdown.locator('a[href$="' + route + '"]').click();
+      assert.equal(new URL(desktopHome.url()).pathname, "/Ivyhongzhan" + route, "Project link must navigate to its own page");
+      await go(desktopHome, base + "/", "Return from " + route);
+    }
+    passed("All three project navigation links open distinct detail pages");
+    await desktopHome.close();
+
+    await go(mobile, base + "/", "Mobile homepage layout verification");
+    const mobileCards = mobile.locator(".hz-featured-card");
+    const mobileGeometry = await mobileCards.evaluateAll((items) => items.map((card) => {
+      const r = card.getBoundingClientRect();
+      return { x: r.x, y: r.y, width: r.width, height: r.height };
+    }));
+    assert.equal(mobileGeometry.length, 3);
+    assert.ok(mobileGeometry.every((item) => Math.abs(item.x - mobileGeometry[0].x) < 2), "Mobile cards should use one aligned column");
+    assert.ok(mobileGeometry[0].y + mobileGeometry[0].height < mobileGeometry[1].y && mobileGeometry[1].y + mobileGeometry[1].height < mobileGeometry[2].y, "Mobile cards should be stacked without overlap");
+    const mobileHomeWidth = await mobile.evaluate(() => ({
+      viewport: document.documentElement.clientWidth,
+      content: document.documentElement.scrollWidth
+    }));
+    assert.ok(mobileHomeWidth.content <= mobileHomeWidth.viewport + 2, "Mobile academic homepage overflows horizontally: " + JSON.stringify(mobileHomeWidth));
+    await mobile.locator(".site-navigation-dropdown summary").click();
+    const mobileMenu = await mobile.locator(".site-navigation-dropdown-menu").boundingBox();
+    assert.ok(mobileMenu && mobileMenu.x >= -1 && mobileMenu.x + mobileMenu.width <= 391, "Mobile Projects menu extends beyond viewport: " + JSON.stringify(mobileMenu));
+    await mobile.keyboard.press("Escape");
+    await mobile.screenshot({ path: resultsDir + "/mobile-home-verified.png", fullPage: true });
+    passed("Mobile: single-column cards, no overlap or page overflow, dropdown fully visible");
+
     await isolated.close();
 
     page.once("dialog", (dialog) => dialog.accept());
