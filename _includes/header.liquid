@@ -3,24 +3,34 @@
     <div class="site-navigation-inner">
       <ul class="site-navigation-links">
         <li>
-          <a
-            href="{{ '/' | relative_url }}"
-            {% if page.permalink == '/' %}
-              aria-current="page"
-            {% endif %}
-            >About</a
-          >
+          <a href="{{ '/' | relative_url }}" {% if page.permalink == '/' %}aria-current="page"{% endif %}>About</a>
         </li>
         <li>
-          <a
-            href="{{ '/research/' | relative_url }}"
-            {% if page.permalink contains '/research/' %}
-              aria-current="page"
-            {% endif %}
-            >Research</a
-          >
+          <details class="site-navigation-dropdown">
+            <summary>Projects</summary>
+            <ul class="site-navigation-dropdown-menu" aria-label="Project pages">
+              <li><a href="{{ '/research/genai-trust/' | relative_url }}" {% if page.permalink == '/research/genai-trust/' %}aria-current="page"{% endif %}>Generative AI Trust and Distrust</a></li>
+              <li><a href="{{ '/research/masters/' | relative_url }}" {% if page.permalink == '/research/masters/' %}aria-current="page"{% endif %}>Cross-platform Social Media Research</a></li>
+              <li><a href="{{ '/research/recruitment-system/' | relative_url }}" {% if page.permalink == '/research/recruitment-system/' %}aria-current="page"{% endif %}>Recruitment Management System</a></li>
+            </ul>
+          </details>
         </li>
       </ul>
     </div>
   </nav>
 </header>
+<script>
+  (() => {
+    const menu = document.querySelector(".site-navigation-dropdown");
+    if (!menu) return;
+    document.addEventListener("click", (event) => {
+      if (menu.open && !menu.contains(event.target)) menu.open = false;
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menu.open) {
+        menu.open = false;
+        menu.querySelector("summary").focus();
+      }
+    });
+  })();
+</script>
