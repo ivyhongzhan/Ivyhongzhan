@@ -7,7 +7,7 @@ nav_order: 2
 description: Research on trust in generative AI across technical online communities.
 ---
 
-## AI trust across Reddit communities
+## Beyond the Aggregate: AI trust across Reddit communities
 
 **Sole-author research · 2026 · Under review at PACM HCI (CSCW)**
 

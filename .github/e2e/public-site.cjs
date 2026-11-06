@@ -35,7 +35,7 @@ async function go(page, url, label) {
     await page.getByText("Design decisions and trade-offs").waitFor({timeout:10000});
     const heroText = await page.locator(".hero").innerText();
     assert.match(heroText, /Zero Point HR/);
-    assert.match(heroText, /Alex Rivera/);
+    assert.match(heroText, /Select an applicant in Screening/);
     assert.match(await page.locator("footer").innerText(), /Fictional data, for portfolio demonstration only/);
     passed("Hero, design rationale and demo-specific footer render");
     await page.screenshot({ path: resultsDir + "/desktop-demo.png", fullPage: true });
