@@ -21,15 +21,15 @@ Across 8,519 valid trust/distrust classifications from five technical Reddit com
 
 **Methods:** Designed and conducted 15 semi-structured interviews; transcribed, translated and organized materials; conducted NVivo-assisted thematic analysis. This qualitative study examined participation barriers, cross-platform information practices and cultural belonging. Interview transcripts and identifying participant records are not public.
 
-[Read the MSc research case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/masters/)
+[Read the MSc research case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/masters/) · [2026 Python methods companion (synthetic data)](https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit)
 
 ### Recruitment Management System — BEng Topic (2021), Software Implementation (2026)
 
-**Research/design question:** How can a hiring workflow expose stage-specific actions and an inspectable record of candidate progression?
+**Project context:** A 2026 reconstruction of a recruitment workflow related to my 2021 BEng capstone topic and professional recruitment-operations experience.
 
-**Engineering:** FastAPI, SQLite and browser UI; six-stage application pipeline, validation, stage transitions, persistence and action history. The public browser demo is a standalone implementation using fictional data and local browser storage. 
+**Engineering:** Java 21, Spring Boot, Spring Data JPA and MySQL 8.4; six-stage pipeline, validated transitions, persistence and operation-event history. The public JavaScript demo uses fictional data and browser-local storage; it is not connected to MySQL. 
 
-[Systems case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/recruitment-system/) · [Interactive synthetic-data demo](https://ivyhongzhan.github.io/Ivyhongzhan/assets/recruitment-demo.html)
+[Systems case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/recruitment-system/) · [Java/MySQL source & tests](https://github.com/ivyhongzhan/recruitment-management-system) · [Interactive synthetic-data demo](https://ivyhongzhan.github.io/Ivyhongzhan/assets/recruitment-demo.html)
 
 ## Contact
 
