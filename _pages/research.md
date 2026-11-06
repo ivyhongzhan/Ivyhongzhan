@@ -75,10 +75,21 @@ Designed and conducted **15 semi-structured interviews** with Chinese students s
 
 ## 03. Recruitment Management System
 
-**BEng capstone topic · 2021 | Current web implementation · 2026**
+**BEng Thesis Project · 2021 | Current web reconstruction · 2026**
 
 A working information-system prototype with searchable applicants, six-stage recruitment boards, persisted records, state-transition rules and inspectable event history. The engineering artifact supports HCI interaction-design analysis and information-systems workflow evaluation. All demonstration records are synthetic; no empirical usability outcomes are claimed.
 
 **[Explore the systems case study]({{ '/research/recruitment-system/' | relative_url }})**
 
 **[Try the interactive synthetic-data demo]({{ '/assets/recruitment-demo.html' | relative_url }})**
+
+
+---
+
+## 04. AI Trust & Verification
+
+**HCI research prototype · 2026 · Interactive demo**
+
+An interactive, human-led claim–evidence review workspace for documenting sources, judgments and intended use when evaluating AI-generated answers. Built with React and TypeScript and demonstrated with synthetic scenarios. This is a **working prototype, not a completed user study or validated trust intervention**.
+
+**[Explore the research prototype]({{ '/research/ai-trust-verification/' | relative_url }})** · [Try the interactive demo](https://ivyhongzhan.github.io/ai-trust-verification/) · [View source code](https://github.com/ivyhongzhan/ai-trust-verification)

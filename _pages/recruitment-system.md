@@ -8,7 +8,7 @@ description: "A hiring-workflow prototype with state transitions, operation-even
 
 # Recruitment Management System
 
-**BEng capstone · Wuchang University of Technology · 2021**  
+**BEng Thesis Project · Wuchang University of Technology · 2021**  
 **Current portfolio implementation · 2026**
 
 The **2021 BEng graduation design** used **Spring Boot and MySQL**. The **2026 system reconstruction** also uses **Java, Spring Boot, Spring Data JPA and MySQL**, while preserving the reviewed HTML, CSS and JavaScript interface. It implements job and application management, validated six-stage transitions, persistent records and operation-event history. [View the complete source, Docker Compose setup and integration tests on GitHub](https://github.com/ivyhongzhan/recruitment-management-system). The [public browser demo]({{ '/assets/recruitment-demo.html' | relative_url }}) is a separate JavaScript prototype that stores synthetic records in the visitor's browser with `localStorage`; it is **not connected to the project's MySQL database**.

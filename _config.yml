@@ -147,6 +147,7 @@ include:
     "_pages/about.md",
     "_pages/research.md",
     "_pages/genai-trust.md",
+    "_pages/ai-trust-verification.md",
     "_pages/projects.md",
     "_pages/repositories.md",
     "_pages/masters-research.md",

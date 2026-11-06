@@ -105,11 +105,11 @@ async function go(page, url, label) {
     }
     await go(mobile, base + "/", "Research homepage mobile reread");
     const cards = mobile.locator(".hz-featured-card");
-    assert.equal(await cards.count(), 3);
+    assert.equal(await cards.count(), 4);
     const homeDemoHref = await mobile.locator(".hz-featured-card a").filter({ hasText: "Interactive demo" }).first().getAttribute("href");
     assert.ok(homeDemoHref && homeDemoHref.endsWith("/assets/recruitment-demo.html"), "Homepage demo link incorrect: " + homeDemoHref);
     await mobile.screenshot({ path: resultsDir + "/mobile-home.png", fullPage: true });
-    passed("Three research cards and demo link are present on live homepage");
+    passed("Four research/project cards and recruitment demo link are present on live homepage");
 
     // Verify the current homepage itself, not only the recruitment demo.
     const desktopHome = await context.newPage();
@@ -117,25 +117,27 @@ async function go(page, url, label) {
     await desktopHome.setViewportSize({ width: 1440, height: 900 });
     await go(desktopHome, base + "/", "Desktop academic homepage");
     const desktopCards = desktopHome.locator(".hz-featured-card");
-    assert.equal(await desktopCards.count(), 3);
+    assert.equal(await desktopCards.count(), 4);
     const desktopGeometry = await desktopCards.evaluateAll((items) => items.map((card) => ({
       box: (() => { const r = card.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width, height: r.height }; })(),
       rows: Array.from(card.children).map((element) => element.getBoundingClientRect().top)
     })));
-    assert.ok(desktopGeometry.every((item) => Math.abs(item.box.y - desktopGeometry[0].box.y) < 2), "Desktop cards must start at the same vertical position");
-    assert.ok(desktopGeometry.every((item) => Math.abs(item.box.height - desktopGeometry[0].box.height) < 2), "Desktop cards must have identical heights");
     assert.ok(desktopGeometry.every((item) => item.rows.length === 6), "Each card must have six alignment rows");
-    for (let row = 0; row < 6; row++) {
-      const positions = desktopGeometry.map((item) => item.rows[row]);
-      assert.ok(Math.max(...positions) - Math.min(...positions) < 2, "Desktop card content row " + (row + 1) + " is misaligned: " + JSON.stringify(positions));
+    for (const [left, right] of [[0, 1], [2, 3]]) {
+      assert.ok(Math.abs(desktopGeometry[left].box.y - desktopGeometry[right].box.y) < 2, "Paired desktop cards must start together");
+      assert.ok(Math.abs(desktopGeometry[left].box.height - desktopGeometry[right].box.height) < 2, "Paired desktop cards must have equal heights");
+      for (let row = 0; row < 6; row++) {
+        assert.ok(Math.abs(desktopGeometry[left].rows[row] - desktopGeometry[right].rows[row]) < 2, "Card section " + (row + 1) + " misaligned within pair " + left);
+      }
     }
+    assert.ok(desktopGeometry[2].box.y > desktopGeometry[0].box.y + desktopGeometry[0].box.height, "Second card row must begin below first");
     const desktopOverflow = await desktopHome.evaluate(() => ({
       viewport: document.documentElement.clientWidth,
       content: document.documentElement.scrollWidth
     }));
     assert.ok(desktopOverflow.content <= desktopOverflow.viewport + 2, "Desktop overflow: " + JSON.stringify(desktopOverflow));
     await desktopHome.screenshot({ path: resultsDir + "/desktop-home.png", fullPage: true });
-    passed("Desktop: three equal-height cards, all six content rows aligned, no horizontal overflow");
+    passed("Desktop: two-by-two cards, aligned content rows, no horizontal overflow");
     const firstCard = desktopCards.first();
     await firstCard.hover();
     await desktopHome.waitForTimeout(350);
@@ -153,7 +155,7 @@ async function go(page, url, label) {
 
     const dropdown = desktopHome.locator(".site-navigation-dropdown");
     await dropdown.locator("summary").click();
-    assert.equal(await dropdown.locator(".site-navigation-dropdown-menu a").count(), 3);
+    assert.equal(await dropdown.locator(".site-navigation-dropdown-menu a").count(), 4);
     assert.ok(await dropdown.locator(".site-navigation-dropdown-menu").isVisible());
     await desktopHome.keyboard.press("Escape");
     assert.equal(await dropdown.getAttribute("open"), null, "Escape should close dropdown");
@@ -163,7 +165,7 @@ async function go(page, url, label) {
     await desktopHome.locator("h1").first().click();
     assert.equal(await dropdown.getAttribute("open"), null, "Outside click should close dropdown");
     passed("Projects dropdown opens with click/keyboard and closes with Escape/outside click");
-    for (const route of ["/research/genai-trust/", "/research/masters/", "/research/recruitment-system/"]) {
+    for (const route of ["/research/genai-trust/", "/research/masters/", "/research/recruitment-system/", "/research/ai-trust-verification/"]) {
       await dropdown.locator("summary").click();
       await dropdown.locator('a[href$="' + route + '"]').click();
       assert.equal(new URL(desktopHome.url()).pathname, "/Ivyhongzhan" + route, "Project link must navigate to its own page");
@@ -178,9 +180,11 @@ async function go(page, url, label) {
       const r = card.getBoundingClientRect();
       return { x: r.x, y: r.y, width: r.width, height: r.height };
     }));
-    assert.equal(mobileGeometry.length, 3);
+    assert.equal(mobileGeometry.length, 4);
     assert.ok(mobileGeometry.every((item) => Math.abs(item.x - mobileGeometry[0].x) < 2), "Mobile cards should use one aligned column");
-    assert.ok(mobileGeometry[0].y + mobileGeometry[0].height < mobileGeometry[1].y && mobileGeometry[1].y + mobileGeometry[1].height < mobileGeometry[2].y, "Mobile cards should be stacked without overlap");
+    for (let i = 1; i < mobileGeometry.length; i++) {
+      assert.ok(mobileGeometry[i - 1].y + mobileGeometry[i - 1].height < mobileGeometry[i].y, "Mobile cards should be stacked without overlap");
+    }
     const mobileHomeWidth = await mobile.evaluate(() => ({
       viewport: document.documentElement.clientWidth,
       content: document.documentElement.scrollWidth
