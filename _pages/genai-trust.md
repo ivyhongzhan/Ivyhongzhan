@@ -10,52 +10,43 @@ description: "Beyond the Aggregate: Trust and Distrust in Generative AI Across T
 
 _Trust and Distrust in Generative AI Across Technical Reddit Communities and Time_
 
-Sole-author research · 2026<br>
-_Manuscript under review at PACM HCI (CSCW)_
+**Sole-author research · 2026**<br>
+_Under review at PACM HCI (CSCW)_
 
-Human–AI Interaction · Information Science · Computational Social Science
+## Research question
 
-### Overview
+How do pooled classifications of trust and distrust in generative AI compare with patterns within individual Reddit communities and half-year periods?
 
-How do aggregate measures of trust and distrust in generative AI relate to the community-specific and temporal patterns underlying them?
+## What I did
 
-This study examines released computational classifications across five technical Reddit communities, comparing pooled results with community- and time-stratified patterns.
+I conducted a descriptive secondary analysis of data released by Pessianzadeh et al. (2026). I analyzed **8,519 eligible classification records** from five technical Reddit communities and **4,964 dimension records** in a separate archive.
 
-### Methods & Contributions
+I compared pooled, community, and half-year distributions, documenting the measurement fields, denominators, missing labels, and sparse or unavailable periods. Primary temporal comparisons cover **2023-H1 through 2025-H1**; December 2022 is partial-coverage context only.
 
-- **Research design:** Re-analyzed 8,519 eligible trust/distrust classifications across five technical Reddit communities, comparing pooled, community-level, and half-year patterns.
-- **Measurement and reproducibility:** Analyzed 4,964 dimension records in a separate archive; documented archive-specific denominators, eligibility criteria, and a uniform-field replacement estimand; released frozen results with automated verification checks.
+For dimensions, I used the same released model-output field throughout: `Output_gpt-4.1-2025-04-14_few`. This documented replacement estimand differs from the source study’s mixed-field specification, which could not be reconstructed from the public release.
 
-### Key Findings
+## Main findings
 
-**1. Aggregate patterns differ across communities.**
+- **The pooled leading label does not lead in every community.** _Neither_ accounts for **41.7%** of pooled classifications, compared with **40.0%** for _Trust_. _Trust_ leads in ChatGPTCoding (**43.1%**) and programming (**46.2%**); _Neither_ leads in webdev, GitHub, and compsci.
+- **Several dimension indicators occur frequently.** In the separate dimensions archive, Competence appears in **70.6%** of records, Reliability in **49.4%**, and Familiarity in **45.2%**. Indicators can co-occur within a record.
+- **Community and time views reveal differences in composition and coverage.** A pooled percentage alone does not show these distributions or the sparse and unavailable half-years.
 
-_Neither_ is the most frequent classification overall (41.7%), while _Trust_ leads in ChatGPTCoding (43.1%) and programming (46.2%).
-
-**2. Trust-related indicators capture multiple dimensions.**
-
-Competence (70.6%), Reliability (49.4%), and Familiarity (45.2%) are the most frequently observed indicators in the separate dimensions archive.
-
-**3. Stratification reveals the limits of pooled summaries.**
-
-Pooled summaries do not show community-specific distributions or differences in half-year coverage. Stratified reporting makes these patterns and measurement boundaries explicit.
-
-This work contributes to my broader research interest in how trust in AI is measured and interpreted across social contexts.
-
-### Code & Reproducibility
-
-The public analysis pipeline reconstructs the study's **main numerical results and three principal figures** from the two openly released source archives, without redistributing record-level data. A documented clean-checkout run completed **68/68 specified reproduction checks**; the frozen files and 11 automated unit tests also passed.
-
-This is a bounded computational reproduction, **not** independent validation of the underlying computational labels, construct validity, or the complete anonymized submission. Historical Day 17 workflow gating and the unavailable Day 24 supporting-figure renderer remain explicitly documented.
-
-**[Reproduce from public data](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md)** · [Audit and limitations](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION_AUDIT_20261105.md)
-
-### Research Figure
+The findings support reporting pooled AI-trust discourse summaries alongside community and temporal views. They describe released discourse records, not individual attitudes, population prevalence, or causal effects. The two archives remain separate.
 
 ![Pooled and community-specific distributions of trust and distrust](https://raw.githubusercontent.com/ivyhongzhan/genai-trust-reddit-analysis/main/figures/rq1_figure.png)
 
-_Figure 1. Classification and dimension profiles across five technical Reddit communities. The panels use separate analytical archives and denominators._
+_Figure 1. Classification and dimension profiles across five technical Reddit communities. The panels use separate archives and denominators._
 
-### Research Materials
+## Code and reproduction
 
-[SSRN: Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [GitHub: Code & Reproducibility](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo: Archived Artifacts](https://doi.org/10.5281/zenodo.23666151) · [Public Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md) · [Figure 1 (320 dpi PDF)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure_300dpi.pdf)
+The [public workflow](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md) rebuilds the main numerical results and three principal figure layouts from the public source archives. A documented clean-checkout run passed **68 specified checks**, **11 unit tests**, and **12 frozen-file integrity checks**.
+
+These checks do not validate the original computational labels or reproduce the complete submission. Some historical workflow checks remain blocked, and the original code for two supporting figures is unavailable. The [dated audit](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION_AUDIT_20261105.md) explains the remaining limits. Record-level Reddit data are not redistributed here.
+
+## Research materials
+
+[SSRN preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · [Code and results](https://github.com/ivyhongzhan/genai-trust-reddit-analysis) · [Zenodo v3 archive](https://doi.org/10.5281/zenodo.23666151) · [Figure 1 (PDF; approximately 320 dpi embedded images)](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/figures/rq1_figure_300dpi.pdf)
+
+[Source study](https://doi.org/10.1162/TACL.a.744) · [Source dataset](https://doi.org/10.5281/zenodo.20331918)
+
+[Back to research overview]({{ '/research/' | relative_url }})

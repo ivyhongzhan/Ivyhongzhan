@@ -8,15 +8,15 @@ description: Academic website of Hong (Ivy) Zhan, featuring research in human–
 
 ## About
 
-Hello! I’m Hong Zhan, though you can call me Ivy. My research examines how the **measurement and aggregation of AI-related discourse** influence interpretations of **trust and distrust**. My current work uses **descriptive secondary analysis** of **released classification data** to compare aggregate findings with **community- and time-specific patterns**, with particular attention to **measurement boundaries and data provenance**.
+Hello! I’m Hong Zhan, though you can call me Ivy. I study how people evaluate information, use digital platforms, and express trust in AI. My current research compares released classifications of AI-trust discourse across Reddit communities and time, with attention to what the measures can tell us.
 
-My background spans **computer science and social media research**, including **qualitative interviewing, thematic analysis, quantitative analysis, and information-system development**. These experiences inform my interest in context-sensitive approaches to studying **human–AI interaction**.
+My background combines computer science and social media research. I have designed interview studies, conducted thematic and quantitative analyses, and developed information systems. I want to build on these experiences in human–AI interaction research.
 
 Outside academia, I enjoy traveling, hiking, and learning languages. I’ve visited more than 100 countries and enjoy exploring new places on foot. I’m also studying Spanish, Italian, German, and Japanese.
 
 ## Selected Work
 
-Research, empirical methods, and interactive software prototypes—complementary ways of investigating digital technologies and human experience.
+Computational and qualitative research, recruitment systems, and AI review tools.
 
 <style>
 .hz-featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(6,auto) 20px repeat(6,auto);column-gap:20px;row-gap:0;margin:20px 0 27px}
@@ -59,8 +59,8 @@ Research, empirical methods, and interactive software prototypes—complementary
   <div class="hz-featured-eyebrow">2026 · Sole-author manuscript · PACM HCI (CSCW) under review</div>
   <h3>Beyond the Aggregate: Trust and Distrust in Generative AI</h3>
   <p class="hz-featured-question">How do aggregated AI-trust classifications differ from patterns across communities and time?</p>
-  <p><span class="hz-featured-label">My work.</span> Secondary computational analysis of 8,519 classification records from five technical Reddit communities, with a separate 4,964-record dimension archive; community- and half-year-level descriptive summaries.</p>
-  <p><span class="hz-featured-label">Evidence.</span> <em>Neither</em> is the largest pooled category (41.7%); <em>Trust</em> leads in two communities. Source provenance, denominators and reproduction limits are documented.</p>
+  <p><span class="hz-featured-label">My work.</span> I analyzed 8,519 released classification records from five technical Reddit communities and a separate archive of 4,964 dimension records, comparing distributions by community and half-year.</p>
+  <p><span class="hz-featured-label">Finding.</span> <em>Neither</em> is the most frequent pooled label (41.7%), while <em>Trust</em> leads in two of the five communities.</p>
   <div class="hz-featured-links">
     <a href="{{ '/research/genai-trust/' | relative_url }}">Study & findings</a>
     <a href="https://github.com/ivyhongzhan/genai-trust-reddit-analysis">Code & verification</a>
@@ -71,8 +71,8 @@ Research, empirical methods, and interactive software prototypes—complementary
   <div class="hz-featured-eyebrow">2023 · MSc dissertation · University of York</div>
   <h3>Cross-platform Social Media & Information Practices</h3>
   <p class="hz-featured-question">How do different platform and cultural environments shape Chinese students' communication and sense of belonging in the UK?</p>
-  <p><span class="hz-featured-label">My work.</span> Designed and conducted 15 semi-structured interviews; recorded, transcribed, translated and organized materials; used NVivo-assisted thematic coding and Excel.</p>
-  <p><span class="hz-featured-label">Research focus.</span> Cross-platform communication, language barriers, information credibility and cultural adaptation, informed by interview coding and analysis of social-media posts.</p>
+  <p><span class="hz-featured-label">My work.</span> I designed and conducted 15 semi-structured interviews, recorded and prepared the materials, and used NVivo and Excel for thematic analysis and organization.</p>
+  <p><span class="hz-featured-label">Findings.</span> Interview coding and social-media-post analysis identified platform-specific communication, language barriers, and cross-platform credibility checking in students’ accounts of cultural adaptation.</p>
   <div class="hz-featured-links">
     <a href="{{ '/research/masters/' | relative_url }}">Research case study & methods</a>
     <a href="https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit">2026 Python companion (synthetic data)</a>
@@ -82,8 +82,8 @@ Research, empirical methods, and interactive software prototypes—complementary
   <div class="hz-featured-eyebrow">2021 · BEng Thesis Project</div>
   <h3>Recruitment Management System</h3>
   <p class="hz-featured-question">An interactive recruitment pipeline informed by practical screening and placement workflows at Zero Point HR.</p>
-  <p><span class="hz-featured-label">My work.</span> Implemented a recruitment workflow reconstruction using Java, Spring Boot and MySQL, with six-stage application tracking, validated transitions and operation-event history.</p>
-  <p><span class="hz-featured-label">Try it.</span> The browser demo supports fictional applicant creation, search, stage transitions and local history. It uses synthetic data and browser-local storage.</p>
+  <p><span class="hz-featured-label">My work.</span> For my 2021 capstone, I built a Spring Boot/MySQL system and used think-aloud testing with 8 participants to guide interface revisions. In 2026, I reconstructed the workflow in Java and Spring Boot.</p>
+  <p><span class="hz-featured-label">Try it.</span> The browser demo lets you add fictional applicants, search records, move applications through six stages, and inspect their history. Changes stay in your browser.</p>
   <div class="hz-featured-links">
     <a href="{{ '/research/recruitment-system/' | relative_url }}">System design & tests</a>
     <a href="https://github.com/ivyhongzhan/recruitment-management-system">Java/MySQL source & tests</a>
@@ -104,7 +104,7 @@ Research, empirical methods, and interactive software prototypes—complementary
 </article>
 </section>
 
-<p class="hz-featured-note">Public materials distinguish empirical findings, qualitative interpretations and synthetic software demonstration data. No new usability-study outcomes are claimed.</p>
+<p class="hz-featured-note">The 2026 software demos use fictional data. Their engineering tests are separate from the user research conducted for my original capstone.</p>
 
 ## Education
 

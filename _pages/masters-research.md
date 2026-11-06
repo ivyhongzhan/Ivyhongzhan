@@ -6,76 +6,45 @@ nav: false
 description: "MSc research on cross-platform social media, information credibility and cultural belonging."
 ---
 
-# Cross-platform information practices and cultural belonging
-
-**MSc Dissertation · University of York · 2023**  
+**MSc dissertation · University of York · 2023**<br>
 **Hong Zhan · Supervisor: Dr Daniel Robins**
 
 **Dissertation:** _Differences between the Use of Social Media by Chinese Students in the UK and Their Home Country's Mainstream Media Culture_
 
 > How does the use of social media by Chinese students studying in the UK impact their sense of cultural identity and belonging?
 
-This project examined Chinese international students’ social-media experiences across different linguistic, cultural and platform environments. It provides experience in **primary qualitative research**, complementing my subsequent computational research on generative-AI trust.
+I examined how Chinese students in the UK used social media across linguistic, cultural, and platform contexts, and how they described communication, information credibility, and belonging.
 
-## Research design and my contributions
+## What I did
 
-| Component        | Research activity                                                                                                                                               |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Study design     | Developed an interview-based study of cross-platform experiences and cultural adaptation.                                                                       |
-| Data collection  | Designed and conducted **15 semi-structured interviews** (researcher-reported completed work) with Chinese students studying in the UK.                                                                           |
-| Data preparation | Recorded, transcribed, translated and organized interview materials.                                                                                            |
-| Analysis         | Transcribed and thematically coded interviews using **NVivo**, with Excel-supported organization.                                                                               |
-| Platform context | Examined cross-platform communication practices and analyzed social-media posts to investigate participation and information evaluation. |
+- Designed and conducted **15 semi-structured interviews** with Chinese students studying in the UK.
+- Recorded, transcribed, translated, and organized the interview materials.
+- Coded interviews thematically in **NVivo**, using **Excel** to organize the analysis.
+- Analyzed social-media posts alongside the interviews to examine participation and information evaluation.
 
-## Research process and evidence
+## Main findings
 
-1. **Study framing:** focused on Chinese students’ cross-platform social-media practices and cultural adaptation in the UK.
-2. **Primary data collection:** conducted 15 semi-structured interviews, as reported by the researcher, to examine participants' experiences.
-3. **Qualitative preparation and coding:** transcribed interviews, organized cross-language materials and used NVivo for thematic coding.
-4. **Additional analysis:** examined social-media posts in relation to participation and information evaluation.
-5. **Interpretation:** developed themes concerning platform-specific communication, language barriers and credibility checking against perceived media differences.
+The analysis identified platform-specific communication practices, language barriers to participation, and cross-platform credibility checking. Students’ accounts also addressed perceived differences in media environments, platform norms, and content restrictions.
 
-This work is qualitative; its themes should not be interpreted as representative survey estimates or numerical prevalence rates.
+These themes describe participants’ experiences of cultural adaptation. They are qualitative interpretations, rather than estimates of how common these experiences are among Chinese students generally.
 
-## Methodological record and limits
+## Materials and methods
 
-The surviving 2023 ethics-application draft documents the **planned design**, rather than the final analysis. The completed dissertation is no longer available. The interview count, transcription, translation and NVivo-assisted coding above describe researcher-reported completed work; the surviving draft does not independently verify those activities.
+Participant recordings, transcripts, identities, and identifiable posts remain private. The completed dissertation and original coding exports are no longer available for review; this page summarizes the study rather than reconstructing its full analysis.
 
-- **Planned recruitment:** Chinese international students studying in the UK, initially approached through a WeChat group. The draft proposed three initial participants followed by snowball referrals, with a target age range of 18–26. These are recruitment intentions, not verified characteristics of the final sample (draft, Section 5).
-- **Planned interviews:** semi-structured interviews using WeChat, asking about platform choices, interaction practices, language, perceived media differences and adaptation (draft, Section 3).
-- **Analytic process:** the researcher reports thematic coding supported by NVivo. The surviving document does not establish whether coding was inductive, deductive or combined, how codes became themes, or whether negative cases were systematically examined. No original codebook or coding-reliability estimate is presented here.
-- **Researcher position and translation:** the draft recognizes cultural bias and political sensitivity and proposes culturally sensitive interpretation (Section 2). It does not document a completed reflexive account or a translation-checking procedure. Translation-related loss of meaning therefore remains an interpretive limitation.
-- **Sampling limits:** the planned referral-based recruitment could privilege connected peer networks. The available record cannot establish saturation or representativeness of the final sample.
+<details>
+<summary>Surviving study-planning record</summary>
 
-The draft contains incomplete fields and no recorded committee decision. Its consent and data-protection plans are not evidence that a particular approval or procedure was completed. The original document is kept private because it contains personal identifiers.
+The 2023 ethics-application draft records an interview study using WeChat, with three initial recruits followed by snowball referrals and a planned age range of 18–26. The interview guide covered platform choices and interactions, perceived media and language differences, and communication and adaptation. These were planning details, not verified characteristics of the final sample.
 
-## How the interview topics relate to belonging
+The draft does not document the final recruitment process, coding decisions, saturation, reflexive account, translation checks, or an ethics-approval decision. It remains private because it contains personal identifiers.
 
-The planned research question concerns cultural identity and belonging. The interview guide approaches that question through everyday communication and adaptation: platform functions and interactions (questions 1–3), perceived media and language differences (4–6), and commonalities, interpersonal communication and adaptation (7–10). This explains the **design rationale** connecting platform practices to belonging; it does not establish an observed effect.
+</details>
 
-| Public-facing topic | Connection to the planned question | Evidence boundary |
-| --- | --- | --- |
-| Communication across platforms | Questions about interaction and interpersonal communication provide a route to exploring social participation. | The guide establishes an intended line of inquiry, not a demonstrated relationship with belonging. |
-| Language and participation | Language is explicitly offered as one possible explanation for perceived differences. | The available record cannot establish its importance across participants. |
-| Information credibility | The researcher's retrospective account identifies credibility checking as a topic. | The surviving guide asks about media reports but does not directly establish credibility checking as a final analytic theme. |
-| Platform norms and perceived controls | Questions ask about media-cultural conflict and perceived censorship, culture and language differences. | These prompts reflect the research framing; they are not findings about platforms or national cultures. |
+## 2026 Python companion
 
-These four topics summarize the public portfolio account. They are **not a reconstructed final codebook or independently verified dissertation findings**. With the final analysis unavailable, this page cannot substantiate a unified empirical claim about how they shaped cultural belonging, report theme frequencies, or provide a material-to-theme audit trail. The 2026 synthetic toolkit demonstrates coding checks and contributes no evidence about the original participants.
+I later developed a [Python toolkit](https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit) to check codebooks and coded segments and produce descriptive summaries. It uses fictional examples; the 2023 dissertation used NVivo, and the toolkit does not reanalyze its interviews or reproduce its findings.
 
-## Skills relevant to doctoral research
+The tables help inspect coding consistency and coverage. Frequency alone does not establish a theme’s importance, and ID-format checks do not anonymize data.
 
-**HCI / Social Computing:** interviewing, situating user experience within sociocultural contexts, identifying participation barriers.
-
-**Information Science:** information practices, credibility judgments and cross-platform sensemaking.
-
-**Computational Social Science:** qualitative grounding for research constructs and hypotheses, complementary to later quantitative work.
-
-## Methods and research integrity
-
-The project used qualitative interviewing, NVivo-assisted thematic interpretation and social-media-post analysis, as described in the CV. A separate **2026 Python analysis companion** demonstrates validation of coded segments, denominator-aware summaries and platform-by-theme tabulation on **synthetic examples**; it is not the dissertation's original code and those examples are not additional findings from the dissertation. [View the toolkit source and tests](https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit).
-
-The companion tables support coding checks, not judgments about theme importance: frequency does not establish analytic importance or population prevalence. Interpretation requires context and contrasting accounts. Its ID-token checks validate format only; they do not anonymize data or certify safe disclosure. The public examples are fictional.
-
-Participant audio, transcripts, identities and identifiable social-media materials are not publicly distributed. This page does not claim a new participant study or an independently verified ethics-approval decision.
-
-[Back to research overview]({{ '/research/' | relative_url }}) · [See the quantitative AI-trust project]({{ '/research/' | relative_url }})
+[Back to research overview]({{ '/research/' | relative_url }}) · [AI-trust research]({{ '/research/genai-trust/' | relative_url }})

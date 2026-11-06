@@ -6,10 +6,10 @@ I study how people interact with digital technologies, navigate information, and
 
 ## Featured Research
 
-**[Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** (2026)  
+**[Beyond the Aggregate: Trust and Distrust in Generative AI Across Technical Reddit Communities and Time](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** (2026)<br>
 _Sole-author research · Manuscript under review at PACM HCI (CSCW)_
 
-Across 8,519 valid trust/distrust classifications from five technical Reddit communities, _Neither_ led the pooled archive (41.7%), whereas _Trust_ led ChatGPTCoding (43.1%) and programming (46.2%). This finding motivates my interest in context-sensitive measurement of AI trust. The public-data pipeline regenerated the main numeric results and three principal figures in a clean environment (**68 specified reproduction checks passed**); the [audit documents scope and remaining limits](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION_AUDIT_20261105.md).
+Across 8,519 valid trust/distrust classifications from five technical Reddit communities, _Neither_ led the pooled archive (41.7%), whereas _Trust_ led ChatGPTCoding (43.1%) and programming (46.2%). I report these community patterns alongside pooled summaries so readers can see what aggregation leaves out. The [public reproduction audit](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION_AUDIT_20261105.md) documents the regenerated results and their limits.
 
 [SSRN Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698) · **[Code & Reproducibility](https://github.com/ivyhongzhan/genai-trust-reddit-analysis)** · [Public Reproduction Guide](https://github.com/ivyhongzhan/genai-trust-reddit-analysis/blob/main/docs/PUBLIC_REPRODUCTION.md) · [Zenodo Archived Artifacts (v3)](https://doi.org/10.5281/zenodo.23666151) · [Research Page](https://ivyhongzhan.github.io/Ivyhongzhan/research/)
 
@@ -25,9 +25,11 @@ Across 8,519 valid trust/distrust classifications from five technical Reddit com
 
 ### Recruitment Management System — BEng Topic (2021), Software Implementation (2026)
 
-**Project context:** A 2026 reconstruction of a recruitment workflow related to my 2021 BEng capstone topic and professional recruitment-operations experience.
+**Original capstone (2021):** Designed and implemented a Spring Boot/MySQL recruitment system, conducted think-aloud usability testing with 8 participants, and used the findings to revise the interface.
 
-**Engineering:** Java 21, Spring Boot, Spring Data JPA and MySQL 8.4; six-stage pipeline, validated transitions, persistence and operation-event history. The public JavaScript demo uses fictional data and browser-local storage; it is not connected to MySQL. 
+**2026 reconstruction:** Rebuilt the workflow using Java and Spring Boot, drawing on my recruitment operations experience.
+
+**Engineering:** Java 21, Spring Boot, Spring Data JPA and MySQL 8.4; six-stage pipeline, validated transitions, persistence and operation-event history. The public JavaScript demo uses fictional data and browser-local storage; it is not connected to MySQL.
 
 [Systems case study](https://ivyhongzhan.github.io/Ivyhongzhan/research/recruitment-system/) · [Java/MySQL source & tests](https://github.com/ivyhongzhan/recruitment-management-system) · [Interactive synthetic-data demo](https://ivyhongzhan.github.io/Ivyhongzhan/assets/recruitment-demo.html)
 
