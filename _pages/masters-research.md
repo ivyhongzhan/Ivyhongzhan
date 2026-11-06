@@ -74,6 +74,8 @@ These four topics summarize the public portfolio account. They are **not a recon
 
 The project used qualitative interviewing, NVivo-assisted thematic interpretation and social-media-post analysis, as described in the CV. A separate **2026 Python analysis companion** demonstrates validation of coded segments, denominator-aware summaries and platform-by-theme tabulation on **synthetic examples**; it is not the dissertation's original code and those examples are not additional findings from the dissertation. [View the toolkit source and tests](https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit).
 
+The companion tables support coding checks, not judgments about theme importance: frequency does not establish analytic importance or population prevalence. Interpretation requires context and contrasting accounts. Its ID-token checks validate format only; they do not anonymize data or certify safe disclosure. The public examples are fictional.
+
 Participant audio, transcripts, identities and identifiable social-media materials are not publicly distributed. This page does not claim a new participant study or an independently verified ethics-approval decision.
 
 [Back to research overview]({{ '/research/' | relative_url }}) · [See the quantitative AI-trust project]({{ '/research/' | relative_url }})
