@@ -21,6 +21,14 @@ Research, empirical methods, and a working software prototype—three complement
 <style>
 .hz-featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(6,auto);column-gap:16px;row-gap:0;margin:20px 0 27px}
 .hz-featured-card{min-width:0;display:grid;grid-row:span 6;grid-template-rows:subgrid;padding:23px 21px 19px;border:1px solid #dce4ec;border-radius:15px;background:#fff;box-shadow:0 6px 22px rgba(22,42,67,.055);color:#172a41}
+/* Subtle elevation only on pointer-hover devices, without moving neighboring cards. */
+@media (hover:hover) and (pointer:fine){
+  .hz-featured-card{position:relative;transition:transform .22s ease,box-shadow .22s ease;transform-origin:center center}
+  .hz-featured-card:hover,.hz-featured-card:focus-within{transform:scale(1.02);z-index:2;box-shadow:0 14px 34px rgba(22,42,67,.14)}
+}
+@media (prefers-reduced-motion:reduce){
+  .hz-featured-card{transition:none!important}
+}
 .hz-featured-card:first-child{border-top:4px solid #325d8d}.hz-featured-card:nth-child(2){border-top:4px solid #3d777c}.hz-featured-card:nth-child(3){border-top:4px solid #685b88}
 .hz-featured-eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;font-weight:750;color:#496279;margin-bottom:12px}
 .hz-featured-card h3{font-size:1.22rem!important;line-height:1.3!important;letter-spacing:-.015em;margin:0 0 13px!important;color:#172a41!important}
