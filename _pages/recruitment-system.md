@@ -34,6 +34,21 @@ The system does **not** score candidates, recommend hiring decisions, or analyze
 | **Information Systems**          | Relational entities, persistence, job and stage rules, version checks, event history                            | Traceable workflow implementation and data integrity                              |
 | **Computational Social Science** | Stage snapshot counts with synthetic data and declared denominators                                             | Measurement transparency and caution about interpreting cross-sectional summaries |
 
+## Workflow rules and scope
+
+The following reasons explain the 2026 demonstration design; they are not evidence of universal recruiting practice or a validated user requirement. Five ordered progress states plus one rejection outcome make six displayed stages.
+
+| Implemented rule | Design reason | Unsupported exception |
+| --- | --- | --- |
+| Applied → Screening → Interview → Offer → Hired; no skipping or backward moves | Makes each change explicit and the next action inspectable | Fast-track hiring, correction/backtracking and parallel stages |
+| Rejection from any active stage; Hired and Rejected are terminal | Preserves a simple final outcome without silently reopening it | Candidate withdrawal, offer declined and reopening a rejected application; these must not be relabelled as employer rejection |
+| One application per candidate email and job | Prevents duplicate records within this demo | Reapplication to the same job or separate recruitment cycles |
+| Interview is one stage | Keeps the overview compact | Multiple interview rounds and interview scheduling |
+| Closed jobs reject new applications; existing applications remain | Separates intake availability from existing workflow | Automatically cancelling active applications when a job closes |
+| Application updates require the current version | Detects stale edits | Automatic conflict merging or a multi-user approval workflow |
+
+A different operational setting may require additional states and explicit event types. The current model should be evaluated with recruiters before extending it; rejected must not stand in for every reason an application ends.
+
 ### Inspectable workflow
 
 1. View an applicant and identify the allowed next action.
