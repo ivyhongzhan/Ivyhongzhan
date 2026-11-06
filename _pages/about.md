@@ -3,7 +3,7 @@ layout: academic-home
 title: About
 permalink: /
 nav: false
-description: Hong (Ivy) Zhan studies trust in generative AI through large-scale analysis of online communities.
+description: Academic website of Hong Zhan, featuring research in human–AI interaction, computational social science, information science, and software projects.
 ---
 
 ## About
@@ -44,7 +44,7 @@ Research, empirical methods, and a working software prototype—three complement
   <p><span class="hz-featured-label">My work.</span> Secondary computational analysis of 8,519 classification records from five technical Reddit communities, with a separate 4,964-record dimension archive; community- and half-year-level descriptive summaries.</p>
   <p><span class="hz-featured-label">Evidence.</span> <em>Neither</em> is the largest pooled category (41.7%); <em>Trust</em> leads in two communities. Source provenance, denominators and reproduction limits are documented.</p>
   <div class="hz-featured-links">
-    <a href="{{ '/research/' | relative_url }}">Study & findings</a>
+    <a href="{{ '/research/genai-trust/' | relative_url }}">Study & findings</a>
     <a href="https://github.com/ivyhongzhan/genai-trust-reddit-analysis">Code & verification</a>
     <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7671698">Preprint</a>
   </div>
