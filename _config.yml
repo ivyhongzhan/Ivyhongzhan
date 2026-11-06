@@ -1,10 +1,10 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-title: "Hong Zhan"
+title: "Hong (Ivy) Zhan"
 tagline: "Computational Social Science · Human–AI Interaction · Information Science"
 description: >-
-  Hong Zhan's academic website featuring research in human–AI interaction, computational social science, information science, and software projects.
+  Hong (Ivy) Zhan's academic website featuring research in human–AI interaction, computational social science, information science, and software projects.
 
 url: "https://ivyhongzhan.github.io"
 baseurl: "/Ivyhongzhan"
@@ -17,9 +17,9 @@ keywords: HCI, information science, computational social science, human–AI int
 lang: en
 icon: "⚛️"
 
-author: "Hong Zhan"
+author: "Hong (Ivy) Zhan"
 first_name: "Hong"
-middle_name: ""
+middle_name: "(Ivy)"
 last_name: "Zhan"
 affiliation: ""
 email: ""
@@ -71,7 +71,7 @@ bing_site_verification:
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: Hong Zhan
+blog_name: Hong (Ivy) Zhan
 blog_description: Research notes on HCI, information science, and computational social science
 permalink: /blog/:year/:title/
 lsi: false
