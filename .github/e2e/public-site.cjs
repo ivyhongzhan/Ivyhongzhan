@@ -99,7 +99,7 @@ async function go(page, url, label) {
       if(path === "/research/recruitment-system/"){
         const content = await mobile.locator("body").innerText();
         assert.match(content,/Spring Boot and MySQL/);
-        assert.match(content,/FastAPI, SQLite/);
+        assert.match(content,/not connected to MySQL/i);
         passed("2021 and 2026 engineering stacks are clearly distinguished");
       }
     }
@@ -141,7 +141,7 @@ async function go(page, url, label) {
     await desktopHome.waitForTimeout(350);
     const hoveredBox = await firstCard.boundingBox();
     const neighborBox = await desktopCards.nth(1).boundingBox();
-    assert.ok(hoveredBox.width >= desktopGeometry[0].box.width * 1.015, "Hovered card did not scale up enough");
+    assert.ok(hoveredBox.width >= desktopGeometry[0].box.width * 1.045, "Hovered card did not scale up enough");
     assert.ok(Math.abs(neighborBox.width - desktopGeometry[1].box.width) < 2, "Hover should not enlarge neighboring cards");
     await desktopHome.screenshot({ path: resultsDir + "/desktop-home-hover.png", fullPage: true });
     await desktopHome.mouse.move(1, 1);
