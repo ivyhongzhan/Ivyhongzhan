@@ -57,16 +57,18 @@ Research, empirical methods, and a working software prototype—three complement
   <p><span class="hz-featured-label">Research focus.</span> Cross-platform communication, language barriers, information credibility and cultural adaptation, informed by interview coding and analysis of social-media posts. No identifiable participant materials are displayed.</p>
   <div class="hz-featured-links">
     <a href="{{ '/research/masters/' | relative_url }}">Research case study & methods</a>
+    <a href="https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit">2026 Python companion (synthetic data)</a>
   </div>
 </article>
 <article class="hz-featured-card">
   <div class="hz-featured-eyebrow">2021 · BEng capstone topic | 2026 · Interactive software</div>
   <h3>Recruitment Management System</h3>
   <p class="hz-featured-question">An interactive recruitment pipeline informed by practical screening and placement workflows at Zero Point HR.</p>
-  <p><span class="hz-featured-label">My work.</span> Implemented a recruitment workflow with six-stage pipeline, job/application management, validation, history and persistent storage in a FastAPI/SQLite project.</p>
+  <p><span class="hz-featured-label">My work.</span> Implemented a 2026 recruitment workflow reconstruction using Java, Spring Boot and MySQL, with six-stage application tracking, validated transitions and operation-event history.</p>
   <p><span class="hz-featured-label">Try it.</span> The browser demo supports fictional applicant creation, search, stage transitions and local history. It uses synthetic data and browser-local storage.</p>
   <div class="hz-featured-links">
     <a href="{{ '/research/recruitment-system/' | relative_url }}">System design & tests</a>
+    <a href="https://github.com/ivyhongzhan/recruitment-management-system">Java/MySQL source & tests</a>
     <a href="{{ '/assets/recruitment-demo.html' | relative_url }}">Interactive demo</a>
   </div>
 </article>
