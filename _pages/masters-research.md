@@ -56,7 +56,7 @@ These are qualitative themes, **not** population estimates, effect sizes or coun
 
 ## Methods and research integrity
 
-The project used qualitative interviewing, NVivo-assisted thematic interpretation and social-media-post analysis, as described in the CV. A separate Python coding-analysis companion demonstrates validation of coded segments, denominator-aware summaries and platform-by-theme tabulation on **synthetic examples**; those examples are not additional findings from the dissertation.
+The project used qualitative interviewing, NVivo-assisted thematic interpretation and social-media-post analysis, as described in the CV. A separate **2026 Python analysis companion** demonstrates validation of coded segments, denominator-aware summaries and platform-by-theme tabulation on **synthetic examples**; it is not the dissertation's original code and those examples are not additional findings from the dissertation. [View the toolkit source and tests](https://github.com/ivyhongzhan/msc-qualitative-analysis-toolkit).
 
 Participant audio, transcripts, identities and identifiable social-media materials are not publicly distributed. This page does not claim a new participant study or an independently verified ethics-approval decision.
 
