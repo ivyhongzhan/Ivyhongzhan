@@ -3,7 +3,7 @@ layout: page
 title: "Recruitment Management System"
 permalink: /research/recruitment-system/
 nav: false
-description: "A hiring-workflow prototype with state transitions, audit history and synthetic-data evaluation."
+description: "A hiring-workflow prototype with state transitions, operation-event history and synthetic-data evaluation."
 ---
 
 # Recruitment Management System
@@ -11,7 +11,7 @@ description: "A hiring-workflow prototype with state transitions, audit history 
 **BEng capstone · Wuchang University of Technology · 2021**  
 **Current portfolio implementation · 2026**
 
-The **2021 BEng graduation design** used **Spring Boot and MySQL**. The **2026 system reconstruction** also uses **Java, Spring Boot, Spring Data JPA and MySQL**, while preserving the reviewed HTML, CSS and JavaScript interface. It implements job and application management, validated six-stage transitions, persistent records and audit history. [View the complete source, Docker Compose setup and integration tests on GitHub](https://github.com/ivyhongzhan/recruitment-management-system). The [public browser demo]({{ '/assets/recruitment-demo.html' | relative_url }}) is a separate JavaScript prototype that stores synthetic records in the visitor's browser with `localStorage`; it is **not connected to the project's MySQL database**.
+The **2021 BEng graduation design** used **Spring Boot and MySQL**. The **2026 system reconstruction** also uses **Java, Spring Boot, Spring Data JPA and MySQL**, while preserving the reviewed HTML, CSS and JavaScript interface. It implements job and application management, validated six-stage transitions, persistent records and operation-event history. [View the complete source, Docker Compose setup and integration tests on GitHub](https://github.com/ivyhongzhan/recruitment-management-system). The [public browser demo]({{ '/assets/recruitment-demo.html' | relative_url }}) is a separate JavaScript prototype that stores synthetic records in the visitor's browser with `localStorage`; it is **not connected to the project's MySQL database**.
 
 The demo draws on my professional recruitment operations experience at Zero Point HR. It demonstrates the application and screening-to-decision workflow, not shift scheduling or placement management.
 
@@ -21,7 +21,7 @@ The demo draws on my professional recruitment operations experience at Zero Poin
 - Add and search applicants using **synthetic demonstration data**.
 - Explore applications in a six-stage hiring **board or table**.
 - Apply explicit stage transitions, with rejection and terminal-state rules.
-- Examine candidate details, change history and an operations log.
+- Examine candidate details, change history and an operation-event log.
 - Inspect descriptive pipeline counts with clearly stated denominators.
 
 The system does **not** score candidates, recommend hiring decisions, or analyze sensitive personal characteristics.
@@ -63,12 +63,16 @@ A different operational setting may require additional states and explicit event
 
 ## Engineering checks
 
-The repository includes Java integration tests against MySQL 8.4 for job/application operations, validation, stage transitions, audit history, persistence and frontend/API serving. [View the verified GitHub Actions run](https://github.com/ivyhongzhan/recruitment-management-system/actions/runs/42068376340): five integration tests passed with no failures or skips, and a restart check confirmed MySQL persistence.
+The repository includes Java integration tests against MySQL 8.4 for job/application operations, validation, stage transitions, operation-event history, persistence and frontend/API serving. [View the verified GitHub Actions run](https://github.com/ivyhongzhan/recruitment-management-system/actions/runs/42068376340): five integration tests passed with no failures or skips, and a restart check confirmed MySQL persistence.
 
 The public presentation is intended to use a read-only or isolated synthetic-data environment. A writable recruitment backend without authentication must not be exposed publicly.
 
 ## Evidence and limitations
 
-The **2026 portfolio implementation** is a software design and engineering artifact, not a completed usability experiment. Real-user completion times, success rates, satisfaction scores and claims of improved efficiency are **not reported**. A formative evaluation protocol and blank observation templates are included with the source package for a future consent-based study.
+The **2026 portfolio implementation** is a software design and engineering artifact, not a completed usability experiment. Real-user completion times, success rates, satisfaction scores and claims of improved efficiency are **not reported**. A [formative evaluation protocol](https://github.com/ivyhongzhan/recruitment-management-system/blob/main/docs/FORMATIVE_EVALUATION.md) and blank observation/issue templates are available for a future consent-based study. The proposed tasks cover finding a record, advancing a stage, explaining history, recovering from a duplicate and understanding unsupported outcomes. Recruitment, applicable ethics review, consent and data handling must be arranged before collecting observations. No sessions or results have been recorded in these templates.
+
+### What the event history establishes
+
+The Java API retains the compatibility name `/api/audit`, but provides operation-event history: event/object identifiers, timestamps and state changes stored with accepted updates. It does not record an authenticated operator or establish their authorization. The records are not tamper-evident, and rejected requests are not comprehensively logged as security events. Authentication, role permissions and server-derived actor identities are priorities before shared deployment; a saved event alone does not provide complete accountability.
 
 [Back to research overview]({{ '/research/' | relative_url }})
