@@ -91,7 +91,7 @@ async function go(page, url, label) {
       ["/research/recruitment-system/", "Systems case study", "Recruitment Management System"]
     ]) {
       await go(mobile, base + path, label);
-      await mobile.getByText(expected, { exact: false }).first().waitFor({ timeout: 12000 });
+      await mobile.locator("#main-content").getByText(expected, { exact: false }).first().waitFor({ timeout: 12000 });
       if(path === "/research/masters/"){
         assert.match(await mobile.locator("body").innerText(), /analyzed social-media posts/i);
         passed("MSc case study aligns with CV social-media-post analysis");
@@ -136,6 +136,20 @@ async function go(page, url, label) {
     assert.ok(desktopOverflow.content <= desktopOverflow.viewport + 2, "Desktop overflow: " + JSON.stringify(desktopOverflow));
     await desktopHome.screenshot({ path: resultsDir + "/desktop-home.png", fullPage: true });
     passed("Desktop: three equal-height cards, all six content rows aligned, no horizontal overflow");
+    const firstCard = desktopCards.first();
+    await firstCard.hover();
+    await desktopHome.waitForTimeout(350);
+    const hoveredBox = await firstCard.boundingBox();
+    const neighborBox = await desktopCards.nth(1).boundingBox();
+    assert.ok(hoveredBox.width >= desktopGeometry[0].box.width * 1.015, "Hovered card did not scale up enough");
+    assert.ok(Math.abs(neighborBox.width - desktopGeometry[1].box.width) < 2, "Hover should not enlarge neighboring cards");
+    await desktopHome.screenshot({ path: resultsDir + "/desktop-home-hover.png", fullPage: true });
+    await desktopHome.mouse.move(1, 1);
+    await desktopHome.waitForTimeout(350);
+    const restoredBox = await firstCard.boundingBox();
+    assert.ok(Math.abs(restoredBox.width - desktopGeometry[0].box.width) < 2, "Card did not return to original width on mouse leave");
+    passed("Desktop hover gently enlarges only hovered card and smoothly restores it");
+
 
     const dropdown = desktopHome.locator(".site-navigation-dropdown");
     await dropdown.locator("summary").click();
