@@ -19,8 +19,8 @@ Outside academia, I enjoy traveling, hiking, and learning languages. I’ve visi
 Research, empirical methods, and a working software prototype—three complementary ways of investigating digital technologies and human experience.
 
 <style>
-.hz-featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 27px}
-.hz-featured-card{min-width:0;display:flex;flex-direction:column;padding:23px 21px 19px;border:1px solid #dce4ec;border-radius:15px;background:#fff;box-shadow:0 6px 22px rgba(22,42,67,.055);color:#172a41}
+.hz-featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(6,auto);column-gap:16px;row-gap:0;margin:20px 0 27px}
+.hz-featured-card{min-width:0;display:grid;grid-row:span 6;grid-template-rows:subgrid;padding:23px 21px 19px;border:1px solid #dce4ec;border-radius:15px;background:#fff;box-shadow:0 6px 22px rgba(22,42,67,.055);color:#172a41}
 .hz-featured-card:first-child{border-top:4px solid #325d8d}.hz-featured-card:nth-child(2){border-top:4px solid #3d777c}.hz-featured-card:nth-child(3){border-top:4px solid #685b88}
 .hz-featured-eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;font-weight:750;color:#496279;margin-bottom:12px}
 .hz-featured-card h3{font-size:1.22rem!important;line-height:1.3!important;letter-spacing:-.015em;margin:0 0 13px!important;color:#172a41!important}
@@ -28,12 +28,13 @@ Research, empirical methods, and a working software prototype—three complement
 .hz-featured-card .hz-featured-question{font-size:.87rem;font-weight:600;color:#263e58}
 .hz-featured-divider{height:1px;background:#e5eaf0;margin:8px 0 13px}
 .hz-featured-label{font-weight:750;color:#223c57}
-.hz-featured-links{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center;margin-top:auto;padding-top:9px}
+.hz-featured-links{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center;align-self:start;margin-top:0;padding-top:9px}
 .hz-featured-links a{font-size:.84rem;font-weight:700;text-decoration:underline;text-underline-offset:3px;color:#205988}
 .hz-featured-links a:focus-visible{outline:3px solid #205988;outline-offset:3px}
 .hz-featured-note{font-size:.79rem;color:#53667b}
-@media(max-width:950px){.hz-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hz-featured-card:last-child{grid-column:1/-1}}
-@media(max-width:630px){.hz-featured-grid{grid-template-columns:minmax(0,1fr)}.hz-featured-card:last-child{grid-column:auto}.hz-featured-card{padding:19px}}
+@media(max-width:950px){.hz-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hz-featured-card:last-child{grid-column:1/-1;margin-top:16px}}
+@media(max-width:630px){.hz-featured-grid{grid-template-columns:minmax(0,1fr)}.hz-featured-card{padding:19px}.hz-featured-card:not(:first-child){margin-top:16px}}
+@supports not (grid-template-rows:subgrid){.hz-featured-grid{grid-template-rows:none;row-gap:16px}.hz-featured-card{display:flex;flex-direction:column}.hz-featured-links{margin-top:auto}.hz-featured-card:last-child{margin-top:0}}
 </style>
 
 <section class="hz-featured-grid" aria-label="Selected research and software work">
