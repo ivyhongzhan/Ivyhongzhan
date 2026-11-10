@@ -231,7 +231,7 @@ async function go(page, url, label) {
       lens.waitForEvent("download"),
       lens.locator("#export-btn").click()
     ]);
-    assert.match(csvDownload.suggestedFilename(), /360-records\\.csv$/);
+    assert.ok(csvDownload.suggestedFilename().endsWith("360-records.csv"));
     passed("Lens exports filtered synthetic records to CSV");
     await lens.screenshot({ path: resultsDir + "/recruitment-lens-desktop.png", fullPage: true });
     const lensMobile = await browser.newContext({ viewport: { width: 390, height: 844 } });
