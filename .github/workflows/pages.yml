@@ -56,6 +56,8 @@ jobs:
           echo "Generated site directories:"
           find _site -maxdepth 3 -type d | head -65
           test -s _site/assets/recruitment-demo.html
+          test -s _site/assets/recruitment-lens.html
+          grep -q 'Recruitment Lens' _site/assets/recruitment-lens.html
           grep -q 'Recruitment management workspace' _site/assets/recruitment-demo.html
           grep -q 'hz-add-person' _site/assets/recruitment-demo.html
           test -s _site/index.html
