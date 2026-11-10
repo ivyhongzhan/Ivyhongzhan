@@ -206,6 +206,49 @@ async function go(page, url, label) {
     assert.equal((await page.locator("#hz-total").innerText()).trim(), "14");
     passed("Reset clears browser-local changes and remains reset after reload");
 
+
+    // Recruitment Lens: 2026 read-only analytics extension, separate from the ATS demo.
+    const lens = await context.newPage();
+    lens.on("pageerror", (error) => runtimeErrors.push("Lens: " + error.message));
+    await go(lens, base + "/assets/recruitment-lens.html", "Recruitment Lens analytics demo");
+    await lens.locator("#metric-applications").waitFor({ timeout: 12000 });
+    assert.equal((await lens.locator("#metric-applications").innerText()).trim(), "360");
+    assert.equal(await lens.locator("#funnel .funnel-row").count(), 5);
+    assert.equal(await lens.locator("#load-error").isVisible(), false);
+    passed("Lens loads 360 synthetic records and five ever-reached stages");
+    await lens.locator("#department").selectOption({ index: 1 });
+    const subsetSize = Number((await lens.locator("#metric-applications").innerText()).replaceAll(",", ""));
+    assert.ok(subsetSize > 0 && subsetSize < 360, "Lens filter did not update denominators");
+    await lens.locator("#clear-filters").click();
+    assert.equal((await lens.locator("#metric-applications").innerText()).trim(), "360");
+    passed("Lens department filtering and reset change the correct denominator");
+    await lens.locator("#records-body .inspect-btn").first().click();
+    assert.equal(await lens.locator("#detail-drawer").isVisible(), true);
+    assert.match(await lens.locator("#detail-content").innerText(), /Recorded stage events/);
+    await lens.locator("#close-drawer").click();
+    passed("Lens record-level event drill-down works");
+    const [csvDownload] = await Promise.all([
+      lens.waitForEvent("download"),
+      lens.locator("#export-btn").click()
+    ]);
+    assert.match(csvDownload.suggestedFilename(), /360-records\\.csv$/);
+    passed("Lens exports filtered synthetic records to CSV");
+    await lens.screenshot({ path: resultsDir + "/recruitment-lens-desktop.png", fullPage: true });
+    const lensMobile = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const lensMobilePage = await lensMobile.newPage();
+    lensMobilePage.on("pageerror", (error) => runtimeErrors.push("Lens mobile: " + error.message));
+    await go(lensMobilePage, base + "/assets/recruitment-lens.html", "Recruitment Lens mobile analytics demo");
+    assert.equal((await lensMobilePage.locator("#metric-applications").innerText()).trim(), "360");
+    const lensWidth = await lensMobilePage.evaluate(() => ({
+      viewport: document.documentElement.clientWidth,
+      content: document.documentElement.scrollWidth
+    }));
+    assert.ok(lensWidth.content <= lensWidth.viewport + 2, "Lens mobile horizontal overflow: " + JSON.stringify(lensWidth));
+    await lensMobilePage.screenshot({ path: resultsDir + "/recruitment-lens-mobile.png", fullPage: true });
+    await lensMobile.close();
+    await lens.close();
+    passed("Lens mobile layout has no page-level horizontal overflow");
+
     assert.deepEqual(runtimeErrors, [], "Uncaught JavaScript errors: " + runtimeErrors.join("; "));
     passed("No uncaught JavaScript page errors");
     fs.writeFileSync(resultsDir + "/checks.json", JSON.stringify({ url: demoUrl, passed: checks, environment: "GitHub-hosted Chromium external network" }, null, 2));
