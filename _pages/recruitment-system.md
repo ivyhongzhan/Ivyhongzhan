@@ -35,6 +35,14 @@ The board supports scanning by stage; the table supports search and detailed ope
 
 The demo is a separate JavaScript implementation. It saves changes in your browser with `localStorage` and is **not connected to MySQL**. The [Java project](https://github.com/ivyhongzhan/recruitment-management-system) runs independently with MySQL persistence and server-side validation.
 
+## Recruitment Lens: 2026 analytics extension
+
+I also developed **[Recruitment Lens]({{ '/assets/recruitment-lens.html' | relative_url }})**, a separate **read-only workflow analytics prototype** built with HTML, CSS and JavaScript. It lets visitors filter 360 synthetic applications, inspect stage-reach denominators, compare simulated channel-level patterns and drill down to generated event histories.
+
+This module is intended to demonstrate interaction design, descriptive computational analysis and information-system thinking. It is **not** the Spring Boot/MySQL application above, and its simulated data do not support empirical, fairness or causal claims. No participant evaluation has been conducted for this new module.
+
+[Launch Recruitment Lens]({{ '/assets/recruitment-lens.html' | relative_url }}) · [Inspect the source and methods](https://github.com/ivyhongzhan/recruitment-management-system/tree/main/analytics-lens)
+
 ## Workflow rules
 
 Five ordered progress states and one rejection outcome make six displayed stages. These rules simplify the demo; other recruitment settings may need additional states and exceptions.
