@@ -7,7 +7,7 @@ description: "MSc research on cross-platform social media, information credibili
 ---
 
 **MSc dissertation · University of York · 2023**<br>
-**Hong Zhan · Supervisor: Dr Daniel Robins**
+**Hong Zhan**
 
 **Dissertation:** _Differences between the Use of Social Media by Chinese Students in the UK and Their Home Country's Mainstream Media Culture_
 
